@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences_root">
+
+    <ListPreference
+        android:key="preference_touch_capture"
+        android:title="@string/preference_touch_capture"
+        android:summary="@string/preference_touch_capture_summary"
+        android:icon="@drawable/ic_touch_app_white_48dp"
+        android:entries="@array/preference_touch_capture_entries"
+        android:entryValues="@array/preference_touch_capture_values"
+        android:defaultValue="none"
+        />
+
+    <SwitchPreference
+        android:key="preference_pause_preview"
+        android:title="@string/preference_pause_preview"
+        android:summary="@string/preference_pause_preview_summary"
+        android:defaultValue="false"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <SwitchPreference
+        android:key="preference_shutter_sound"
+        android:title="@string/preference_shutter_sound"
+        android:summary="@string/preference_shutter_sound_summary"
+        android:defaultValue="true"
+        />
+
+    <SwitchPreference
+        android:key="preference_timer_beep"
+        android:title="@string/preference_timer_beep"
+        android:summary="@string/preference_timer_beep_summary"
+        android:defaultValue="true"
+        />
+
+    <SwitchPreference
+        android:key="preference_timer_speak"
+        android:title="@string/preference_timer_speak"
+        android:summary="@string/preference_timer_speak_summary"
+        android:defaultValue="false"
+        />
+
+    <ListPreference
+        android:key="preference_volume_keys"
+        android:title="@string/preference_volume_keys"
+        android:summary="%s"
+        android:entries="@array/preference_volume_keys_entries"
+        android:entryValues="@array/preference_volume_keys_values"
+        android:defaultValue="volume_really_nothing"
+        />
+
+    <ListPreference
+        android:key="preference_audio_control"
+        android:title="@string/preference_audio_control"
+        android:summary="@string/preference_audio_control_summary"
+        android:icon="@drawable/ic_mic_white_48dp"
+        android:entries="@array/preference_audio_control_entries"
+        android:entryValues="@array/preference_audio_control_values"
+        android:defaultValue="none"
+        />
+
+    <com.linkedcamera.app.ui.ArraySeekBarPreference
+        android:key="preference_audio_noise_control_sensitivity"
+        android:title="@string/preference_audio_noise_control_sensitivity"
+        android:summary="@string/preference_audio_noise_control_sensitivity_summary"
+        android:entries="@array/preference_audio_noise_control_sensitivity_entries"
+        android:entryValues="@array/preference_audio_noise_control_sensitivity_values"
+        android:defaultValue="0"
+        />
+
+    <!--  if we move this to another PreferenceScreen, we should update code for the findPreference() call -->
+    <PreferenceScreen
+        android:key="preference_screen_remote_control"
+        android:title="@string/preference_screen_remote_control"
+        android:icon="@drawable/ic_more_horiz_white_48dp"
+        android:persistent="false"
+        android:fragment="com.linkedcamera.app.PreferenceSubRemoteCtrl"
+        />
+
+    <ListPreference
+        android:key="preference_lock_orientation"
+        android:title="@string/preference_lock_orientation"
+        android:summary="@string/preference_lock_orientation_summary"
+        android:entries="@array/preference_lock_orientation_entries"
+        android:entryValues="@array/preference_lock_orientation_values"
+        android:defaultValue="none"
+        />
+
+    <Preference
+        android:key="preference_save_location"
+        android:title="@string/preference_save_location"
+        android:summary="@string/preference_save_location_summary"
+        android:icon="@drawable/ic_save_white_48dp"
+        android:dialogTitle="@string/preference_save_location"
+        android:dialogMessage="@string/preference_save_location_summary"
+        android:inputType="text"
+        android:defaultValue="OpenCamera"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <!-- if this is changed to being different to SwitchPreference or we change the key name, consider whether
+        MyPreferenceFragment.setupDependencies() needs updating. -->
+    <SwitchPreference
+        android:key="preference_using_saf"
+        android:title="@string/preference_using_saf"
+        android:summary="@string/preference_using_saf_summary"
+        android:defaultValue="false"
+        />
+
+    <!-- if the default value changes, remember to update code in MyPreferenceFragment.setSummary() -->
+    <com.linkedcamera.app.ui.MyEditTextPreference
+        android:key="preference_save_photo_prefix"
+        android:title="@string/preference_save_photo_prefix"
+        android:summary="@string/preference_save_photo_prefix_summary"
+        android:dialogMessage="@string/preference_save_photo_prefix_summary"
+        android:inputType="text"
+        android:defaultValue="IMG_"
+        />
+
+    <!-- if the default value changes, remember to update code in MyPreferenceFragment.setSummary() -->
+    <com.linkedcamera.app.ui.MyEditTextPreference
+        android:key="preference_save_video_prefix"
+        android:title="@string/preference_save_video_prefix"
+        android:summary="@string/preference_save_video_prefix_summary"
+        android:dialogMessage="@string/preference_save_video_prefix_summary"
+        android:inputType="text"
+        android:defaultValue="VID_"
+        />
+
+    <ListPreference
+        android:key="preference_save_zulu_time"
+        android:title="@string/preference_save_zulu_time"
+        android:summary="%s"
+        android:entries="@array/preference_save_zulu_time_entries"
+        android:entryValues="@array/preference_save_zulu_time_values"
+        android:defaultValue="local"
+        />
+
+    <SwitchPreference
+        android:key="preference_save_include_milliseconds"
+        android:title="@string/preference_save_include_milliseconds"
+        android:summary="@string/preference_save_include_milliseconds_summary"
+        android:defaultValue="false"
+        />
+
+    <SwitchPreference
+        android:key="preference_allow_haptic_feedback"
+        android:title="@string/preference_allow_haptic_feedback"
+        android:summary="@string/preference_allow_haptic_feedback_summary"
+        android:defaultValue="true"
+        />
+
+    <SwitchPreference
+        android:key="preference_show_when_locked"
+        android:title="@string/preference_show_when_locked"
+        android:summary="@string/preference_show_when_locked_summary"
+        android:defaultValue="false"
+        />
+
+    <SwitchPreference
+        android:key="preference_startup_focus"
+        android:title="@string/preference_startup_focus"
+        android:summary="@string/preference_startup_focus_summary"
+        android:defaultValue="true"
+        />
+
+    <SwitchPreference
+        android:key="preference_allow_long_press"
+        android:title="@string/preference_allow_long_press"
+        android:summary="@string/preference_allow_long_press_summary"
+        android:defaultValue="true"
+        />
+
+    <Preference
+        android:key="preference_calibrate_level"
+        android:title="@string/preference_calibrate_level"
+        android:summary="@string/preference_calibrate_level_summary"
+        />
+
+</PreferenceScreen>

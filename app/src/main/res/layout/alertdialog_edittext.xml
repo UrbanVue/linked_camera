@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generic xml for use with AlertDialog where we want an EditText.
+    Used in several places, so customisations should be done programatically in code - this is
+    also why we don't set a "hint" here in the XML; this should be done by the caller. Similarly
+    for the autofillHints.
+    Important not to create EditTexts dynamically in code, due to Google Play emoji policy...
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        tools:ignore="Autofill,LabelFor"
+        />
+
+</LinearLayout>

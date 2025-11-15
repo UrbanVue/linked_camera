@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generic xml for use with creating a TextView for PopupView.
+    Used in several places, so customisations should be done programatically in code.
+    Important not to create TextViews dynamically in code, due to Google Play emoji policy...
+    We ignore the "Overdraw" warning as (when checking for Android warnings for entire application)
+    we get a warning Android/Lint/Performance/"Overdraw: Painting regions more than once" for
+    android:background - this is spurious, as we don't use this xml for a root view.
+    -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:gravity="center"
+    android:textColor="#ffffffff"
+    android:background="#ff212121"
+    tools:ignore="Overdraw"
+    />

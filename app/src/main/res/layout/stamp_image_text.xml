@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generic xml for use with creating a TextView so we can stamp text onto images.
+    Used in several places, so customisations should be done programatically in code.
+    Important not to create TextViews dynamically in code, due to Google Play emoji policy...
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        />
+
+</LinearLayout>

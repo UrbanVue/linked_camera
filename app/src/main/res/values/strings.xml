@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Linked Camera</string> <!-- shouldn't be translated, unless deemed appropriate e.g. alternative alphabets -->
+    <string name="action_settings">Settings</string>
+    <string name="action_popup">Popup settings</string>
+    <string name="intro_ok">OK (This message won\'t show again)</string>
+
+    <string name="on">On</string> <!-- whether a setting is turned on, e.g., "Auto-level: On" -->
+    <string name="off">Off</string> <!-- whether a setting is turned off, e.g., "Auto-level: Off" -->
+    
+    <string name="choose_save_location">Choose save location:</string>
+    <string name="clear_folder_history">Clear folder history</string>
+    <string name="clear_folder_history_question">Clear folder history?</string>
+    <string name="choose_another_folder">Choose another folder</string>
+    <string name="changed_save_location">Changed save location to:</string>
+    <string name="stopped_recording_video">Stopped recording video</string>
+    <string name="repeats_to_go">repeats to go</string> <!--  intentionally starts lower case -->
+    <string name="failed_to_reconnect_camera">Failed to reconnect to camera</string>
+    <string name="video_may_be_corrupted">Error, video file may be corrupted</string>
+    <string name="not_supported">not supported on your device</string> <!--  intentionally starts lower case -->
+    <string name="video_error_unknown">Unknown error, video halted</string>
+    <string name="video_error_server_died">Server died, video halted</string>
+    <string name="video_max_duration">Video reached max duration</string>
+    <string name="video_max_filesize">Video reached max file size</string>
+    <string name="exposure_compensation">Exposure compensation</string>
+    <string name="fps">FPS</string>
+    <string name="focus_distance">Focus distance</string>
+    <string name="infinite">Infinite</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="exposure_locked">Exposure locked</string>
+    <string name="exposure_unlocked">Exposure unlocked</string>
+    <string name="cancelled_timer">Cancelled timer</string>
+    <string name="cancelled_repeat_mode">Cancelled repeat mode</string>
+    <string name="started_timer">Started timer</string>
+    <string name="failed_to_save_video">Failed to save video file</string>
+    <string name="failed_to_record_video">Failed to record video</string>
+    <string name="started_recording_video">Started recording video</string>
+    <string name="sorry">Sorry</string>
+    <string name="failed_to_save_photo">Failed to save photo</string>
+    <string name="failed_to_save_photo_raw">Failed to save RAW photo</string>
+    <string name="failed_to_auto_stabilise">Failed to auto-level</string>
+    <string name="failed_to_start_camera_preview">Failed to start camera preview</string>
+    <string name="taking_photo">Taking photo</string>
+    <string name="failed_to_take_picture">Failed to take picture</string>
+    <string name="location_not_available">GPS location not available</string>
+    <string name="photo_deleted">Photo deleted</string>
+    <string name="no_gallery_app">No gallery app available</string>
+    <string name="screen_is_locked">Screen is locked\nswipe the screen to unlock</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="auto_stabilise_not_supported">Sorry, auto-level not supported\non this device</string>
+    <string name="audio_disabled">Audio disabled</string>
+    <string name="max_duration">Max duration</string>
+    <string name="color_effect">Color effect</string>
+    <string name="scene_mode">Scene mode</string>
+    <string name="white_balance">White balance</string>
+    
+    <string name="angle">Angle</string>
+    <string name="direction">Direction</string>
+    <string name="failed_to_open_camera_1">FAILED TO OPEN CAMERA.</string>
+    <string name="failed_to_open_camera_2">CAMERA MAY BE IN USE</string>
+    <string name="failed_to_open_camera_3">BY ANOTHER APPLICATION?</string>
+    <string name="iso">ISO</string>
+    <string name="zoom">Zoom</string>
+    <string name="free_memory">Free</string>
+    <string name="screen_lock_message_1">[LOCKED:</string>
+    <string name="screen_lock_message_2">Swipe to unlock]</string>
+    
+    <string name="failed_to_stamp">Failed to stamp info to photo</string>
+    <string name="metres_abbreviation">m</string> <!-- symbol short for metres -->
+    
+    <string name="preference_category_camera_effects">Camera Effects</string>
+    <string name="preference_auto_stabilise">Auto-level</string>
+    <string name="preference_auto_stabilise_summary">Images will be rotated so they are automatically level (photos only) (slower to take photos, and may fail on devices with too low memory)</string>
+    <string name="preference_color_effect">Apply a color effect</string>
+    <string name="preference_color_effect_summary">Applies the selected color effect to the photo</string>
+    <string name="preference_scene_mode">Apply a scene mode</string>
+    <string name="preference_scene_mode_summary">Optimise the photo for different scenes</string>
+    <string name="preference_white_balance">Set the white balance</string>
+    <string name="preference_white_balance_summary">Choose a setting to adjust the white balance</string>
+    <string name="preference_iso">Set the ISO</string>
+    <string name="preference_iso_summary">A higher value means more sensitive to light (may not work on some devices)</string>
+    <string name="preference_exposure">Set the exposure compensation</string>
+    <string name="preference_exposure_summary">Set to 0 for the default exposure compensation</string>
+    <string name="preference_lock_orientation">Lock photo/video orientation</string>
+    <string name="preference_lock_orientation_summary">If set, the orientation of the device will be ignored, and the orientation of the photo/video will be with respect to the specified orientation\n%s</string>
+    <string name="preference_face_detection">Face detection</string>
+    <string name="preference_face_detection_summary">Use face detection instead of focus areas</string>
+
+    <string name="preference_category_camera_controls">Linked Camera Settings</string>
+    <string name="preference_timer">Timer</string>
+    <string name="preference_timer_beep">Timer beep</string>
+    <string name="preference_timer_beep_summary">Beep when timer is counting down or for repeat mode delay</string>
+    <string name="preference_timer_speak">Voice timer countdown</string>
+    <string name="preference_timer_speak_summary">Speak the countdown for timer or repeat mode delay (from 60 seconds)</string>
+    <string name="preference_burst_mode">Repeat</string> <!-- preference is called "burst" for historical reasons, but is more of a repeat mode; also used in popup menu, so shouldn't be too long a string -->
+    <string name="preference_burst_interval">Repeat mode interval</string>
+    <string name="preference_screen_camera_controls_more">More camera controls…</string>
+    <string name="preference_touch_capture">Touch to capture</string>
+    <string name="preference_touch_capture_summary">Take a photo or record video just by touching or double-tapping the preview\n%s</string>
+    <string name="preference_pause_preview">Pause after taking photo</string>
+    <string name="preference_pause_preview_summary">Pause the screen after taking a photo, with the option to share or delete the photo</string>
+    <string name="preference_shutter_sound">Shutter sound</string>
+    <string name="preference_shutter_sound_summary">Play a sound when taking a photo</string>
+    <string name="preference_volume_keys">Volume keys</string>
+    <string name="preference_audio_control">Audio control options</string>
+    <!-- preference_audio_control_summary defined below -->
+    <string name="preference_audio_noise_control_sensitivity">Audio control sensitivity</string>
+    <string name="preference_audio_noise_control_sensitivity_summary">Noise level sensitivity for audio (loud noise) option\n%s</string>
+    <string name="preference_save_location">Save location</string>
+    <string name="preference_save_location_summary">Folder to save the photo/video files in</string>
+    <string name="preference_using_saf" translatable="false">Storage Access Framework</string> <!-- not translated as it's referenced in the privacy policy, and unclear how this term should be translated -->
+    <string name="preference_using_saf_summary">Whether to use Storage Access Framework for saving photos and videos. This should be enabled to allow saving to external SD cards. On Android 10+ this option must be enabled if you want to save in a folder outside of DCIM.</string>
+    <string name="preference_save_photo_prefix">Save photo prefix</string>
+    <string name="preference_save_photo_prefix_summary">The prefix to use for the save filenames for photos</string>
+    <string name="preference_save_video_prefix">Save video prefix</string>
+    <string name="preference_save_video_prefix_summary">The prefix to use for the save filenames for videos</string>
+    <string name="preference_save_zulu_time">Time format for filename</string>
+    <string name="preference_save_include_milliseconds">Use milliseconds in filename</string>
+    <string name="preference_save_include_milliseconds_summary">If enabled, filenames will include milliseconds</string>
+    <string name="preference_show_when_locked">Show camera when locked</string>
+    <string name="preference_show_when_locked_summary">If enabled, Linked Camera will still show above any lockscreen (you\'ll still have to unlock to access Settings, Gallery etc)</string>
+    <string name="preference_startup_focus">Perform auto-focus on startup</string>
+    <string name="preference_startup_focus_summary">Whether to auto-focus when Linked Camera is started. If you have the problem of flash turning on when starting, disable this option</string>
+    <string name="preference_lock_video">Lock screen when recording video</string>
+    <string name="preference_lock_video_summary">When recording video, the GUI will be locked to prevent accidentally stopping recording. Swipe the screen to unlock. Note that video recording will always stop if the app goes into background or the screen is blanked.</string>
+    <string name="preference_rotate_preview">Rotate preview</string>
+    <string name="preference_rotate_preview_summary">Option to rotate the preview (won\'t affect resultant photos/videos)\n%s</string>
+    <string name="preference_screen_gui">On screen GUI…</string>
+    <string name="preference_preview_size">Preview size</string>
+    <string name="preference_ui_placement">UI placement</string>
+    <string name="preference_immersive_mode">Immersive mode</string>
+    <string name="preference_show_zoom">Show zoom</string>
+    <string name="preference_show_zoom_summary">Display the current camera zoom level on screen (when zoomed in)</string>
+    <string name="preference_show_zoom_slider_controls">Show zoom slider control</string>
+    <string name="preference_show_zoom_slider_controls_summary">Show the slider for zoom control</string>
+    <string name="preference_show_iso">Show ISO</string>
+    <string name="preference_show_iso_summary">Display the current ISO level. (Requires Camera2 API.)</string>
+    <string name="preference_free_memory">Show free memory</string>
+    <string name="preference_free_memory_summary">Display the remaining device storage space on screen</string>
+    <string name="preference_show_angle">Show angle</string>
+    <string name="preference_show_angle_summary">Display the current device orientation angle on screen</string>
+    <string name="preference_show_angle_line">Show angle line</string>
+    <string name="preference_show_angle_line_summary">Display horizontal level line</string>
+    <string name="preference_angle_highlight_color">Angle/altitude highlight color</string>
+    <string name="preference_angle_highlight_color_summary">Highlight color for when camera is nearly level\n%s</string>
+    <string name="preference_show_geo_direction">Show compass direction</string>
+    <string name="preference_show_geo_direction_summary">Display the compass direction of the device on screen</string>
+    <string name="preference_show_time">Show time</string>
+    <string name="preference_show_time_summary">Display the current time on screen</string>
+    <string name="preference_show_battery">Show battery</string>
+    <string name="preference_show_battery_summary">Display the current battery level on screen</string>
+    <string name="preference_grid">Show a grid</string>
+    <string name="grid">Grid</string> <!-- short form of Show a grid -->
+    <string name="preference_crop_guide">Show a crop guide</string>
+    <string name="preference_crop_guide_summary">A crop guide displays a rectangle showing what the specified aspect ratio looks like - useful if you plan to crop the photo/video afterwards to a different aspect ratio. Requires WYSIWYG photo mode, or being in video mode.\n%s</string>
+    <string name="preference_show_toasts">Show on-screen messages</string>
+    <string name="preference_show_toasts_summary">Whether to display temporary on-screen info messages</string>
+    <string name="preference_thumbnail_animation">Show thumbnail animation</string>
+    <string name="preference_thumbnail_animation_summary">Display moving thumbnail animation when taking a photo</string>
+    <string name="preference_take_photo_border">Show border when taking photo</string>
+    <string name="preference_take_photo_border_summary">Display a border on the display to indicate taking a photo</string>
+    <string name="preference_keep_display_on">Keep display on</string>
+    <string name="preference_keep_display_on_summary">If enabled, the screen won\'t switch off while the main Linked Camera UI is active</string>
+    <string name="preference_max_brightness">Force maximum brightness</string>
+    <string name="preference_max_brightness_summary">Force screen display to be at maximum brightness, rather than device default</string>
+    
+    <string name="preference_category_camera_quality">Photo and Video Settings</string>
+    <string name="preference_screen_photo_settings">Photo settings…</string>
+    <string name="preference_screen_video_settings">Video settings…</string>
+    <string name="preference_screen_location_settings">Location settings…</string>
+    <string name="preference_resolution">Camera resolution</string>
+    <string name="preference_quality">Image quality</string>
+    <string name="preference_quality_summary">Set the image quality of saved JPEG or WebP photo images (default value is 90%%). Has no effect for PNG image format.\n%s</string> <!-- '%' is encoded as '%%' - a single % can crash devices, and this isn't picked up by Android Lint! -->
+    <string name="preference_raw">RAW</string>
+    <string name="preference_location">Store location data (Geotagging)</string>
+    <string name="preference_location_summary">Store GPS location data in the photos/videos (for photos, location data can only be stored in JPEG and DNG formats)</string>
+    <string name="preference_gps_direction">Store compass direction</string>
+    <string name="preference_gps_direction_summary">Store GPS compass direction in the photos (JPEG formats only)</string>
+    <string name="preference_require_location">Require location data</string>
+    <string name="preference_require_location_summary">If location data is enabled, only take photo/video if location data is available</string>
+    <string name="preference_stamp">Stamp photos</string>
+    <string name="preference_stamp_summary">Stamp photos with date and time; and also GPS info if location/direction data is enabled\n%s</string>
+    <string name="preference_stamp_dateformat">Datestamp format</string>
+    <string name="preference_stamp_timeformat">Timestamp format</string>
+    <string name="preference_stamp_gpsformat">GPS stamp format</string>
+    <string name="preference_textstamp">Custom text</string>
+    <string name="preference_textstamp_summary">Stamp photos with a custom text</string>
+    <string name="preference_stamp_fontsize">Font size</string>
+    <string name="preference_stamp_fontsize_summary">Font size to use when stamping text onto photos\n%s</string>
+    <string name="preference_stamp_font_color">Font color</string>
+    <string name="preference_stamp_font_color_summary">Font color to use when stamping text onto photos\n%s</string>
+    <string name="preference_stamp_style">Text style</string>
+    <string name="preference_stamp_style_summary">Style to use when stamping text onto photos\n%s</string>
+    <string name="preference_background_photo_saving">Use background thread</string>
+    <string name="preference_background_photo_saving_summary">Whether to save photos on a background thread (for faster operation)</string>
+    <string name="video_quality">Video resolution</string>
+    <string name="preference_force_video_4k">Force 4K UHD video (only works on some devices)</string>
+    <string name="preference_force_video_4k_summary">Enable 3840x2160 resolution for video recording on back camera - this option is a hack that may allow 4K devices on 4K cameras that don\'t expose the option to 3rd party camera apps. This isn\'t guaranteed to work, please test before working.</string>
+    <string name="preference_video_stabilization">Enable digital video stabilization</string>
+    <string name="preference_video_stabilization_summary">Video stabilization reduces the shaking due to the motion of the camera in both the preview and in recorded videos. This may be unnecessary if your device supports optical image stabilization (OIS).</string>
+    <string name="preference_video_bitrate">Video bitrate (approx)</string>
+    <string name="preference_video_bitrate_summary">Set the approximate bitrate of videos (higher means better quality, but takes up more disk space; may cause video recording to fail if bitrate not supported)\n%s</string>
+    <string name="preference_video_fps">Video frame rate (approx)</string>
+    <string name="preference_video_fps_summary">Set the frame rate (FPS) of videos (may be approx, not guaranteed to be achieved, and may cause video recording to fail if frame rate not supported). Please check resultant videos to find the actual frame rate used. Note that this setting is ignored for slow motion videos.\n%s</string>
+    <string name="preference_video_max_duration">Maximum duration of video</string>
+    <string name="preference_video_max_duration_summary">The video recording will stop after the specified duration\n%s</string>
+    <string name="preference_video_restart">Restart video after max duration</string>
+    <string name="preference_video_restart_summary">If the video has stopped after hitting the maximum duration (if set), this option will make the video restart, up to the specified number of times\n%s</string>
+    <string name="preference_video_max_filesize">Maximum file size of video</string>
+    <string name="preference_video_max_filesize_summary">The video recording will stop and/or restart (see option below) when the (approximate) maximum file size is reached. Note that many Android devices have a maximum file size for videos (typically around 2GB or 4GB), but this option allows setting a specific value. Note that this option can\'t be used to increase a device\'s built-in maximum.\n%s</string>
+    <string name="preference_video_restart_max_filesize">Restart on maximum file size</string>
+    <string name="preference_video_restart_max_filesize_summary">Whether to automatically restart when the maximum file size is reached (whether the device default max file size, or user specified)</string>
+    <string name="preference_record_audio">Record audio</string>
+    <string name="preference_record_audio_summary">Record audio when recording video</string>
+    <string name="preference_record_audio_src">Audio source</string>
+    <string name="preference_record_audio_src_summary">Microphone to use for recording audio. Note that the exact behaviour of the options depends on how the option is implemented on your device.\n%s</string>
+    <string name="preference_record_audio_channels">Audio channels</string>
+    <string name="preference_record_audio_channels_summary">Specify mono or stereo for recording audio (stereo only supported on some devices)\n%s</string>
+    <string name="preference_video_flash">Flash while recording video</string>
+    <string name="preference_video_flash_summary">If enabled, flash will switch on/off when recording video (can be used to tell camera is still recording at a distance)</string>
+    
+    <string name="preference_category_online">Miscellaneous</string>
+    <string name="preference_online_help">About Linked Camera</string>
+    <string name="preference_online_help_summary"></string>
+    <string name="about_content">Linked Camera v1.0\n© 2025 UrbanVue B.V.\n\nLinked Camera is a lightweight, privacy-aware camera app designed for field data collection.\nIt captures high-quality photos and securely links them to your workflow, including optional automatic upload to a configured server or Nextcloud environment.\n\nThis app builds upon the excellent open-source work of Open Camera by Mark Harman and is distributed under the GNU GPLv3 license.</string>
+    <string name="github">GitHub</string>
+    <string name="preference_use_camera2">Use Camera2 API</string>
+    <string name="preference_use_camera2_summary">Enables extra features such as manual modes for exposure, focus, white balance, along with RAW (if supported by the device), but may not work properly on all devices (will cause a restart)</string>
+    <string name="preference_about">App and debug information</string>
+    <string name="preference_about_summary"></string>
+    <string name="preference_reset">Reset settings</string>
+    <string name="preference_reset_summary">Reset all Linked Camera settings to default</string>
+    <string name="preference_reset_question">Are you sure you want to reset all Linked Camera settings to default?</string>
+
+    <string name="about_available">Available</string>
+    <string name="about_not_available">Not available</string>
+    <string name="about_copy_to_clipboard">Copy to clipboard</string>
+    
+    <string name="take_photo">Take Photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="exposure">Exposure</string>
+    <string name="exposure_lock">Lock exposure</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="flash_mode">Flash Mode</string>
+    <string name="switch_to_front_camera">Switch to front camera</string>
+    <string name="switch_to_back_camera">Switch to back camera</string>
+    <string name="switch_to_video">Switch to video mode</string>
+    <string name="switch_to_photo">Switch to photo mode</string>
+    <string name="trash">Delete Last Picture</string>
+    <string name="share">Share Photo</string>
+    
+    <string name="parent_folder">Parent Folder</string>
+    <string name="new_folder">New Folder</string>
+    <string name="cant_write_folder">Can\'t write to this folder</string>
+    <string name="cant_access_folder">Can\'t access this folder</string>
+    <string name="enter_new_folder">Enter new folder name</string>
+    <string name="failed_create_folder">Failed to create folder</string>
+    <string name="folder_exists">Folder already exists</string>
+
+    <string name="saf_select_save_location">Select a save location</string>
+    <string name="saf_cancelled">Storage Access Framework cancelled</string>
+    <string name="saf_permission_failed">Unable to save to this folder</string>
+
+    <!-- the permission names such as Microphone should match what Android calls them in the App permission settings -->
+    <string name="permission_record_audio_not_available">Microphone permission is not available</string>
+    <string name="permission_location_not_available">Location permission is not available</string>
+
+    <string name="start_video">Start recording video</string>
+    <string name="stop_video">Stop recording video</string>
+
+    <string name="max_filesize">Max file size</string>
+    <string name="mb_abbreviation">MB</string> <!-- symbol short for megabytes -->
+    <string name="gb_abbreviation">GB</string> <!-- symbol short for gigabytes -->
+
+    <string name="audio_control_start">Start audio listening</string>
+    <string name="audio_control_stop">Stop audio listening</string>
+    <string name="speech_recognizer_started">Say \"cheese\"</string> <!-- note that cheese shouldn't be translated, as we listen for this no matter what language is being used -->
+    <string name="audio_listener_started">Make a loud noise</string>
+
+    <string name="auto_stabilise_info">Auto-level will automatically rotate photos so that they appear level.\n\nNote that this means images will come out a slightly lower resolution (due to the rotation and cropping that\'s required).</string>
+    <string name="raw_info">DNG files contain the full uncompressed and unprocessed information from your camera.\n\nNote that some gallery apps don\'t recognise DNG files. DNG images can be used with specialised image editors.\n\nNote that various processing options such as "Stamp photos" and "Auto-level" will only apply to the non-DNG (JPEG/etc) images, and not the DNG images.</string>
+    <string name="hdr_info">HDR mode is useful for shots with a large variation in brightness. It works by taking multiple shots at different exposures, and combining them to create the final image.\n\nNote that HDR is not suitable for scenes with fast movement, and may result in less accurate color reproduction.\n\nTaking photos in HDR mode will be slower.</string>
+
+    <string name="dont_show_again">Don\'t show again</string>
+
+    <string name="photo_mode">Photo Mode</string>
+    <string name="photo_mode_standard">Std</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_standard_full">Standard</string>
+    <string name="photo_mode_hdr">HDR</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_expo_bracketing">Expo {}</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_expo_bracketing_full">Exposure Bracketing</string>
+    <string name="photo_mode_fast_burst" translatable="false">[]]]</string> <!-- keep short, as this shows in the popup menu; shouldn't be translated -->
+    <string name="photo_mode_fast_burst_full">Fast Burst</string>
+    <string name="photo_mode_noise_reduction">NR</string> <!-- keep short, as this shows in the popup menu; probably shouldn't be translated? -->
+    <string name="photo_mode_noise_reduction_full">Noise Reduction</string>
+    <string name="preference_category_stamp">Photo Stamp</string>
+    <string name="preference_hdr_save_expo">Save all images for HDR mode</string>
+    <string name="preference_hdr_save_expo_summary">If enabled, when using HDR photo mode, the three base exposure images will be saved as well as the final HDR photo. Note this will make saving slower, especially if options like \"Stamp photos\" or Auto-level are also used.</string>
+
+    <string name="no_permission">PERMISSIONS NOT AVAILABLE</string>
+    <string name="permission_rationale_title">Permission required</string>
+    <string name="permission_rationale_camera">Camera permission is required to enable the camera</string>
+    <string name="permission_rationale_storage">Storage read/write permission is required to save resultant files such as photos or videos</string>
+    <string name="permission_rationale_record_audio">Microphone permission is required to record video with audio, as well as use the \"Audio control\" options</string>
+    <string name="permission_rationale_location">Location permission is required for geotagging (storing location data in
+        photos and videos, including stamp and subtitles options). Location permission is also required (at least for Android 11 and earlier) for connecting to Bluetooth LE remote control devices.</string>
+
+    <string name="preference_category_photo_debugging">Debugging options</string>
+    <string name="preference_category_video_debugging">Debugging options</string>
+    <string name="preference_camera2_fake_flash">Use alternative flash method</string>
+    <string name="preference_camera2_fake_flash_summary">Enable this if your device has buggy flash behaviour with Camera2 API</string>
+
+    <string name="preference_expo_bracketing_n_images">Exposure Bracketing</string>
+    <string name="preference_expo_bracketing_n_images_summary">Number of images for exposure bracketing mode\n%s</string>
+    <string name="preference_expo_bracketing_stops">Exposure Bracketing Stops</string>
+    <string name="preference_expo_bracketing_stops_summary">How many stops to subtract/add for the darkest/brightest image\n%s</string>
+
+    <string name="preference_nr_save">Noise Reduction original images</string>
+    <string name="preference_nr_save_summary">Whether to save original images in noise reduction mode. Note this can make saving photos much slower.\n%s</string>
+
+    <string name="preference_nr_save_no">Don\'t save original images</string>
+    <string name="preference_nr_save_single">Save single original image</string>
+    <string name="preference_nr_save_all">Save all original images (slow)</string>
+
+    <string name="seconds_abbreviation">s</string> <!-- short for seconds -->
+
+    <string name="video_no_free_space">Not enough free space to record video</string>
+    <string name="video_power_critical">Video stopped\nBattery level critically low</string>
+    <string name="preference_video_low_power_check">Critical battery check</string>
+    <string name="preference_video_low_power_check_summary">Stop video recording if battery level is critically low. This helps reduce the risk of videos being corrupted if your device suddenly switches off due to running out of power.</string>
+
+    <string name="dark">Dark</string> <!-- exposure compensation dark -->
+    <string name="bright">Bright</string> <!-- exposure compensation bright -->
+    <string name="exposure_shutter_speed">Shutter speed</string>
+
+    <string name="camera_error">Serious camera error</string>
+
+    <string name="preference_camera2_fast_burst">Enable fast HDR/expo burst</string>
+    <string name="preference_camera2_fast_burst_summary">Allows faster capture of the HDR/expo shots. Disable this if your device has problems when taking photos with HDR or Expo photo modes.</string>
+
+    <string name="camera">Camera</string>
+    <string name="record_video">Record video</string>
+    <string name="selfie">Selfie</string>
+
+    <string name="preference_front_camera_mirror">Front camera mirror</string>
+    <string name="preference_front_camera_mirror_summary">Whether to mirror the resultant photos when using the front camera\n%s</string>
+
+    <string name="preference_calibrate_level">Calibrate level angle</string>
+    <string name="preference_calibrate_level_summary">This option calibrates your device\'s accelerometer, so the auto-level and on-screen level/angle options work correctly</string>
+    <string name="preference_calibrate_level_dialog">Please place your device on a flat horizontal surface so that it is level (either in portrait or landscape orientation), and then select Calibrate.\n\nPress Reset to remove the calibration from your device.\n\nPress back button to cancel.</string>
+    <string name="preference_calibrate_level_calibrate">Calibrate</string>
+    <string name="preference_calibrate_level_reset">Reset</string>
+    <string name="preference_calibrate_level_calibrated">Level calibrated</string>
+    <string name="preference_calibrate_level_calibration_reset">Level calibration reset</string>
+
+    <string name="photo_mode_dro">DRO</string> <!-- keep short, as this shows in the popup menu -->
+
+    <string name="preference_show_pitch_lines">Show pitch lines</string>
+    <string name="preference_show_pitch_lines_summary">Display horizontal pitch lines</string>
+    <string name="preference_show_geo_direction_lines">Show compass direction lines</string>
+    <string name="preference_show_geo_direction_lines_summary">Display compass direction lines</string>
+    <string name="preference_video_subtitle">Video subtitles</string>
+    <string name="preference_video_subtitle_summary">Create a subtitles (.SRT) file storing date and time; and also GPS info if location/direction data is enabled. (On Android 11+, this option requires More camera controls/Storage Access Framework to be enabled.)\n%s</string>
+
+    <string name="duration_unlimited">Unlimited</string>
+    <string name="duration_3s">3 seconds</string>
+    <string name="duration_5s">5 seconds</string>
+    <string name="duration_10s">10 seconds</string>
+    <string name="duration_15s">15 seconds</string>
+    <string name="duration_30s">30 seconds</string>
+    <string name="duration_1m">1 minute</string>
+    <string name="duration_2m">2 minutes</string>
+    <string name="duration_3m">3 minutes</string>
+    <string name="duration_4m">4 minutes</string>
+    <string name="duration_5m">5 minutes</string>
+    <string name="duration_6m">6 minutes</string>
+    <string name="duration_7m">7 minutes</string>
+    <string name="duration_8m">8 minutes</string>
+    <string name="duration_9m">9 minutes</string>
+    <string name="duration_10m">10 minutes</string>
+    <string name="duration_11m">11 minutes</string>
+    <string name="duration_12m">12 minutes</string>
+    <string name="duration_15m">15 minutes</string>
+    <string name="duration_20m">20 minutes</string>
+    <string name="duration_25m">25 minutes</string>
+    <string name="duration_30m">30 minutes</string>
+    <string name="duration_45m">45 minutes</string>
+    <string name="duration_1h">1 hour</string>
+
+    <string name="preference_show_take_photo">Show \"Take Photo\" icon</string>
+    <string name="preference_show_take_photo_summary">Show the icon for taking photos and recording videos. Uncheck if you\'d rather take photos by other methods (e.g., if your device has a hardware shutter button, or using the volume keys).</string>
+
+    <string name="video_pause">Video paused</string>
+    <string name="video_resume">Video resumed</string>
+    <string name="pause_video">Pause video recording</string>
+    <string name="resume_video">Resume video recording</string>
+
+    <string name="capturing">Capturing…</string>
+
+    <string name="audio_listener_failed">Failed to initalise audio listening</string>
+    <string name="failed_to_process_hdr">Failed to create HDR image</string>
+
+    <string name="white_balance_auto">Auto</string>
+    <string name="white_balance_cloudy">Cloudy</string>
+    <string name="white_balance_daylight">Daylight</string>
+    <string name="white_balance_fluorescent">Fluorescent</string>
+    <string name="white_balance_incandescent">Incandescent</string>
+    <string name="white_balance_shade">Shade</string>
+    <string name="white_balance_twilight">Twilight</string>
+    <string name="white_balance_warm">Warm</string>
+    <string name="white_balance_manual">Manual</string>
+
+    <string name="scene_mode_action">Action</string>
+    <string name="scene_mode_barcode">Barcode</string>
+    <string name="scene_mode_beach">Beach</string>
+    <string name="scene_mode_candlelight">Candlelight</string>
+    <string name="scene_mode_auto">Auto</string>
+    <string name="scene_mode_fireworks">Fireworks</string>
+    <string name="scene_mode_landscape">Landscape</string>
+    <string name="scene_mode_night">Night</string>
+    <string name="scene_mode_night_portrait">Night portrait</string>
+    <string name="scene_mode_party">Party</string>
+    <string name="scene_mode_portrait">Portrait</string>
+    <string name="scene_mode_snow">Snow</string>
+    <string name="scene_mode_sports">Sports</string>
+    <string name="scene_mode_steady_photo">Steady photo</string>
+    <string name="scene_mode_sunset">Sunset</string>
+    <string name="scene_mode_theatre">Theatre</string>
+
+    <string name="color_effect_aqua">Aqua</string>
+    <string name="color_effect_blackboard">Blackboard</string>
+    <string name="color_effect_mono">Mono</string>
+    <string name="color_effect_negative">Negative</string>
+    <string name="color_effect_none">None</string>
+    <string name="color_effect_posterize">Posterize</string>
+    <string name="color_effect_sepia">Sepia</string>
+    <string name="color_effect_solarize">Solarize</string>
+    <string name="color_effect_whiteboard">Whiteboard</string>
+
+    <string name="whats_new">What\'s New:</string>
+
+    <!-- for accessibility, these strings for face detection will typically be spoken, e.g., through Google Talkback -->
+    <string name="face_detected">face</string>
+    <string name="faces_detected">faces</string>
+    <string name="left_of_screen">at left of screen</string>
+    <string name="right_of_screen">at right of screen</string>
+    <string name="top_of_screen">at top of screen</string>
+    <string name="bottom_of_screen">at bottom of screen</string>
+    <string name="centre_of_screen">at centre</string>
+
+    <string name="high_speed">High Speed</string> <!-- in the sense of high speed video frame rates -->
+
+    <string name="preference_video_fps_default">Default</string>
+
+    <string name="preference_category_exif_tags">Custom EXIF tags</string>
+    <string name="preference_exif_artist">Artist</string>
+    <string name="preference_exif_artist_summary">Text to store in the image metadata for the "artist" tag  (JPEG formats only). (Leave blank for none.)</string>
+    <string name="preference_exif_copyright">Copyright</string>
+    <string name="preference_exif_copyright_summary">Text to store in the image metadata for the "copyright" tag  (JPEG formats only). (Leave blank for none.)</string>
+
+    <string name="processing">Processing…</string>
+
+    <string name="preference_raw_no">No</string>
+    <string name="preference_raw_yes">Standard and DNG (RAW)</string>
+    <string name="preference_raw_only">DNG (RAW) only</string>
+
+    <string name="preference_stamp_dateformat_default">Default</string>
+    <string name="preference_stamp_dateformat_yyyymmdd">yyyy-mm-dd (ISO 8601)</string>
+    <string name="preference_stamp_dateformat_ddmmyyyy">dd/mm/yyyy</string>
+    <string name="preference_stamp_dateformat_mmddyyyy">mm/dd/yyyy</string>
+    <string name="preference_stamp_dateformat_none">None</string>
+
+    <string name="preference_fast_burst_n_images">Number of photos</string>
+    <string name="preference_fast_burst_n_images_entries_2">2</string>
+    <string name="preference_fast_burst_n_images_entries_3">3</string>
+    <string name="preference_fast_burst_n_images_entries_4">4</string>
+    <string name="preference_fast_burst_n_images_entries_5">5</string>
+    <string name="preference_fast_burst_n_images_entries_6">6</string>
+    <string name="preference_fast_burst_n_images_entries_8">8</string>
+    <string name="preference_fast_burst_n_images_entries_10">10</string>
+    <string name="preference_fast_burst_n_images_entries_12">12</string>
+    <string name="preference_fast_burst_n_images_entries_15">15</string>
+    <string name="preference_fast_burst_n_images_entries_20">20</string>
+
+    <string name="preference_focus_bracketing_n_images">Number of photos</string>
+    <string name="preference_focus_bracketing_n_images_entries_2">2</string>
+    <string name="preference_focus_bracketing_n_images_entries_3">3</string>
+    <string name="preference_focus_bracketing_n_images_entries_4">4</string>
+    <string name="preference_focus_bracketing_n_images_entries_5">5</string>
+    <string name="preference_focus_bracketing_n_images_entries_6">6</string>
+    <string name="preference_focus_bracketing_n_images_entries_8">8</string>
+    <string name="preference_focus_bracketing_n_images_entries_10">10</string>
+    <string name="preference_focus_bracketing_n_images_entries_12">12</string>
+    <string name="preference_focus_bracketing_n_images_entries_15">15</string>
+    <string name="preference_focus_bracketing_n_images_entries_20">20</string>
+    <string name="preference_focus_bracketing_n_images_entries_25">25</string>
+    <string name="preference_focus_bracketing_n_images_entries_30">30</string>
+    <string name="preference_focus_bracketing_n_images_entries_40">40</string>
+    <string name="preference_focus_bracketing_n_images_entries_50">50</string>
+    <string name="preference_focus_bracketing_n_images_entries_100">100</string>
+    <string name="preference_focus_bracketing_n_images_entries_150">150</string>
+    <string name="preference_focus_bracketing_n_images_entries_200">200</string>
+
+    <string name="preference_video_capture_rate">Speed</string>
+    <string name="preference_video_capture_rate_normal">Normal</string>
+    <string name="slow_motion_enabled">Slow motion enabled</string>
+    <string name="slow_motion_disabled">Slow motion disabled</string>
+
+    <string name="flash_off">Flash Off</string>
+    <string name="flash_auto">Flash Auto</string>
+    <string name="flash_on">Flash On</string>
+    <string name="flash_torch">Torch</string>
+    <string name="flash_red_eye">Red Eye</string>
+    <string name="flash_frontscreen_auto">Screen Flash Auto</string>
+    <string name="flash_frontscreen_on">Screen Flash On</string>
+    <string name="flash_frontscreen_torch">Screen Torch</string>
+
+    <string name="preference_antibanding">Anti-banding</string>
+    <string name="preference_antibanding_summary">Algorithms to help with light flickering.\n%s</string>
+    <string name="anti_banding_auto">Auto</string>
+    <string name="anti_banding_50hz">50Hz</string>
+    <string name="anti_banding_60hz">60Hz</string>
+    <string name="anti_banding_off">Off</string>
+
+    <string name="preference_ghost_image">Ghost image</string>
+    <string name="preference_ghost_image_summary">Display an image over the preview, to help with alignment.\n%s</string>
+    <string name="preference_ghost_image_off">Off</string>
+    <string name="preference_ghost_image_last">Last photo taken</string>
+    <string name="preference_ghost_image_selected">Selected image</string>
+
+    <string name="open_files_saf_exception_ghost">No file dialog found on this device, ghost image option is not supported</string>
+    <string name="saf_permission_failed_open_image">Unable to open this image</string>
+
+    <string name="preference_camera2_photo_video_recording">Allow photos whilst recording video</string>
+    <string name="preference_camera2_photo_video_recording_summary">Allows taking photos whilst recording videos. Disable this if there are problems with video recording with Camera2 API enabled on your device.</string>
+
+    <string name="preference_video_log">Video picture profiles</string>
+    <string name="preference_video_log_summary">Set standard or flat picture profile for video mode\n%s</string>
+    <string name="preference_video_log_off">Default</string>
+    <string name="preference_video_log_fine">Log (Fine)</string>
+    <string name="preference_video_log_low">Log (Low)</string>
+    <string name="preference_video_log_medium">Log (Medium)</string>
+    <string name="preference_video_log_strong">Log (Strong)</string>
+    <string name="preference_video_log_extra_strong">Log (Extra strong)</string>
+    <string name="video_log">Log profile</string>
+
+    <string name="preference_record_audio_src_camcorder">Camcorder</string>
+    <string name="preference_record_audio_src_mic">External mic (if present)</string>
+    <string name="preference_record_audio_src_default">Default audio source</string>
+    <string name="preference_record_audio_src_voice_communication">Optimised for voice calls</string>
+    <string name="preference_record_audio_src_voice_recognition">Optimised for voice recognition</string>
+    <string name="preference_record_audio_src_unprocessed">Unprocessed</string>
+
+    <string name="preference_video_bitrate_default">Default</string>
+    <string name="preference_video_bitrate_100000">100kbps</string>
+    <string name="preference_video_bitrate_200000">200kbps</string>
+    <string name="preference_video_bitrate_500000">500kbps</string>
+    <string name="preference_video_bitrate_1000000">1Mbps</string>
+    <string name="preference_video_bitrate_2000000">2Mbps</string>
+    <string name="preference_video_bitrate_3000000">3Mbps</string>
+    <string name="preference_video_bitrate_4000000">4Mbps</string>
+    <string name="preference_video_bitrate_5000000">5Mbps</string>
+    <string name="preference_video_bitrate_6000000">6Mbps</string>
+    <string name="preference_video_bitrate_7000000">7Mbps</string>
+    <string name="preference_video_bitrate_8000000">8Mbps</string>
+    <string name="preference_video_bitrate_9000000">9Mbps</string>
+    <string name="preference_video_bitrate_10000000">10Mbps</string>
+    <string name="preference_video_bitrate_15000000">15Mbps</string>
+    <string name="preference_video_bitrate_20000000">20Mbps</string>
+    <string name="preference_video_bitrate_30000000">30Mbps</string>
+    <string name="preference_video_bitrate_40000000">40Mbps</string>
+    <string name="preference_video_bitrate_50000000">50Mbps</string>
+    <string name="preference_video_bitrate_60000000">60Mbps</string>
+    <string name="preference_video_bitrate_70000000">70Mbps</string>
+    <string name="preference_video_bitrate_80000000">80Mbps</string>
+    <string name="preference_video_bitrate_90000000">90Mbps</string>
+    <string name="preference_video_bitrate_100000000">100Mbps</string>
+    <string name="preference_video_bitrate_150000000">150Mbps</string>
+    <string name="preference_video_bitrate_200000000">200Mbps</string>
+
+    <string name="no_burst">no burst</string> <!-- string for burst mode not being supported for a resolution -->
+
+    <string name="preference_show_video_max_amp">Show audio level meter</string>
+    <string name="preference_show_video_max_amp_summary">Whether to show on-screen audio level when recording video</string>
+
+    <string name="photo_mode_focus_bracketing">Focus {}</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_focus_bracketing_full">Focus Bracketing</string>
+
+    <string name="focus_bracketing_source_distance">Focus bracketing source distance</string>
+    <string name="focus_bracketing_target_distance">Focus bracketing target distance</string>
+
+    <string name="focus_bracketing_add_infinity">Add infinite distance</string>
+
+    <string name="magnetic_accuracy_title">Compass direction</string>
+    <string name="magnetic_accuracy_info">Your device\'s compass needs calibrating to improve its accuracy. This can be done by moving your device in a figure of 8 motion.\n\nCurrent accuracy:</string>
+
+    <string name="accuracy_unreliable">Unreliable</string>
+    <string name="accuracy_low">Low</string>
+    <string name="accuracy_medium">Medium</string>
+    <string name="accuracy_high">High</string>
+    <string name="accuracy_unknown">Unknown</string>
+
+    <string name="preference_units_distance">Distance unit</string>
+    <string name="preference_units_distance_summary">Used for GPS altitude for photo stamp and video subtitles\n%s</string>
+    <string name="preference_units_distance_m">Metres</string>
+    <string name="preference_units_distance_ft">Feet</string>
+    <string name="feet_abbreviation">ft</string> <!-- symbol short for feet -->
+
+    <string name="preference_show_whats_new">Shows What\'s New dialog</string>
+    <string name="preference_show_whats_new_summary">Whether to display information on new features and improvements when the application has updated</string>
+
+    <string name="preference_edge_mode">Edge mode algorithm</string>
+    <string name="preference_edge_mode_summary">Algorithm that the camera driver should use for applying edge enhancement. Edge enhancement improves sharpness and details in the captured image. (This setting is ignored in NR photo mode.)\n%s</string>
+
+    <string name="preference_screen_processing_settings">Processing settings…</string>
+
+    <string name="preference_noise_reduction_mode">Noise reduction algorithm</string>
+    <string name="preference_noise_reduction_mode_summary">Algorithm that the camera driver should use for applying noise reduction. The noise reduction algorithm attempts to improve image quality by removing excessive noise added by the capture process, especially in dark conditions. (Note that this is not related to the Noise Reduction photo mode, and in fact this setting is ignored in NR photo mode.)\n%s</string>
+    <string name="noise_reduction_mode_default">Default</string>
+    <string name="noise_reduction_mode_off">Off</string>
+    <string name="noise_reduction_mode_minimal">Minimal</string>
+    <string name="noise_reduction_mode_fast">Fast</string>
+    <string name="noise_reduction_mode_high_quality">High Quality</string>
+
+    <string name="preference_focus_assist">Focus assist</string>
+    <string name="preference_focus_assist_summary">Whether to zoom in when adjusting manual focus distance\n%s</string>
+    <string name="preference_focus_assist_off">Off</string>
+    <string name="preference_focus_assist_2x">2x</string>
+    <string name="preference_focus_assist_4x">4x</string>
+
+    <string name="exposure_compensation_zoom">Increase or decrease exposure compensation</string>
+
+    <string name="previous">Previous</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) for "<" button on popup menu -->
+    <string name="next">Next</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) for ">" button on popup menu -->
+
+    <string name="preference_burst_mode_off">Off</string>
+    <string name="preference_burst_mode_2x">2x</string>
+    <string name="preference_burst_mode_3x">3x</string>
+    <string name="preference_burst_mode_4x">4x</string>
+    <string name="preference_burst_mode_5x">5x</string>
+    <string name="preference_burst_mode_10x">10x</string>
+    <string name="preference_burst_mode_20x">20x</string>
+    <string name="preference_burst_mode_30x">30x</string>
+    <string name="preference_burst_mode_40x">40x</string>
+    <string name="preference_burst_mode_50x">50x</string>
+    <string name="preference_burst_mode_100x">100x</string>
+    <string name="preference_burst_mode_200x">200x</string>
+    <string name="preference_burst_mode_500x">500x</string>
+    <string name="preference_burst_mode_unlimited">Unlimited</string>
+
+    <string name="preference_burst_interval_no_delay">No delay</string>
+    <string name="preference_burst_interval_0_5s">0.5s</string>
+    <string name="preference_burst_interval_1s">1s</string>
+    <string name="preference_burst_interval_2s">2s</string>
+    <string name="preference_burst_interval_3s">3s</string>
+    <string name="preference_burst_interval_5s">5s</string>
+    <string name="preference_burst_interval_10s">10s</string>
+    <string name="preference_burst_interval_15s">15s</string>
+    <string name="preference_burst_interval_20s">20s</string>
+    <string name="preference_burst_interval_30s">30s</string>
+    <string name="preference_burst_interval_1m">1m</string>
+    <string name="preference_burst_interval_2m">2m</string>
+    <string name="preference_burst_interval_5m">5m</string>
+    <string name="preference_burst_interval_10m">10m</string>
+    <string name="preference_burst_interval_20m">20m</string>
+    <string name="preference_burst_interval_30m">30m</string>
+    <string name="preference_burst_interval_1h">1h</string>
+    <string name="preference_burst_interval_2h">2h</string>
+
+    <string name="preference_video_max_filesize_default">Device default</string>
+    <string name="preference_video_max_filesize_100mb">100MB</string>
+    <string name="preference_video_max_filesize_200mb">200MB</string>
+    <string name="preference_video_max_filesize_300mb">300MB</string>
+    <string name="preference_video_max_filesize_500mb">500MB</string>
+    <string name="preference_video_max_filesize_1gb">1GB</string>
+    <string name="preference_video_max_filesize_2gb">2GB</string>
+    <string name="preference_video_max_filesize_5gb">5GB</string>
+    <string name="preference_video_max_filesize_9gb">9GB</string>
+
+    <string name="cancelled_focus_bracketing">Cancelled focus bracketing</string>
+
+    <string name="preference_crop_guide_none">None</string>
+    <string name="preference_crop_guide_1">1 (1:1)</string>
+    <string name="preference_crop_guide_1_25">1.25 (5:4)</string>
+    <string name="preference_crop_guide_1_33">1.33 (4:3)</string>
+    <string name="preference_crop_guide_1_4">1.4 (7:4)</string>
+    <string name="preference_crop_guide_1_5">1.5 (3:2)</string>
+    <string name="preference_crop_guide_1_78">1.78 (16:9)</string>
+    <string name="preference_crop_guide_1_85">1.85 (37:20)</string>
+    <string name="preference_crop_guide_2">2 (2:1)</string>
+    <string name="preference_crop_guide_2_33">2.33 (21:9)</string>
+    <string name="preference_crop_guide_2_35">2.35 (47:20)</string>
+    <string name="preference_crop_guide_2_4">2.4 (12:5)</string>
+    <string name="preference_crop_guide_2_71">2.71 (65:24)</string>
+    <string name="preference_crop_guide_3">3 (3:1)</string>
+
+    <string name="preference_audio_noise_control_sensitivity_3">+3 (high sensitivity)</string>
+    <string name="preference_audio_noise_control_sensitivity_2">+2</string>
+    <string name="preference_audio_noise_control_sensitivity_1">+1</string>
+    <string name="preference_audio_noise_control_sensitivity_0">0 (default)</string>
+    <string name="preference_audio_noise_control_sensitivity_m1">-1</string>
+    <string name="preference_audio_noise_control_sensitivity_m2">-2</string>
+    <string name="preference_audio_noise_control_sensitivity_m3">-3 (low sensitivity)</string>
+
+    <string name="preference_hdr_contrast_enhancement">HDR contrast enhancement</string>
+    <string name="preference_hdr_contrast_enhancement_summary">When to use a contrast enhancement algorithm for HDR. This can improve the appearance in cases where there is a very high dynamic range in the scene, and also gives a "HDR look" to the results.\n%s</string>
+    <string name="preference_hdr_contrast_enhancement_off">Off</string>
+    <string name="preference_hdr_contrast_enhancement_smart">Smart</string>
+    <string name="preference_hdr_contrast_enhancement_always">Always</string>
+
+    <string name="preference_video_output_format">Video format</string>
+    <string name="preference_video_output_format_summary">Video and audio file format and codecs\n%s</string>
+
+    <string name="preference_video_output_format_default">Default</string>
+    <string name="preference_video_output_format_mpeg4_h264">MPEG4 H264</string>
+    <string name="preference_video_output_format_mpeg4_hevc">MPEG4 HEVC</string>
+    <string name="preference_video_output_format_3gpp">3GPP</string>
+    <string name="preference_video_output_format_webm">WebM (audio not supported)</string>
+
+    <string name="preference_screen_settings_manager">Settings manager</string>
+
+    <string name="preference_save_settings">Save settings</string>
+    <string name="preference_save_settings_summary">Saves all of Linked Camera\'s settings to a file</string>
+    <string name="preference_save_settings_filename">Saved settings name</string>
+
+    <string name="preference_restore_settings">Restore settings</string>
+    <string name="preference_restore_settings_summary">Restores previously saved settings. This will overwrite all current settings with the saved settings!</string>
+    <string name="preference_restore_settings_question">This option allows you to select one of the settings files that you previously saved. Be warned that selecting a file to load will overwrite all current settings!</string>
+
+    <string name="saved_settings">Saved settings</string>
+    <string name="save_settings_failed">Failed to save settings</string>
+    <string name="restore_settings_failed">Failed to restore settings</string>
+    <string name="open_files_saf_exception_generic">No file dialog found on this device, option is not supported</string>
+
+    <string name="preference_image_format">Image format</string>
+    <string name="preference_image_format_jpeg">JPEG</string>
+    <string name="preference_image_format_jpeg_r">Ultra HDR JPEG</string>
+    <string name="preference_image_format_webp">WebP</string>
+    <string name="preference_image_format_png">PNG</string>
+
+    <!-- beware of these strings for preference_nr_mode* being too long, otherwise too wide for popup menu -->
+    <string name="preference_nr_mode">NR Mode</string>
+    <string name="preference_nr_mode_normal">Normal</string>
+    <string name="preference_nr_mode_low_light">Low light</string>
+
+    <string name="preference_ui_placement_left">Left-handed user interface</string>
+    <string name="preference_ui_placement_right">Right-handed user interface</string>
+    <string name="preference_ui_placement_top">Icons along top (portrait)</string>
+
+    <string name="preference_show_face_detection">Show face detection icon</string>
+    <string name="preference_show_face_detection_summary">Whether to show an on-screen icon for enabling or disabling face detection</string>
+    <string name="face_detection_enable">Enable face detection</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="face_detection_disable">Disable face detection</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="face_detection_enabled">Face detection enabled</string>
+    <string name="face_detection_disabled">Face detection disabled</string>
+
+    <string name="preference_show_auto_level">Show auto-level icon</string>
+    <string name="preference_show_auto_level_summary">Whether to show an on-screen icon for enabling or disabling auto-level. When auto-level is enabled, photos will be rotated so they are automatically level with the horizon.</string>
+    <string name="auto_level_enable">Enable auto-level</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="auto_level_disable">Disable auto-level</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+
+    <string name="preference_show_stamp">Show stamp photo icon</string>
+    <string name="preference_show_stamp_summary">Whether to show an on-screen icon for enabling or disabling photo stamp</string>
+    <string name="stamp_enable">Enable photo stamp</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="stamp_disable">Disable photo stamp</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="stamp_enabled">Photo stamp enabled</string>
+    <string name="stamp_disabled">Photo stamp disabled</string>
+
+    <string name="preference_show_textstamp">Show custom text stamp photo icon</string>
+    <string name="preference_show_textstamp_summary">Whether to show an on-screen icon for specifying custom text to be stamped onto the photo</string>
+
+    <string name="preference_show_white_balance_lock">Show auto white balance lock icon</string>
+    <string name="preference_show_white_balance_lock_summary">Whether to show an on-screen icon for locking or unlocking auto white balance</string>
+    <string name="white_balance_lock">Lock white balance</string>
+    <string name="white_balance_unlock">Unlock white balance</string>
+    <string name="white_balance_locked">White balance locked</string>
+    <string name="white_balance_unlocked">White balance unlocked</string>
+
+    <string name="preference_show_exposure_lock">Show auto exposure lock icon</string>
+    <string name="preference_show_exposure_lock_summary">Whether to show an on-screen icon for locking or unlocking exposure</string>
+    <string name="exposure_unlock">Unlock exposure</string>
+
+    <string name="preference_nr_mode_low_light_message">Low light mode: please hold the camera steady</string>
+
+    <string name="photo_mode_panorama">Pano</string> <!-- keep short, as this shows in the popup menu; probably shouldn't be translated? -->
+    <string name="photo_mode_panorama_full">Panorama</string>
+
+    <string name="preference_screen_remote_control">Bluetooth LE remote control…</string>
+    <string name="preference_enable_remote">Enable Bluetooth LE remote control</string>
+    <string name="preference_enable_remote_summary">Enable Bluetooth LE (BLE) remote control devices</string>
+    <string name="preference_remote_type">Remote device type</string>
+
+    <string name="ble_not_supported">BLE not supported</string>
+    <string name="scan_ble">BLE Device Scan</string>
+    <string name="bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="preference_remote_disconnect_screen_dim">Dim screen if remote disconnects</string>
+    <string name="preference_remote_disconnect_screen_dim_summary">Hint: set default brightness to minimum level before starting Linked Camera.</string>
+    <string name="preference_water_type">Use Saltwater for depth calculations</string>
+    <string name="preference_water_type_summary">For underwater housings, improves accuracy if correct water type is selected.</string>
+    <string name="remote_connected">Remote connected</string>
+
+    <string name="preference_remote_type_kraken" translatable="false">Kraken</string>
+
+    <string name="preference_stamp_geo_address">Use addresses</string>
+    <!-- preference_stamp_geo_address_summary defined below -->
+    <string name="preference_stamp_geo_address_both">Display address if possible, in addition to GPS coords</string>
+    <string name="preference_stamp_geo_address_prefer">Prefer address to GPS coords</string>
+    <string name="preference_stamp_geo_address_no">Don\'t display address</string>
+
+    <string name="preference_show_store_location">Show store location data icon</string>
+    <string name="preference_show_store_location_summary">Whether to show an on-screen icon for enabling or disabling location data (geotagging)</string>
+    <string name="preference_location_enable">Store location data</string>
+    <string name="preference_location_disable">Stop storing location data</string>
+
+    <string name="preference_histogram">Show a histogram</string>
+    <string name="preference_histogram_summary">Whether to display histogram of the colors shown on-screen\n%s</string>
+    <string name="preference_histogram_off">Off</string>
+    <string name="preference_histogram_rgb">RGB Colors</string>
+    <string name="preference_histogram_luminance">Luminance</string>
+    <string name="preference_histogram_value">Value (Maximum)</string>
+    <string name="preference_histogram_intensity">Intensity (Average)</string>
+    <string name="preference_histogram_lightness">Lightness (Average of min-max)</string>
+
+    <string name="preference_zebra_stripes">Show zebra stripes</string>
+    <string name="preference_zebra_stripes_summary">If this option is enabled, zebra stripes will be drawn on-screen showing where the camera preview is over exposed.\n%s</string>
+    <string name="preference_zebra_stripes_off">Off</string>
+    <string name="preference_zebra_stripes_70pc">70%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_80pc">80%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_90pc">90%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_93pc">93%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_95pc">95%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_97pc">97%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_98pc">98%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_99pc">99%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_100pc">100%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+
+    <string name="preference_focus_peaking">Focus peaking</string>
+    <string name="preference_focus_peaking_summary">If this option is enabled, highlights will be shown on in-focus edges (contours). This is primarily useful for manual focus, and can be used to help determine which regions of the image are in focus.\n%s</string>
+    <string name="preference_focus_peaking_off">Off</string>
+    <string name="preference_focus_peaking_on">On</string>
+    <string name="preference_focus_peaking_color">Focus peaking color</string>
+    <string name="preference_focus_peaking_color_summary">Which color to use for highlighting the in-focus edges\n%s</string>
+
+    <string name="remaining">Remaining</string> <!-- images remaining for "processing" -->
+
+    <string name="preference_preview">Camera preview…</string>
+
+    <string name="cycle_flash">Cycle flash</string>
+    <string name="preference_show_cycle_flash">Show flash icon</string>
+    <string name="preference_show_cycle_flash_summary">Whether to show an on-screen icon for cycling through the flash options, instead of displaying flash options on the popup menu. Note that torch is not available if using this icon.</string>
+
+    <string name="preference_raw_expo_bracketing">Allow RAW for expo bracketing</string>
+    <string name="preference_raw_expo_bracketing_summary">Whether the RAW option should also apply for expo bracketing photo mode (or for HDR mode when \"Save all images for HDR mode\" is enabled). If this option is disabled, only non-DNG (JPEG/etc) images will be saved in those photo modes.</string>
+
+    <string name="preference_raw_focus_bracketing">Allow RAW for focus bracketing</string>
+    <string name="preference_raw_focus_bracketing_summary">Whether the RAW option should also apply for focus bracketing photo mode. If this option is disabled, only non-DNG (JPEG/etc) images will be saved in focus bracketing photo modes.</string>
+
+    <string name="cycle_raw">Cycle RAW modes</string>
+    <string name="preference_show_cycle_raw">Show RAW icon</string>
+    <string name="preference_show_cycle_raw_summary">Whether to show an on-screen icon for cycling through the RAW modes</string>
+
+    <string name="bluetooth_current_remote">Current remote:</string>
+    <string name="bluetooth_scan">Scan</string>
+
+    <string name="preference_stamp_style_shadowed">Shadowed text</string>
+    <string name="preference_stamp_style_plain">Plain text</string>
+    <string name="preference_stamp_style_background">Text with shaded background</string>
+
+    <string name="image_saving_notification">Saving images…</string>
+
+    <string name="finish_panorama">Finish panorama</string>
+    <string name="cancel_panorama">Cancel panorama</string>
+    <string name="panorama_cancelled">Panorama cancelled</string>
+    <string name="failed_to_process_panorama">Failed to create Panorama image</string>
+
+    <string name="preference_panorama_crop">Panorama auto-crop</string>
+    <string name="preference_panorama_crop_summary">For panorama mode, whether to remove the wavy boundaries\n%s</string>
+
+    <string name="panorama_info">To take a panorama image, hold your device in portrait orientation, and click to take a photo to start the panorama. Then rotate your device either left or right to move the centred white circle over the blue dot. After each new image is captured, keep rotating your device to cover each new blue dot that appears in turn.\n\nClick the tick icon to save the panorama, or the cross icon to cancel.\n\nNote that panorama photos can take time to process and save.</string>
+
+    <string name="preference_panorama_save">Panorama original images</string>
+    <string name="preference_panorama_save_summary">Whether to save original images in panorama mode. Note this will make saving panorama photos slower. Also allows the option to save an XML file which can be useful reporting problems with panorama.\n%s</string>
+
+    <string name="preference_panorama_save_no">Don\'t save original images</string>
+    <string name="preference_panorama_save_all">Save original images</string>
+    <string name="preference_panorama_save_all_plus_debug">Save original images plus debug XML</string>
+
+    <string name="camera_id">ID</string> <!-- ID as in camera ID -->
+
+    <string name="exposure_compensation_seekbar">Seekbar to change exposure compensation</string>
+
+    <string name="preference_image_format_summary">Select the file format used for saving photos. This affects \"standard\" (not RAW) photos. Only JPEG formats support saving Exif metadata. Ultra HDR not supported for NR, HDR, Pano, X- modes. Note that PNG format is not truly lossless, instead it is converted from a JPEG at 100%% quality.\n%s</string>
+
+    <string name="preference_camera_api">Camera API</string>
+    <string name="preference_camera_api_summary">Select Camera2 API to enable extra features such as manual modes for exposure, focus, white balance, along with RAW (if supported by the device). Changing the API will cause a restart.\n%s</string>
+    <string name="preference_camera_api_old">Original camera API</string>
+    <string name="preference_camera_api_camera2">Camera2 API</string>
+
+    <string name="preference_audio_control_summary">Take photo/video when a noise is detected.
+        When enabled, use the on-screen microphone button to start/stop listening.
+        \n%s</string>
+
+    <string name="intro_text">Touch to focus, and press the circular blue shutter button to take photos.
+        \n\nTo save to Nextcloud, see Settings → Server settings.
+        For more help, visit our GitHub.
+    </string>
+
+    <string name="preference_select_remote">Select remote device</string>
+
+    <string name="preference_video_rec709">REC709</string>
+    <string name="preference_video_srgb">sRGB</string>
+    <string name="preference_video_gamma">Gamma</string>
+    <string name="preference_video_jtvideo" translatable="false">JTVideo</string>
+    <string name="preference_video_jtlog" translatable="false">JTLog</string>
+    <string name="preference_video_jtlog2" translatable="false">JTLog2</string>
+    <string name="preference_video_profile_gamma">Video gamma value</string>
+    <string name="preference_video_profile_gamma_summary">Gamma value to use for video if video picture profile is set to Gamma\n%s</string>
+    <string name="preference_video_profile_gamma_1_6">1.6</string>
+    <string name="preference_video_profile_gamma_1_8">1.8</string>
+    <string name="preference_video_profile_gamma_1_9">1.9</string>
+    <string name="preference_video_profile_gamma_2_0">2.0</string>
+    <string name="preference_video_profile_gamma_2_1">2.1</string>
+    <string name="preference_video_profile_gamma_2_2">2.2</string>
+    <string name="preference_video_profile_gamma_2_3">2.3</string>
+    <string name="preference_video_profile_gamma_2_4">2.4</string>
+    <string name="preference_video_profile_gamma_2_6">2.6</string>
+    <string name="preference_video_profile_gamma_2_8">2.8</string>
+
+    <string name="preference_immersive_mode_off">Off</string>
+    <string name="preference_immersive_mode_navigation">Hide on-screen virtual navigation buttons</string>
+    <string name="preference_immersive_mode_gui">Hide GUI</string>
+    <string name="preference_immersive_mode_everything">Hide everything</string>
+
+    <string name="preference_ghost_image_alpha">Ghost image opacity</string>
+    <string name="preference_ghost_image_alpha_summary">Alpha value to use for ghost images. A lower value means more transparent, higher means more opaque.\n%s</string>
+
+    <string name="preference_zebra_stripes_foreground_color">Zebra stripes foreground color</string>
+    <string name="preference_zebra_stripes_foreground_color_summary">Color to use for the foreground stripe when showing zebra stripes.\n%s</string>
+    <string name="preference_zebra_stripes_background_color">Zebra stripes background color</string>
+    <string name="preference_zebra_stripes_background_color_summary">Color to use for the background stripe when showing zebra stripes.\n%s</string>
+
+    <string name="preference_zebra_stripes_color_black">Black</string>
+    <string name="preference_zebra_stripes_color_red">Red</string>
+    <string name="preference_zebra_stripes_color_orange">Orange</string>
+    <string name="preference_zebra_stripes_color_transparent">Transparent</string>
+    <string name="preference_zebra_stripes_color_white">White</string>
+
+    <string name="external_camera">External camera</string>
+    <string name="ultrawide">Ultra-wide</string>
+
+    <string name="switch_to_external_camera">Switch to external camera</string>
+    <string name="switch_to_unknown_camera">Switch camera</string>
+    <string name="switch_multi_camera">Switch between multiple cameras</string>
+    <string name="preference_multi_cam_button">Multiple cameras icon</string>
+    <string name="preference_multi_cam_button_summary">If enabled, use separate buttons to switch between front/back cameras, and to switch between multiple front/back facing cameras. If disabled, the Switch Camera icon will cycle through all cameras.</string>
+
+    <string name="preference_show_camera_id">Show camera ID</string>
+    <string name="preference_show_camera_id_summary">Display the current camera ID number on screen</string>
+
+    <string name="preference_allow_long_press">Allow long press actions</string>
+    <string name="preference_allow_long_press_summary">Whether to allow long press actions (e.g., long press on gallery to change save location).</string>
+
+    <string name="aperture">Aperture</string>
+
+    <string name="error_features_4k">4K UHD</string>
+    <string name="error_features_bitrate">Bitrate</string>
+    <string name="error_features_frame_rate">Frame rate</string>
+    <string name="error_features_slow_motion">Slow motion</string>
+
+    <string name="preference_comment_ypr">Store yaw, pitch and roll</string>
+    <string name="preference_comment_ypr_summary">Store the yaw, pitch and roll of the device in the photo\'s Exif user comment (JPEG formats only)</string>
+
+    <string name="array_seekbar_preference_seekbar">Seekbar to change current preference value</string>
+
+    <string name="preference_audio_control_none">None</string>
+    <string name="preference_audio_control_noise">Loud noise</string>
+    <string name="preference_audio_control_voice">Voice command: \"cheese\"</string> <!-- note that cheese shouldn't be translated, as we listen for this no matter what language is being used -->
+
+    <string name="preference_camera2_dummy_capture_hack">Enable dummy capture HDR/expo fix</string>
+    <string name="preference_camera2_dummy_capture_hack_summary">Try enabling this if your device has problems when taking photos with HDR or Expo photo modes (if expo images come out with same exposures). Only relevant if fast HDR/expo option below is also enabled.</string>
+
+    <string name="permission_rationale_bluetooth_scan_connect">Bluetooth scan/connect permissions are required for discovering and connecting to Bluetooth LE remote control devices.</string>
+    <string name="unknown_device_no_permission">Unknown device (bluetooth connect permission not available)</string>
+
+    <string name="photo_mode_x_auto">X-Auto</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_auto_full">Extension: Auto</string>
+    <string name="photo_mode_x_hdr">X-HDR</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_hdr_full">Extension: HDR</string>
+    <string name="photo_mode_x_night">X-Night</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_night_full">Extension: Night</string>
+    <string name="photo_mode_x_bokeh">X-Bokeh</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_bokeh_full">Extension: Bokeh</string>
+    <string name="photo_mode_x_beauty">X-Bty</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_beauty_full">Extension: Beauty / Face Retouch</string>
+
+    <string name="preference_hdr_tonemapping">HDR tonemapping</string>
+    <string name="preference_hdr_tonemapping_summary">Algorithm to use for tonemapping in HDR photo mode\n%s</string>
+    <string name="preference_hdr_tonemapping_clamp">Simple clamp</string>
+    <string name="preference_hdr_tonemapping_exponential">Exponential</string>
+    <string name="preference_hdr_tonemapping_default">Default</string>
+    <string name="preference_hdr_tonemapping_aces" translatable="false">ACES</string>
+
+    <string name="preference_remove_device_exif">Remove device EXIF data</string>
+    <string name="preference_remove_device_exif_summary">Whether to remove device EXIF metadata from JPEG photos. This will not remove exif tags applied by other settings that apply EXIF metadata (e.g. location/geotagging). Those other options are independent and will override this setting. RAW/DNG and videos are not affected.\n%s</string>
+    <string name="preference_remove_device_exif_off">Don\'t remove device EXIF data</string>
+    <string name="preference_remove_device_exif_on">Remove device EXIF data</string>
+    <string name="preference_remove_device_exif_keep_datetime">Remove except date/time</string>
+
+    <string name="choose_camera">Choose camera:</string>
+
+    <string name="preference_show_focus_peaking">Show focus peaking icon</string>
+    <string name="preference_show_focus_peaking_summary">Whether to show an on-screen icon for enabling or disabling focus peaking. When focus peaking is enabled, highlights will be shown on in-focus edges (contours). See Settings/Camera preview/"Focus peaking".</string>
+    <string name="focus_peaking_enable">Enable focus peaking</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="focus_peaking_disable">Disable focus peaking</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+
+    <string name="preference_photo_optimise_focus">Optimise focus for…</string>
+    <string name="preference_photo_optimise_focus_summary">When taking photos, whether to optimise for latency or quality. Only relevant when using continuous focus mode. Optimising for quality ensures that the scene is focused, but may result in a delay in taking photos.\n%s</string>
+    <string name="preference_photo_optimise_focus_latency">Latency</string>
+    <string name="preference_photo_optimise_focus_quality">Quality</string>
+
+    <string name="preference_save_preshots">Save preview shots</string>
+    <string name="preference_save_preshots_summary">When enabled, a short video will be saved alongside each photo, containing shots from the moment before the photo was taken. Not supported for expo, focus bracketing or panorama modes.\n%s</string>
+
+    <string name="telephoto">Telephoto</string>
+    <string name="auto_lens">Auto Lens</string>
+    <string name="lens">Lens</string>
+    <string name="physical_cameras_info">&#9432; By default, a camera uses Auto Lens selection, which means the zoom level controls which lens is used. However this menu also allows you to explicitly choose which lens is being used.</string>
+
+    <string name="focus_bracketing_auto_source_distance">Auto source</string>
+
+    <string name="preference_allow_haptic_feedback">Allow vibration feedback</string>
+    <string name="preference_allow_haptic_feedback_summary">Whether to allow haptic vibration feedback, for example when adjusting some controls. Note this also requires touch interactions to be enabled in your device\'s settings.</string>
+
+    <!-- The following strings should not be translated (and shouldn't be included in language-specific strings.xml), in case they need updating -->
+
+    <string name="preference_privacy_policy" translatable="false">Privacy policy</string>
+    <string name="preference_privacy_policy_summary" translatable="false">Tap to display privacy policy</string>
+    <string name="preference_privacy_policy_text" translatable="false"> <!-- if changing this, remember to consider if the online privacy policy needs updating -->
+        <!-- now interpreted as HTML so that we can have the mailto link, for the contact that's needed for Google Play policies! -->
+        <!-- be careful of rewording/removing bits, as some things here may be required for Google Play policies -->
+        Linked Camera accesses camera sensor and microphone data to fulfil its purpose as a camera.
+        Microphone is also used for the optional \"Audio control\".
+        &lt;br/&gt;Access to files is needed (at least for Android 9 and earlier) to save resultant files such as photos and videos to your device.
+        &lt;br/&gt;Location permission is requested in order to deliver the optional geotagging features (for photos and videos,
+        including stamp and subtitles options).
+        When relevant option(s) are enabled, your device location will be stored in photo/video/subtitle files.
+        &lt;br/&gt;Bluetooth permissions are used to allow the optional feature to discover and connect to Bluetooth LE remote control devices;
+        the Bluetooth remote control feature also requires location permission (on Android 11 or earlier) or
+        Nearby Devices permission (on Android 12 or later).
+        &lt;br/&gt;Resultant data such as photos or videos can be shared with
+        other apps if you use the share option in Linked Camera, or when Linked Camera is called by
+        another app on your device, or when you use the Storage Access Framework option to save
+        to another app or service.
+        &lt;br/&gt;Data handling procedures, data retention and deletion policies: Linked Camera
+        does not transmit personal or sensitive information to me.
+        &lt;br/&gt;Since Linked Camera also uses operating system APIs, you should review relevant privacy policies
+        such as for your device, manufacturer, operating system and/or Google accounts. For example:
+        &lt;br/&gt;*Apps/services such as cloud services on your device may auto-upload photos and videos that are saved on your device.
+    </string>
+
+    <string name="preference_screen_licences" translatable="false">Open Source licences</string>
+    <string name="preference_licence_open_camera" translatable="false">Linked Camera</string>
+    <string name="preference_licence_open_camera_text" translatable="false">Linked Camera is © 2025 UrbanVue B.V., released under the GPL v3 or later. Tap here for full licence text and terms of service.</string>
+    <string name="preference_licence_androidx" translatable="false">AndroidX libraries</string>
+    <string name="preference_licence_androidx_text" translatable="false">Linked Camera uses the AndroidX/Jetpack libraries
+        under the Apache license version 2.0. Tap here for full licence text.</string>
+    <string name="preference_licence_google_icons" translatable="false">Google\'s Material Design icons</string>
+    <string name="preference_licence_google_icons_text" translatable="false">Linked Camera uses icons from Google\'s Material Design icons
+        (https://developer.android.com/design/downloads/index.html ,
+        https://design.google.com/icons/ ,
+        https://github.com/google/material-design-icons/ ,
+        https://google.github.io/material-design-icons/ ,
+        https://fonts.google.com/icons)
+        under the Apache license version 2.0. Some icons include modifications. Tap here for full licence text.</string>
+    <string name="preference_licence_online" translatable="false">Online licences</string>
+    <string name="preference_licence_online_text" translatable="false">Please tap here for full online licensing information (opens in your browser).</string>
+
+    <!-- Nextcloud auto-upload settings -->
+    <string name="preference_screen_server_settings">Server settings...</string>
+    <string name="preference_nextcloud_upload">Nextcloud Auto-Upload</string>
+    <string name="preference_nextcloud_upload_summary">Automatically upload photos to Nextcloud</string>
+    <string name="preference_nextcloud_url">Nextcloud Share URL</string>
+    <string name="preference_nextcloud_url_summary">Enter your Nextcloud public share link</string>
+    <string name="preference_nextcloud_password">Share Password (optional)</string>
+    <string name="preference_nextcloud_password_summary">Enter password if share is password-protected</string>
+    <string name="preference_nextcloud_wifi_only">WiFi Only</string>
+    <string name="preference_nextcloud_wifi_only_summary">Upload only when connected to WiFi</string>
+    <string name="preference_nextcloud_auto_delete">Auto-Delete After Upload</string>
+    <string name="preference_nextcloud_auto_delete_summary">Delete photos after successful upload</string>
+    <string name="preference_nextcloud_process_queue">Process Upload Queue</string>
+    <string name="preference_nextcloud_process_queue_summary">Manually upload queued photos (WiFi required)</string>
+    <string name="nextcloud_queue_processing">Processing upload queue...</string>
+    <string name="nextcloud_no_wifi">WiFi not connected</string>
+    <string name="nextcloud_upload_success">Photo uploaded to Nextcloud</string>
+    <string name="nextcloud_upload_failed">Upload failed</string>
+    <string name="nextcloud_upload_waiting_wifi">Queued for WiFi upload</string>
+    <string name="nextcloud_photo_deleted">Photo deleted after upload</string>
+
+    <!-- There's no point translating the What's New text (and shouldn't be included in language-specific strings.xml) - it'll be updated constantly, and change each version -->
+    <string name="whats_new_text" translatable="false">
+        <small>[This dialog is shown when Linked Camera is updated. You can disable it under
+            Settings/On screen GUI/Show What\'s New dialog.]</small>
+        \n\n<b>v1.55:</b>\n
+        <ul>
+            <li>More crop guides: 65:24 and 3:1.\n</li>
+            <li>Shutter button now changes to a red square when recording video.\n</li>
+            <li>Removed -/+ controls for zoom and exposure compensation.\n</li>
+            <li>Show current save location in settings.\n</li>
+            <li>Don\'t block UI thread when first starting camera preview (for Camera2 API with Android 14+).\n</li>
+            <li>Various other improvements and bug fixes.\n</li>
+        </ul>
+    </string>
+</resources>

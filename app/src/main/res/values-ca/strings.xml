@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Open Camera</string>
+    <string name="action_settings">Paràmetres</string>
+    <string name="action_popup">Paràmetres de finestra emergent</string>
+    <string name="intro_ok">D\'acord (Aquest missatge no es tornarà a mostrar)</string>
+
+    <string name="on">Activat</string> <!-- whether a setting is turned on, e.g., "Auto-level: On" -->
+    <string name="off">Desactivat</string> <!-- whether a setting is turned off, e.g., "Auto-level: Off" -->
+    
+    <string name="choose_save_location">Desa a:</string>
+    <string name="clear_folder_history">Neteja l\'historial de les carpetes</string>
+    <string name="clear_folder_history_question">Vols netejar l\'historial de les carpetes?</string>
+    <string name="choose_another_folder">Tria una altra carpeta</string>
+    <string name="changed_save_location">Es desarà a:</string>
+    <string name="stopped_recording_video">S\'ha aturat l\'enregistrament de vídeo</string>
+    <string name="repeats_to_go">repeteix per anar-hi</string> <!--  intentionally starts lower case -->
+    <string name="failed_to_reconnect_camera">Ha fallat en tornar a connectar la càmera</string>
+    <string name="video_may_be_corrupted">Error, el fitxer de vídeo potser s\'ha malmès</string>
+    <string name="not_supported">no és compatible amb el teu dispositiu</string> <!--  intentionally starts lower case -->
+    <string name="video_error_unknown">Error desconegut, vídeo aturat</string>
+    <string name="video_error_server_died">El servidor ha caigut, vídeo aturat</string>
+    <string name="video_max_duration">El vídeo ha assolit la durada màxima</string>
+    <string name="video_max_filesize">El vídeo ha assolit la mida màxima</string>
+    <string name="exposure_compensation">Compensació d\'exposició</string>
+    <string name="fps">FPS</string>
+    <string name="focus_distance">Distància focal</string>
+    <string name="infinite">Infinit</string>
+    <string name="front_camera">Càmera del davant</string>
+    <string name="back_camera">Càmera del darrere</string>
+    <string name="photo">Foto</string>
+    <string name="video">Vídeo</string>
+    <string name="exposure_locked">Exposició bloquejada</string>
+    <string name="exposure_unlocked">Exposició desbloquejada</string>
+    <string name="cancelled_timer">Temporitzador cancel·lat</string>
+    <string name="cancelled_repeat_mode">Mode ràfega cancel·lat</string>
+    <string name="started_timer">Temporitzador iniciat</string>
+    <string name="failed_to_save_video">Error en desar el vídeo</string>
+    <string name="failed_to_record_video">Error en enregistrar el vídeo</string>
+    <string name="started_recording_video">Enregistrant</string>
+    <string name="sorry">Ho sento</string>
+    <string name="failed_to_save_photo">Error en desar la foto</string>
+    <string name="failed_to_save_photo_raw">Error en desar la foto en RAW</string>
+    <string name="failed_to_auto_stabilise">Error de l\'estabilització autòmatica</string>
+    <string name="failed_to_start_camera_preview">Error en iniciar la vista prèvia de la càmera</string>
+    <string name="taking_photo">Fent la foto</string>
+    <string name="failed_to_take_picture">Error en fer la foto</string>
+    <string name="location_not_available">La ubicació GPS no està disponible</string>
+    <string name="photo_deleted">Foto suprimida</string>
+    <string name="no_gallery_app">No hi ha cap aplicació de galeria disponible</string>
+    <string name="screen_is_locked">La pantalla està bloquejada\nfes lliscar el dit per debloquejar-la</string>
+    <string name="unlocked">Desbloquejada</string>
+    <string name="auto_stabilise_not_supported">Ho sento, l\'estabilització automàtica\nno és compatible amb aquest dispositiu</string>
+    <string name="audio_disabled">Àudio inhabilitat</string>
+    <string name="max_duration">Durada màxima</string>
+    <string name="color_effect">Efecte de color</string>
+    <string name="scene_mode">Mode d\'escena</string>
+    <string name="white_balance">Balanç de blancs</string>
+    
+    <string name="angle">Angle</string>
+    <string name="direction">Direcció</string>
+    <string name="failed_to_open_camera_1">ERROR EN OBRIR LA CÀMERA.</string>
+    <string name="failed_to_open_camera_2">POTSER LA FA SERVIR</string>
+    <string name="failed_to_open_camera_3">UNA ALTRA APLICACIÓ?</string>
+    <string name="iso">ISO</string>
+    <string name="zoom">Zoom</string>
+    <string name="free_memory">Lliure</string>
+    <string name="screen_lock_message_1">[BLOQUEJADA:</string>
+    <string name="screen_lock_message_2">Passa el dit per desbloquejar]</string>
+
+    <string name="failed_to_stamp">Error en annexar la informació a la foto</string>
+    <string name="metres_abbreviation">m</string> <!-- symbol short for metres -->
+    
+    <string name="preference_category_camera_effects">Efectes de la càmera</string>
+    <string name="preference_auto_stabilise">Estabilització automàtica</string>
+    <string name="preference_auto_stabilise_summary">Les imatges es giraran perquè s\'anivellin automàticament (només les fotos) (fa les fotos més lentament i pot fallar en dispositius amb poca memòria)</string>
+    <string name="preference_color_effect">Aplica un efecte de color</string>
+    <string name="preference_color_effect_summary">Aplica a la foto l\'efecte de color escollit</string>
+    <string name="preference_scene_mode">Aplica el mode d\'escena</string>
+    <string name="preference_scene_mode_summary">Optimitza la foto per a diferents escenes</string>
+    <string name="preference_white_balance">Defineix el balanç de blancs</string>
+    <string name="preference_white_balance_summary">Tria un paràmetre per ajustar el balanç de blancs</string>
+    <string name="preference_iso">Defineix l\'ISO</string>
+    <string name="preference_iso_summary">Un valor més gran vol dir major sensibilitat a la llum (pot no funcionar en alguns dispositius)</string>
+    <string name="preference_exposure">Defineix la compensació d\'exposició</string>
+    <string name="preference_exposure_summary">Defineix 0 com a compensació d\'exposició per defecte</string>
+    <string name="preference_lock_orientation">Bloqueja l\'orientació de fotos i vídeos</string>
+    <string name="preference_lock_orientation_summary">Si ho defineixes, en les fotos i vídeos s\'ignorarà l\'orientació general del dispositiu i s\'aplicarà la que tries aquí\n%s</string>
+    <string name="preference_face_detection">Detecció de cares</string>
+    <string name="preference_face_detection_summary">Usa la detecció de cares en lloc de les àrees d\'enfocament</string>
+
+    <string name="preference_category_camera_controls">Controls de càmera</string>
+    <string name="preference_timer">Temporitzador</string>
+    <string name="preference_timer_beep">So del temporitzador</string>
+    <string name="preference_timer_beep_summary">Emet un so quan el temporitzador fa el compte enrere o per al retard en mode ràfega</string>
+    <string name="preference_timer_speak">Compte enrere per veu</string>
+    <string name="preference_timer_speak_summary">Fa el compte enrere per veu (des dels 60 segons)</string>
+    <string name="preference_burst_mode">Ràfega</string> <!-- preference is called "burst" for historical reasons, but is more of a repeat mode; also used in popup menu, so shouldn't be too long a string -->
+    <string name="preference_burst_interval">Interval en mode ràfega</string>
+    <string name="preference_screen_camera_controls_more">Més controls de càmera…</string>
+    <string name="preference_touch_capture">Toc per fer foto/vídeo</string>
+    <string name="preference_touch_capture_summary">Fa una foto/vídeo amb un o dos tocs a la pantalla\n%s</string>
+    <string name="preference_pause_preview">Pausa després de fer una foto</string>
+    <string name="preference_pause_preview_summary">Pausa la pantalla després de fer una foto i dóna l\'opció de compartir-la o suprimir-la</string>
+    <string name="preference_shutter_sound">So de l\'obturador</string>
+    <string name="preference_shutter_sound_summary">Fa un so en fer una foto</string>
+    <string name="preference_volume_keys">Tecles de volum</string>
+    <string name="preference_audio_control">Opcions de control d\'àudio</string>
+    <!-- preference_audio_control_summary defined below -->
+    <string name="preference_audio_noise_control_sensitivity">Sensibilitat de control d\'àudio</string>
+    <string name="preference_audio_noise_control_sensitivity_summary">Sensibilitat al nivell de soroll per a l\'opció d\'àudio (soroll fort)\n%s</string>
+    <string name="preference_save_location">Ubicació on desar</string>
+    <string name="preference_save_location_summary">Carpeta on es desaran les fotos/vídeos</string>
+    <string name="preference_using_saf_summary">Defineix si s\'usa o no l\'Storage Access Framework per desar fotos i vídeos. S\'hauria d\'habilitar per permetre desar en targetes SD externes. En Android 10 i posteriors aquesta opció s\'ha d\'habilitar si vols desar en una carpeta fora de DCIM.</string>
+    <string name="preference_save_photo_prefix">Prefix de foto</string>
+    <string name="preference_save_photo_prefix_summary">Prefix que s\'usarà per al nom dels fitxers en desar les fotos</string>
+    <string name="preference_save_video_prefix">Prefix de vídeo</string>
+    <string name="preference_save_video_prefix_summary">Prefix que s\'usarà per al nom dels fitxers en desar els vídeos</string>
+    <string name="preference_save_zulu_time">Format d\'hora per al nom de fitxer</string>
+    <string name="preference_save_include_milliseconds">Usa els mil·lisegons en el nom del fitxer</string>
+    <string name="preference_save_include_milliseconds_summary">Si s\'habilita, els noms dels fitxers inclouran els mil·lisegons</string>
+    <string name="preference_show_when_locked">Mostra la càmera amb el dispositiu bloquejat</string>
+    <string name="preference_show_when_locked_summary">Si s\'habilita, Open Camera es mostrarà igualment damunt de la pantalla de bloqueig (hauràs de desbloquejar també l\'accés a la galeria, paràmetres, etc.)</string>
+    <string name="preference_startup_focus">Enfocar automàticament a l\'inici</string>
+    <string name="preference_startup_focus_summary">Fa l\'enfocament automàtic en iniciar la càmera. Si s\'engega automàticament el flaix també, inhabilita aquesta opció</string>
+    <string name="preference_lock_video">Bloqueig de pantalla en enregistrar vídeo</string>
+    <string name="preference_lock_video_summary">En enregistrar un vídeo la interfície de la pantalla es bloquejarà per prevenir l\'aturada accidental de l\'enregistrament. Passa el dit per la pantalla per desbloquejar-la. Tingues present que l\'enregistrament s\'aturarà sempre que l\'aplicació passi a segon pla o o si la pantalla passa a negre.</string>
+    <string name="preference_rotate_preview">Capgira la vista prèvia</string>
+    <string name="preference_rotate_preview_summary">Opció per capgirar la vista prèvia (no afectarà les fotos/vídeos resultants)\n%s</string>
+    <string name="preference_screen_gui">A la interfície de pantalla…</string>
+    <string name="preference_preview_size">Mida de la vista prèvia</string>
+    <string name="preference_ui_placement">Ubicació de la interfície d\'usuari</string>
+    <string name="preference_immersive_mode">Mode immersiu</string>
+    <string name="preference_show_zoom">Mostra el zoom</string>
+    <string name="preference_show_zoom_summary">Mostra el nivell de zoom actual de la cámara a la pantalla (en fer zoom)</string>
+    <string name="preference_show_zoom_slider_controls">Mostra el control lliscant del zoom</string>
+    <string name="preference_show_zoom_slider_controls_summary">Mostra el control lliscant per gestionar el zoom</string>
+    <string name="preference_show_iso">Mostra l\'ISO</string>
+    <string name="preference_show_iso_summary">Mostra el nivell d\'ISO actual (cal haver hablitat l\'API Camera2)</string>
+    <string name="preference_free_memory">Mostra l\'espai lliure d\'emmagatzematge</string>
+    <string name="preference_free_memory_summary">Mostra en pantalla l\'espai d\'emmagatzematge que li queda al dispositiu</string>
+    <string name="preference_show_angle">Mostra l\'angle</string>
+    <string name="preference_show_angle_summary">Mostra en pantalla l\'angle d\'orientació actual del dispositiu</string>
+    <string name="preference_show_angle_line">Mostra la línia de l\'angle</string>
+    <string name="preference_show_angle_line_summary">Mostra la línia de nivell horitzontal</string>
+    <string name="preference_angle_highlight_color">Color de ressalt de l\'angle/altura</string>
+    <string name="preference_angle_highlight_color_summary">Color de ressalt quan la càmera està gairebé anivellada\n%s</string>
+    <string name="preference_show_geo_direction">Mostra la direcció de brúixola</string>
+    <string name="preference_show_geo_direction_summary">Mostra en pantalla la direcció de brúixola del dispositiu</string>
+    <string name="preference_show_time">Mostra l\'hora</string>
+    <string name="preference_show_time_summary">Mostra en pantalla l\'hora actual</string>
+    <string name="preference_show_battery">Mostra la bateria</string>
+    <string name="preference_show_battery_summary">Mostra en pantalla el nivell actual de la bateria</string>
+    <string name="preference_grid">Mostra la quadrícula</string>
+    <string name="grid">Quadrícula</string> <!-- short form of Show a grid -->
+    <string name="preference_crop_guide">Mostra la guia de retall</string>
+    <string name="preference_crop_guide_summary">La guia de retall mostra un rectangle que indica com es veu la relació d\'aspecte especificada. És molt útil si després vols retallar la foto/vídeo a una relació d\'aspecte diferent. Li cal el mode de foto WYSIWYG, o estar en mode vídeo\n%s</string>
+    <string name="preference_show_toasts">Mostra missatges en pantalla</string>
+    <string name="preference_show_toasts_summary">Mostra en pantalla missatges d\'informació efímers</string>
+    <string name="preference_thumbnail_animation">Mostra una animació en miniatura</string>
+    <string name="preference_thumbnail_animation_summary">Mostra una animació en miniatura en fer una foto</string>
+    <string name="preference_take_photo_border">Mostra les vores en fer una foto</string>
+    <string name="preference_take_photo_border_summary">Mostra les vores a la pantalla per indicar que s\'ha fet la foto</string>
+    <string name="preference_keep_display_on">Mantén la pantalla activa</string>
+    <string name="preference_keep_display_on_summary">Si l\'hablites, la pantalla no s\'apagarà mentre la interfície d\'usuari d\'Open Camera estigui activa</string>
+    <string name="preference_max_brightness">Força la lluminositat al màxim</string>
+    <string name="preference_max_brightness_summary">Força la visualització de la pantalla a lluminositat màxima en lloc del valor per defecte del dispositiu</string>
+    
+    <string name="preference_category_camera_quality">Paràmetres de Foto i Vídeo</string>
+    <string name="preference_screen_photo_settings">Paràmetres de Foto…</string>
+    <string name="preference_screen_video_settings">Paràmetres de Vídeo…</string>
+    <string name="preference_screen_location_settings">Paràmetres d\'Ubicació…</string>
+    <string name="preference_resolution">Resolució</string>
+    <string name="preference_quality">Qualitat d\'imatge</string>
+    <string name="preference_quality_summary">Defineix la qualitat de les imatges desades en JPEG o WebP (el valor per defecte és del 90%%). No té cap efecte sobre les imatges en format PNG.\n%s</string> <!-- '%' is encoded as '%%' - a single % can crash devices, and this isn't picked up by Android Lint! -->
+    <string name="preference_raw">RAW</string>
+    <string name="preference_location">Emmagatzema les dades d\'ubicació (Geotagging)</string>
+    <string name="preference_location_summary">Emmagatzema les dades d\'ubicació del GPS a les fotos/vídeos (per a les fotos les dades d\'ubicació només es desaran en els formats JPEG i DNG)</string>
+    <string name="preference_gps_direction">Emmagatzema la direcció de brúixola</string>
+    <string name="preference_gps_direction_summary">Emmagatzema la direcció de la brúixola del GPS a les fotos (només per al format JPEG)</string>
+    <string name="preference_require_location">Exigeix les dades d\'ubicació</string>
+    <string name="preference_require_location_summary">Si s\'habiliten les dades d\'ubicació, només es faran fotos/vídeos si hi ha dades d\'ubicació disponibles</string>
+    <string name="preference_stamp">Estampa les fotos</string>
+    <string name="preference_stamp_summary">Estampa les fotos amb la data i l\'hora; també amb la informació del GPS si les dades d\'ubicació/direcció de brúixola estan habilitades\n%s</string>
+    <string name="preference_stamp_dateformat">Format de l\'estampat de la data</string>
+    <string name="preference_stamp_timeformat">Format de l\'estampat de l\'hora</string>
+    <string name="preference_stamp_gpsformat">Format de l\'estampat del GPS</string>
+    <string name="preference_textstamp">Text personalitzat</string>
+    <string name="preference_textstamp_summary">Estampa les fotos amb un text personalitzat</string>
+    <string name="preference_stamp_fontsize">Mida de la font</string>
+    <string name="preference_stamp_fontsize_summary">Mida de la font per al text que s\'estamparà a la foto\n%s</string>
+    <string name="preference_stamp_font_color">Color de la font</string>
+    <string name="preference_stamp_font_color_summary">Color de la font per al text que s\'estamparà a la foto\n%s</string>
+    <string name="preference_stamp_style">Estil del text</string>
+    <string name="preference_stamp_style_summary">Estil per al text que s\'estamparà a la foto\n%s</string>
+    <string name="preference_background_photo_saving">Usa un subprocés en segon pla</string>
+    <string name="preference_background_photo_saving_summary">Desa les fotos amb un subprocés en segon pla (això farà l\'operació més ràpida)</string>
+    <string name="video_quality">Resolució de vídeo</string>
+    <string name="preference_force_video_4k">Força el vídeo a 4K UHD (només funciona en alguns dispositius)</string>
+    <string name="preference_force_video_4k_summary">Habilita la resolució 3840x2160 per enregistrar vídeos amb la càmera del darrere (només si el teu dispositiu és compatible)</string>
+    <string name="preference_video_stabilization">Habilita l\'estabilització digital de vídeo</string>
+    <string name="preference_video_stabilization_summary">L\'estabilització de vídeo redueix les vibracions produïdes pel moviment de la càmera tant en la vista prèvia com en l\'enregistrament. No cal si el teu dispositiu és compatible amb l\'Estabilització Òptica de la Imatge (OIS)</string>
+    <string name="preference_video_bitrate">Taxa de bits del vídeo (aprox)</string>
+    <string name="preference_video_bitrate_summary">Defineix la taxa aproximada de bits per segon (bps) dels vídeos (més gran significa millor qualitat, però el fitxer resultant serà més gran. L\'enregistament de vídeo podria fallar si la taxa de bits per segon no és compatible)\n%s</string>
+    <string name="preference_video_fps">Fotogrames per segon del vídeo (aprox)</string>
+    <string name="preference_video_fps_summary">Defineix la quantitat de fotogrames per segon (FPS) dels vídeos (pot ser aproximada, no hi ha garantia que funcioni i podria provocar una fallada en l\'enregistrament si no és un FPS compatible). Comprova els vídeos resultants per veure quin FPS estàs usant. Tingues present que aquesta opció s\'ignora per als vídeos a càmera lenta.\n%s</string>
+    <string name="preference_video_max_duration">Durada màxima del vídeo</string>
+    <string name="preference_video_max_duration_summary">L\'enregistrament del vídeo s\'aturarà en arribar a la durada especificada\n%s</string>
+    <string name="preference_video_restart">Reinicia el vídeo després de la durada màxima</string>
+    <string name="preference_video_restart_summary">Quan el vídeo s\'atura en arribar a la durada màxima (si l\'has habilitada), aquesta opció farà que el vídeo es torni a iniciar fins al límit de vegades que hagis definit\n%s</string>
+    <string name="preference_video_max_filesize">Mida màxima del fitxer de vídeo</string>
+    <string name="preference_video_max_filesize_summary">L\'enregistrament del vídeo s\'aturarà o reiniciarà (segons l\'opció que hagis definit) en arribar a la mida màxima del fitxer (aproximat). Tingues present que molts dispositius d\'Android tenen un límit màxim de mida de fitxers de vídeo (normalment al voltant de 2GB o 4GB), però aquesta opció et permet d\'establir un valor específic. Tingues també present que aquesta opció no es pot usar per incrementar el màxim integrat al dispositiu\n%s</string>
+    <string name="preference_video_restart_max_filesize">Reinicia en assolir la mida màxima</string>
+    <string name="preference_video_restart_max_filesize_summary">L\'enregistrament de vídeo es torna a iniciar automàticament en assolir la mida màxima del fitxer, tant si és la definida per l\'usuari com la definida pel propi dispositiu</string>
+    <string name="preference_record_audio">Enregistra l\'àudio</string>
+    <string name="preference_record_audio_summary">Enregistra l\'àudio en enregistrar el vídeo</string>
+    <string name="preference_record_audio_src">Font de l\'àudio</string>
+    <string name="preference_record_audio_src_summary">Micròfon que s\'usarà per enregistrar l\'àudio. Tingues present que el funcionament exacte de les opcions dependrà de la configuració general del dispositiu.\n%s</string>
+    <string name="preference_record_audio_channels">Canals d\'àudio</string>
+    <string name="preference_record_audio_channels_summary">Especifica si vols enregistrar en mono o en estéreo (estéreo només s\'admet en alguns dispositius)\n%s</string>
+    <string name="preference_video_flash">Flaix mentre s\'enregistra el vídeo</string>
+    <string name="preference_video_flash_summary">Si s\'habilita, el flaix s\'activarà/desactivarà en enregistrar un vídeo (ho pots usar per saber que la càmera encara està enregistrant a distància)</string>
+    
+    <string name="preference_category_online">Més coses</string>
+    <string name="preference_online_help">Ajuda en línia</string>
+    <string name="preference_online_help_summary">Obre el lloc web d\'Open Camera al teu navegador</string>
+    <string name="preference_use_camera2">Usa l\'API Camera2</string>
+    <string name="preference_use_camera2_summary">Habilita funcions extra com ara els modes manuals d\'exposició, enfocament, balanç de blancs, també el mode RAW (si és compatible amb el dispositiu), però podria no funcionar correctament en tots els dispositius i provocar un reinici</string>
+    <string name="preference_about">Quant a</string>
+    <string name="preference_about_summary">Informació de l\'aplicació i la depuració</string>
+    <string name="preference_reset">Restableix els paràmetres</string>
+    <string name="preference_reset_summary">Restableix tots els paràmetres d\'Open Camera a la configuració per defecte</string>
+    <string name="preference_reset_question">Segur que vols restablir tots els paràmetres d\'Open Camera a la configuració per defecte?</string>
+
+    <string name="about_available">Disponible</string>
+    <string name="about_not_available">No disponible</string>
+    <string name="about_copy_to_clipboard">Copia al porta-retalls</string>
+    
+    <string name="take_photo">Fes una Foto</string>
+    <string name="gallery">Galeria</string>
+    <string name="exposure">Exposició</string>
+    <string name="exposure_lock">Bloqueja l\'exposició</string>
+    <string name="focus_mode">Mode d\'enfocament</string>
+    <string name="flash_mode">Mode de flaix</string>
+    <string name="switch_to_front_camera">Canvia a càmera del davant</string>
+    <string name="switch_to_back_camera">Canvia a càmera del darrere</string>
+    <string name="switch_to_video">Canvia a mode de vídeo</string>
+    <string name="switch_to_photo">Canvia a mode de foto</string>
+    <string name="trash">Suprimeix la darrera foto</string>
+    <string name="share">Comparteix la foto</string>
+    
+    <string name="parent_folder">Carpeta superior</string>
+    <string name="new_folder">Nova Carpeta</string>
+    <string name="cant_write_folder">No es pot escriure en aquesta carpeta</string>
+    <string name="cant_access_folder">No es pot accedir a aquesta carpeta</string>
+    <string name="enter_new_folder">Nom de la nova carpeta</string>
+    <string name="failed_create_folder">No s\'ha pogut crear la carpeta</string>
+    <string name="folder_exists">La carpeta ja existeix</string>
+
+    <string name="saf_select_save_location">Tria on desar</string>
+    <string name="saf_cancelled">Storage Access Framework cancel·lat</string>
+	<string name="saf_permission_failed">No es pot desar en aquesta carpeta</string>
+
+    <!-- the permission names such as Microphone should match what Android calls them in the App permission settings -->
+    <string name="permission_record_audio_not_available">El permís de micròfon no està disponible</string>
+    <string name="permission_location_not_available">El permís d\'ubicació no està disponible</string>
+
+    <string name="start_video">Inicia l\'enregistrament de vídeo</string>
+    <string name="stop_video">Atura l\'enregistrament de vídeo</string>
+
+    <string name="max_filesize">Mida màxima del fitxer</string>
+    <string name="mb_abbreviation">MB</string> <!-- symbol short for megabytes -->
+    <string name="gb_abbreviation">GB</string> <!-- symbol short for gigabytes -->
+
+    <string name="audio_control_start">Comença a escoltar l\'àudio</string>
+    <string name="audio_control_stop">Atura escoltar l\'àudio</string>
+    <string name="speech_recognizer_started">Digues \"cheese\"</string> <!-- note that cheese shouldn't be translated, as we listen for this no matter what language is being used -->
+    <string name="audio_listener_started">Fes un soroll fort</string>
+
+    <string name="auto_stabilise_info">L\'estabilització automàtica girarà les fotos perquè apareguin anivellades.\n\nTingues present que les imatges sortiran amb una resolució lleugerament menor com a conseqüència de la rotació i el retall.</string>
+    <string name="raw_info">Els fitxers DNG contenen la informació completa de la càmera sense comprimir-la ni processar-la.\n\nTingues present que moltes aplicacions de galeria no reconeixen els fitxers DNG i potser hauràs de fer servir un editor d\'imatge especialitzat.\n\nTingues també present que algunes opcions de processament com ara "Estampa les fotos" o "Estabilització automàtica" només s\'aplicaran a les imatges no-DNG (JPEG/etc) i no a les imatges DNG.</string>
+    <string name="hdr_info">El mode HDR es útil per fer fotos amb una gran variació de lluminositat. Funciona fent múltiples fotos amb diferents exposicions i combinant-les per crear la imatge final.\n\nTingues present que l\'HDR no és adequat per a escenes amb moviment ràpid i pot donar com a resultat una reproducció de color menys precisa.\n\nFer fotos en mode HDR serà més lent.</string>
+
+    <string name="dont_show_again">No ho tornis a mostrar</string>
+
+    <string name="photo_mode">Mode de Foto</string>
+    <string name="photo_mode_standard">Std</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_standard_full">Estàndard</string>
+    <string name="photo_mode_hdr">HDR</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_expo_bracketing">Expo {}</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_expo_bracketing_full">Bràqueting d\'exposició</string>
+    <string name="photo_mode_fast_burst_full">Ràfega ràpida</string>
+    <string name="photo_mode_noise_reduction">NR</string> <!-- keep short, as this shows in the popup menu; probably shouldn't be translated? -->
+    <string name="photo_mode_noise_reduction_full">Reducció de soroll</string>
+    <string name="preference_category_stamp">Estampa la foto</string>
+    <string name="preference_hdr_save_expo">Desa totes les imatges del mode HDR</string>
+    <string name="preference_hdr_save_expo_summary">Si s\'habilita, quan facis una foto en mode HDR es desaran les tres imatges de l\'exposició base i la foto HDR final. Això farà que el desament sigui més lent, i més encara si també tens habilitades les opcions "Estampa les fotos" o "Estabilització automàtica".</string>
+
+    <string name="no_permission">PERMISOS NO DISPONIBLES</string>
+    <string name="permission_rationale_title">Permís necessari</string>
+    <string name="permission_rationale_camera">Cal el permís de càmera per habilitar-la</string>
+    <string name="permission_rationale_storage">Cal el permís de lectura/escriptura de l\'emmagatzematge per poder desar els fitxers de foto i vídeo</string>
+    <string name="permission_rationale_record_audio">Cal el permís de micròfon per poder enregistrar vídeo amb àudio i també per usar les opcions de \"Control d\'àudio\"</string>
+    <string name="permission_rationale_location">Cal el permís d\'ubicació per geoetiquetar (emmagatzemar les dades d\'ubicació a
+        fotos i vídeos, com també les opcions d\'annexació d\'informació i subtítols). També cal el permís d\'ubicació, almenys en Android 11 i anteriors, per connectar dispositius de control remot Bluetooth LE.</string>
+        
+    <string name="preference_category_photo_debugging">Opcions de depuració</string>
+    <string name="preference_category_video_debugging">Opcions de depuració</string>
+    <string name="preference_camera2_fake_flash">Usa un mètode de flaix alternatiu</string>
+    <string name="preference_camera2_fake_flash_summary">Habilita-ho si el flaix del teu dispositiu no funciona bé amb l\'API Camera2</string>
+
+    <string name="preference_expo_bracketing_n_images">Bràqueting d\'exposició</string>
+    <string name="preference_expo_bracketing_n_images_summary">Nombre d\'imatges per al bràqueting d\'exposició\n%s</string>
+    <string name="preference_expo_bracketing_stops">Passos de llum del bràqueting d\'exposició</string>
+    <string name="preference_expo_bracketing_stops_summary">Estableix els passos de llum (F/Stop) amb què s\'augmentarà i reduirà la lluminositat de les diferents imatges del bràqueting\n%s</string>
+
+    <string name="preference_nr_save">Reducció de soroll en imatges originals</string>
+    <string name="preference_nr_save_summary">Desa o no les imatges originals en mode de reducció de soroll. El procés de desar les imatges serà molt més lent.\n%s</string>
+
+    <string name="preference_nr_save_no">No desis les imatges originals</string>
+    <string name="preference_nr_save_single">Desa una sola imatge original</string>
+    <string name="preference_nr_save_all">Desa totes les imatges originals (lent)</string>
+
+    <string name="seconds_abbreviation">s</string> <!-- short for seconds -->
+
+    <string name="video_no_free_space">No hi ha prou espai lliure per enregistrar el vídeo</string>
+    <string name="video_power_critical">Vídeo aturat\nNivell de bateria massa baix</string>
+    <string name="preference_video_low_power_check">Comprova bateria massa baixa</string>
+    <string name="preference_video_low_power_check_summary">Atura l\'enregistrament del vídeo si el nivell de la bateria és massa baix. Això ajuda a reduir el risc que els vídeos es malmetin si el dispositiu s\'apaga de cop en quedar-se sense bateria.</string>
+
+    <string name="dark">Fosc</string> <!-- exposure compensation dark -->
+    <string name="bright">Lluminós</string> <!-- exposure compensation bright -->
+    <string name="exposure_shutter_speed">Velocitat d\'obturació</string>
+
+    <string name="camera_error">Error greu de la càmera</string>
+
+    <string name="preference_camera2_fast_burst">Habilita la ràfega ràpida HDR/Expo</string>
+    <string name="preference_camera2_fast_burst_summary">Permet una captura més ràpida de fotos en mode HDR/Expo. Inhabilita-ho si el teu dispositiu té problemes quan fa fotos en els modes de foto HDR o Expo.</string>
+
+    <string name="camera">Càmera</string>
+    <string name="record_video">Enregistra vídeo</string>
+    <string name="selfie">Autofoto</string>
+
+    <string name="preference_front_camera_mirror">Efecte mirall en càmera frontal</string>
+    <string name="preference_front_camera_mirror_summary">Habilita o no l\'efecte mirall en les fotos resultants de la càmera del davant\n%s</string>
+
+    <string name="preference_calibrate_level">Calibra el nivell de l\'angle</string>
+    <string name="preference_calibrate_level_summary">Aquesta opció calibra l\'acceleròmetre del dispositiu per tal que el nivell automàtic i les opcions nivell/angle en pantalla funcionen correctament.</string>
+    <string name="preference_calibrate_level_dialog">Col·loca el dispositiu sobre una superfície horitzontal plana perquè quedi anivellat (en posició vertical o horitzontal) i tria Calibra.\n\nPrem Restableix per suprimir la calibració del dispositiu.\n\nPrem el botó enrere per cancel·lar.</string>
+    <string name="preference_calibrate_level_calibrate">Calibra</string>
+    <string name="preference_calibrate_level_reset">Restableix</string>
+    <string name="preference_calibrate_level_calibrated">Nivell calibrat</string>
+    <string name="preference_calibrate_level_calibration_reset">Calibració de nivell restablida</string>
+
+    <string name="photo_mode_dro">DRO</string> <!-- keep short, as this shows in the popup menu -->
+
+    <string name="preference_show_pitch_lines">Mostra línies de desviació</string>
+    <string name="preference_show_pitch_lines_summary">Mostra línies horitzontals que indiquen els graus de desviació en relació a l\'angle convencional</string>
+    <string name="preference_show_geo_direction_lines">Mostra línies de direcció</string>
+    <string name="preference_show_geo_direction_lines_summary">Mostra les línies de direcció de la brúixola</string>
+    <string name="preference_video_subtitle">Subtítols al vídeo</string>
+    <string name="preference_video_subtitle_summary">Crea un fitxer de subtítols (.SRT) que emmagatzema la data i l\'hora, també la informació del GPS si s\'han habilitat els permisos d\'ubicació/direcció. (En Android 11 i posteriors per poder usar aquesta opció cal habilitar "Més controls de càmera…/Storage Access Framework")\n%s</string>
+
+    <string name="duration_unlimited">Il·limitada</string>
+    <string name="duration_3s">3 segons</string>
+    <string name="duration_5s">5 segons</string>
+    <string name="duration_10s">10 segons</string>
+    <string name="duration_15s">15 segons</string>
+    <string name="duration_30s">30 segons</string>
+    <string name="duration_1m">1 minut</string>
+    <string name="duration_2m">2 minuts</string>
+    <string name="duration_3m">3 minuts</string>
+    <string name="duration_4m">4 minuts</string>
+    <string name="duration_5m">5 minuts</string>
+    <string name="duration_6m">6 minuts</string>
+    <string name="duration_7m">7 minuts</string>
+    <string name="duration_8m">8 minuts</string>
+    <string name="duration_9m">9 minuts</string>
+    <string name="duration_10m">10 minuts</string>
+    <string name="duration_11m">11 minuts</string>
+    <string name="duration_12m">12 minuts</string>
+    <string name="duration_15m">15 minuts</string>
+    <string name="duration_20m">20 minuts</string>
+    <string name="duration_25m">25 minuts</string>
+    <string name="duration_30m">30 minuts</string>
+    <string name="duration_45m">45 minuts</string>
+    <string name="duration_1h">1 hora</string>
+
+    <string name="preference_show_take_photo">Mostra la icona de fer fotos</string>
+    <string name="preference_show_take_photo_summary">Mostra la icona per fer fotos i enregistrar vídeos. La pots inhabilitar si fas fotos amb altres mètodes (p.e., si el teu dispositiu té un botó disparador o uses les tecles de volum).</string>
+
+    <string name="video_pause">Vídeo en pausa</string>
+    <string name="video_resume">Vídeo reprès</string>
+    <string name="pause_video">Pausa en l\'enregistament</string>
+    <string name="resume_video">Reprèn l\'enregistrament</string>
+
+    <string name="capturing">Capturant…</string>
+
+    <string name="audio_listener_failed">Error en inicialitzar l\'escolta d\'àudio</string>
+    <string name="failed_to_process_hdr">Error en crear la imatge HDR</string>
+
+    <string name="white_balance_auto">Automàtic</string>
+    <string name="white_balance_cloudy">Núvol</string>
+    <string name="white_balance_daylight">Llum dia</string>
+    <string name="white_balance_fluorescent">Fluorescent</string>
+    <string name="white_balance_incandescent">Incandescent</string>
+    <string name="white_balance_shade">Ombra</string>
+    <string name="white_balance_twilight">Vespre</string>
+    <string name="white_balance_warm">Llum càlida</string>
+    <string name="white_balance_manual">Manual</string>
+    
+    <string name="scene_mode_action">Acció</string>
+    <string name="scene_mode_barcode">Codi de barres</string>
+    <string name="scene_mode_beach">Platja</string>
+    <string name="scene_mode_candlelight">Llum d\'espelmes</string>
+    <string name="scene_mode_auto">Automàtic</string>   
+    <string name="scene_mode_fireworks">Focs artificials</string>
+    <string name="scene_mode_landscape">Paisatge</string>
+    <string name="scene_mode_night">Nit</string>
+    <string name="scene_mode_night_portrait">Retrat nocturn</string>
+    <string name="scene_mode_party">Festa</string>
+    <string name="scene_mode_portrait">Retrat</string>
+    <string name="scene_mode_snow">Neu</string>
+    <string name="scene_mode_sports">Esports</string>
+    <string name="scene_mode_steady_photo">Foto estàtica</string>
+    <string name="scene_mode_sunset">Posta de sol</string>
+    <string name="scene_mode_theatre">Teatre</string>
+
+    <string name="color_effect_aqua">Aigua</string>
+    <string name="color_effect_blackboard">Pissarra negra</string>
+    <string name="color_effect_mono">Monocrom</string>
+    <string name="color_effect_negative">Negatiu</string>
+    <string name="color_effect_none">Cap</string>
+    <string name="color_effect_posterize">Pòster</string>
+    <string name="color_effect_sepia">Sèpia</string>
+    <string name="color_effect_solarize">Solaritzat</string>
+    <string name="color_effect_whiteboard">Pissarra blanca</string>
+
+    <string name="whats_new">Novetats:</string>
+
+    <!-- for accessibility, these strings for face detection will typically be spoken, e.g., through Google Talkback -->
+    <string name="face_detected">cara detectada</string>
+    <string name="faces_detected">cares detectades</string>
+    <string name="left_of_screen">a l\'esquerra de la pantalla</string>
+    <string name="right_of_screen">a la dreta de la pantalla</string>
+    <string name="top_of_screen">al capdamunt de la pantalla</string>
+    <string name="bottom_of_screen">al capdavall de la pantalla</string>
+    <string name="centre_of_screen">al mig de la pantalla</string>
+
+    <string name="high_speed">Alta velocitat</string> <!-- in the sense of high speed video frame rates -->
+
+    <string name="preference_video_fps_default">Per defecte</string>
+    
+    <string name="preference_category_exif_tags">Personalització d\'etiquetes EXIF</string>
+    <string name="preference_exif_artist">Autor</string>
+    <string name="preference_exif_artist_summary">Text que s\'emmagatzemarà a les metadades per a l\'etiqueta "Autor" (només en formats JPEG). Deixa-ho en blanc per a cap</string>
+    <string name="preference_exif_copyright">Copyright</string>
+    <string name="preference_exif_copyright_summary">Text que s\'emmagatzemarà a les metadades per a l\'etiqueta "Copyright" (només en formats JPEG). Deixa-ho en blanc per a cap</string>
+
+    <string name="processing">Processant…</string>
+
+    <string name="preference_raw_no">No</string>
+    <string name="preference_raw_yes">Estàndard i DNG (RAW)</string>
+    <string name="preference_raw_only">DNG (RAW) només</string>
+
+    <string name="preference_stamp_dateformat_default">Per defecte</string>
+    <string name="preference_stamp_dateformat_yyyymmdd">aaaa-mm-dd (ISO 8601)</string>
+    <string name="preference_stamp_dateformat_ddmmyyyy">dd/mm/aaaa</string>
+    <string name="preference_stamp_dateformat_mmddyyyy">mm/dd/aaaa</string>
+    <string name="preference_stamp_dateformat_none">Cap</string>
+
+    <string name="preference_fast_burst_n_images">Nombre de fotos</string>
+    <string name="preference_fast_burst_n_images_entries_2">2</string>
+    <string name="preference_fast_burst_n_images_entries_3">3</string>
+    <string name="preference_fast_burst_n_images_entries_4">4</string>
+    <string name="preference_fast_burst_n_images_entries_5">5</string>
+    <string name="preference_fast_burst_n_images_entries_6">6</string>
+    <string name="preference_fast_burst_n_images_entries_8">8</string>
+    <string name="preference_fast_burst_n_images_entries_10">10</string>
+    <string name="preference_fast_burst_n_images_entries_12">12</string>
+    <string name="preference_fast_burst_n_images_entries_15">15</string>
+    <string name="preference_fast_burst_n_images_entries_20">20</string>
+
+    <string name="preference_focus_bracketing_n_images">Nombre de fotos</string>
+    <string name="preference_focus_bracketing_n_images_entries_2">2</string>
+    <string name="preference_focus_bracketing_n_images_entries_3">3</string>
+    <string name="preference_focus_bracketing_n_images_entries_4">4</string>
+    <string name="preference_focus_bracketing_n_images_entries_5">5</string>
+    <string name="preference_focus_bracketing_n_images_entries_6">6</string>
+    <string name="preference_focus_bracketing_n_images_entries_8">8</string>
+    <string name="preference_focus_bracketing_n_images_entries_10">10</string>
+    <string name="preference_focus_bracketing_n_images_entries_12">12</string>
+    <string name="preference_focus_bracketing_n_images_entries_15">15</string>
+    <string name="preference_focus_bracketing_n_images_entries_20">20</string>
+    <string name="preference_focus_bracketing_n_images_entries_25">25</string>
+    <string name="preference_focus_bracketing_n_images_entries_30">30</string>
+    <string name="preference_focus_bracketing_n_images_entries_40">40</string>
+    <string name="preference_focus_bracketing_n_images_entries_50">50</string>
+    <string name="preference_focus_bracketing_n_images_entries_100">100</string>
+    <string name="preference_focus_bracketing_n_images_entries_150">150</string>
+    <string name="preference_focus_bracketing_n_images_entries_200">200</string>
+
+    <string name="preference_video_capture_rate">Velocitat</string>
+    <string name="preference_video_capture_rate_normal">Normal</string>
+    <string name="slow_motion_enabled">Càmera lenta habilitada</string>
+    <string name="slow_motion_disabled">Càmera lenta inhabilitada</string>
+
+    <string name="flash_off">Flaix Apagat</string>
+    <string name="flash_auto">Flaix Automàtic</string>
+    <string name="flash_on">Flaix Actiu</string>
+    <string name="flash_torch">Llanterna</string>
+    <string name="flash_red_eye">Ulls Vermells</string>
+    <string name="flash_frontscreen_auto">Flaix Automàtic frontal</string>
+    <string name="flash_frontscreen_on">Flaix Actiu frontal</string>
+    <string name="flash_frontscreen_torch">Llanterna frontal</string>
+
+    <string name="preference_antibanding">Reducció del parpelleig</string>
+    <string name="preference_antibanding_summary">Algorismes per reduir el parpelleig de la llum.\n%s</string>
+    <string name="anti_banding_auto">Automàtica</string>
+    <string name="anti_banding_50hz">50Hz</string>
+    <string name="anti_banding_60hz">60Hz</string>
+    <string name="anti_banding_off">Inhabilitada</string>
+    
+    <string name="preference_ghost_image">Imatge fantasma</string>
+    <string name="preference_ghost_image_summary">Mostra una imatge sobre la vista prèvia per ajudar amb l\'alineament.\n%s</string>
+    <string name="preference_ghost_image_off">Inhabilitada</string>
+    <string name="preference_ghost_image_last">La darrera foto</string>
+    <string name="preference_ghost_image_selected">Imatge seleccionada</string>
+
+    <string name="open_files_saf_exception_ghost">No s\'ha trobat cap quadre de diàleg de fitxer en aquest dispositiu, l\'opció d\'imatge fantasma no és compatible</string>
+    <string name="saf_permission_failed_open_image">Aquesta imatge no es pot obrir</string>
+    
+    <string name="preference_camera2_photo_video_recording">Permet les fotos mentre s\'enregistra</string>
+    <string name="preference_camera2_photo_video_recording_summary">Permet fer fotos mentre s\'enregistren vídeos. Inhabilita-ho si et dóna problemes en enregistrar vídeos amb l\'API Camera2 habilitada.</string>
+
+    <string name="preference_video_log">Perfils de color de vídeo</string>
+    <string name="preference_video_log_summary">Defineix un perfil de color estàndard o pla per al mode vídeo\n%s</string>
+    <string name="preference_video_log_off">Per defecte</string>
+    <string name="preference_video_log_fine">Log (Fi)</string>
+    <string name="preference_video_log_low">Log (Baix)</string>
+    <string name="preference_video_log_medium">Log (Mitjà)</string>
+    <string name="preference_video_log_strong">Log (Fort)</string>
+    <string name="preference_video_log_extra_strong">Log (Extra Fort)</string>
+    <string name="video_log">Perfil logarítmic</string>    
+
+    <string name="preference_record_audio_src_camcorder">Videocàmera</string>
+    <string name="preference_record_audio_src_mic">Micròfon extern (si n\'hi ha)</string>
+    <string name="preference_record_audio_src_default">Font d\'àudio per defecte</string>
+    <string name="preference_record_audio_src_voice_communication">Optimitzada per a trucades de veu</string>
+    <string name="preference_record_audio_src_voice_recognition">Optimitzada per a reconeixement de veu</string>
+    <string name="preference_record_audio_src_unprocessed">Sense processar</string>
+
+    <string name="preference_video_bitrate_default">Per defecte</string>
+    <string name="preference_video_bitrate_100000">100kbps</string>
+    <string name="preference_video_bitrate_200000">200kbps</string>
+    <string name="preference_video_bitrate_500000">500kbps</string>
+    <string name="preference_video_bitrate_1000000">1Mbps</string>
+    <string name="preference_video_bitrate_2000000">2Mbps</string>
+    <string name="preference_video_bitrate_3000000">3Mbps</string>
+    <string name="preference_video_bitrate_4000000">4Mbps</string>
+    <string name="preference_video_bitrate_5000000">5Mbps</string>
+    <string name="preference_video_bitrate_6000000">6Mbps</string>
+    <string name="preference_video_bitrate_7000000">7Mbps</string>
+    <string name="preference_video_bitrate_8000000">8Mbps</string>
+    <string name="preference_video_bitrate_9000000">9Mbps</string>
+    <string name="preference_video_bitrate_10000000">10Mbps</string>
+    <string name="preference_video_bitrate_15000000">15Mbps</string>
+    <string name="preference_video_bitrate_20000000">20Mbps</string>
+    <string name="preference_video_bitrate_30000000">30Mbps</string>
+    <string name="preference_video_bitrate_40000000">40Mbps</string>
+    <string name="preference_video_bitrate_50000000">50Mbps</string>
+    <string name="preference_video_bitrate_60000000">60Mbps</string>
+    <string name="preference_video_bitrate_70000000">70Mbps</string>
+    <string name="preference_video_bitrate_80000000">80Mbps</string>
+    <string name="preference_video_bitrate_90000000">90Mbps</string>
+    <string name="preference_video_bitrate_100000000">100Mbps</string>
+    <string name="preference_video_bitrate_150000000">150Mbps</string>
+    <string name="preference_video_bitrate_200000000">200Mbps</string>
+    
+    <string name="no_burst">Sense ràfega</string> <!-- string for burst mode not being supported for a resolution -->
+
+    <string name="preference_show_video_max_amp">Mostra el mesurador de nivell d\'àudio</string>
+    <string name="preference_show_video_max_amp_summary">Mostra o no en pantalla el mesurador del nivell d\'àudio quan s\'està enregistrant un vídeo</string>
+
+    <string name="photo_mode_focus_bracketing">Focus {}</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_focus_bracketing_full">Bràqueting d\'enfocament</string>
+
+    <string name="focus_bracketing_source_distance">Distància a la font del bràqueting d\'enfocament</string>
+    <string name="focus_bracketing_target_distance">Distància a l\'objectiu del bràqueting d\'enfocament</string>
+
+    <string name="focus_bracketing_add_infinity">Afegeix distància infinta</string>
+
+    <string name="magnetic_accuracy_title">Direcció de la brúixola</string>
+    <string name="magnetic_accuracy_info">Cal calibrar la brúixola del dispositiu per millorar-ne la precisió. Això es pot fer movent el dispositiu amb un gest en forma de 8.\n\nPrecisió actual:</string>
+
+    <string name="accuracy_unreliable">Poc fiable</string>
+    <string name="accuracy_low">Baixa</string>
+    <string name="accuracy_medium">Mitjana</string>
+    <string name="accuracy_high">Alta</string>
+    <string name="accuracy_unknown">Desconeguda</string>
+
+    <string name="preference_units_distance">Unitats de longitud</string>
+    <string name="preference_units_distance_summary">S\'usen per a l\'altura del GPS, en estampar les fotos i per als subtítols del vídeo\n%s</string>
+    <string name="preference_units_distance_m">Metres</string>
+    <string name="preference_units_distance_ft">Peus</string>
+    <string name="feet_abbreviation">ft</string> <!-- symbol short for feet -->
+
+    <string name="preference_show_whats_new">Mostra el diàleg Novetats</string>
+    <string name="preference_show_whats_new_summary">Mostra o no la informació de les noves funcions i les millores quan s\'actualitzi l\'aplicació</string>
+
+    <string name="preference_edge_mode">Algorisme de realçament de vores</string>
+    <string name="preference_edge_mode_summary">Algorisme que pot usar el controlador de la càmera per millorar la definició de les vores. Realça la foscor de les vores i els detalls en la imatge capturada. Aquest paràmetre s\'ignora en el mode NR (Mode de reducció de soroll).\n%s</string>
+
+    <string name="preference_screen_processing_settings">Paràmetres de processament…</string>
+
+    <string name="preference_noise_reduction_mode">Algorisme de reducció de soroll</string>
+    <string name="preference_noise_reduction_mode_summary">Algorisme que pot usar el controlador de la càmera per reduir el soroll. L\'algorisme de reducció de soroll intenta millorar la qualitat de la imatge suprimint el soroll excessiu que s\'afegeix en fer la foto, sobretot en condicions de foscor. (Tingues present que aquest algorisme no fa referència al mode de foto Reducció de Soroll i, de fet, s\'ignora en el mode de foto NR)\n%s</string>
+    <string name="noise_reduction_mode_default">Per defecte</string>
+    <string name="noise_reduction_mode_off">Inhabilitat</string>
+    <string name="noise_reduction_mode_minimal">Mínim</string>
+    <string name="noise_reduction_mode_fast">Ràpid</string>
+    <string name="noise_reduction_mode_high_quality">Alta qualitat</string>
+
+    <string name="preference_focus_assist">Assistent d\'enfocament</string>
+    <string name="preference_focus_assist_summary">Augmenta el zoom quan s\'ajusta manualment la distància focal\n%s</string>
+    <string name="preference_focus_assist_off">Inhabilitat</string>
+    <string name="preference_focus_assist_2x">2x</string>
+    <string name="preference_focus_assist_4x">4x</string>
+
+    <string name="exposure_compensation_zoom">Incrementa o redueix la compensació d\'exposició</string>
+
+    <string name="previous">Anterior</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) for "<" button on popup menu -->
+    <string name="next">Següent</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) for ">" button on popup menu -->    
+
+    <string name="preference_burst_mode_off">Inhabilitada</string>
+    <string name="preference_burst_mode_2x">2x</string>
+    <string name="preference_burst_mode_3x">3x</string>
+    <string name="preference_burst_mode_4x">4x</string>
+    <string name="preference_burst_mode_5x">5x</string>
+    <string name="preference_burst_mode_10x">10x</string>
+    <string name="preference_burst_mode_20x">20x</string>
+    <string name="preference_burst_mode_30x">30x</string>
+    <string name="preference_burst_mode_40x">40x</string>
+    <string name="preference_burst_mode_50x">50x</string>
+    <string name="preference_burst_mode_100x">100x</string>
+    <string name="preference_burst_mode_200x">200x</string>
+    <string name="preference_burst_mode_500x">500x</string>
+    <string name="preference_burst_mode_unlimited">Il·limitada</string>
+
+    <string name="preference_burst_interval_no_delay">Sense retard</string>
+    <string name="preference_burst_interval_0_5s">0.5s</string>
+    <string name="preference_burst_interval_1s">1s</string>
+    <string name="preference_burst_interval_2s">2s</string>
+    <string name="preference_burst_interval_3s">3s</string>
+    <string name="preference_burst_interval_5s">5s</string>
+    <string name="preference_burst_interval_10s">10s</string>
+    <string name="preference_burst_interval_15s">15s</string>
+    <string name="preference_burst_interval_20s">20s</string>
+    <string name="preference_burst_interval_30s">30s</string>
+    <string name="preference_burst_interval_1m">1m</string>
+    <string name="preference_burst_interval_2m">2m</string>
+    <string name="preference_burst_interval_5m">5m</string>
+    <string name="preference_burst_interval_10m">10m</string>
+    <string name="preference_burst_interval_20m">20m</string>
+    <string name="preference_burst_interval_30m">30m</string>
+    <string name="preference_burst_interval_1h">1h</string>
+    <string name="preference_burst_interval_2h">2h</string>
+
+    <string name="preference_video_max_filesize_default">Per defecte del dispositiu</string>
+    <string name="preference_video_max_filesize_100mb">100MB</string>
+    <string name="preference_video_max_filesize_200mb">200MB</string>
+    <string name="preference_video_max_filesize_300mb">300MB</string>
+    <string name="preference_video_max_filesize_500mb">500MB</string>
+    <string name="preference_video_max_filesize_1gb">1GB</string>
+    <string name="preference_video_max_filesize_2gb">2GB</string>
+    <string name="preference_video_max_filesize_5gb">5GB</string>
+    <string name="preference_video_max_filesize_9gb">9GB</string>
+    
+    <string name="cancelled_focus_bracketing">Bràqueting d\'enfocament cancel·lat</string>    
+
+    <string name="preference_crop_guide_none">Cap</string>
+    <string name="preference_crop_guide_1">1 (1:1)</string>
+    <string name="preference_crop_guide_1_25">1.25 (5:4)</string>
+    <string name="preference_crop_guide_1_33">1.33 (4:3)</string>
+    <string name="preference_crop_guide_1_4">1.4 (7:4)</string>
+    <string name="preference_crop_guide_1_5">1.5 (3:2)</string>
+    <string name="preference_crop_guide_1_78">1.78 (16:9)</string>
+    <string name="preference_crop_guide_1_85">1.85 (37:20)</string>
+    <string name="preference_crop_guide_2">2 (2:1)</string>
+    <string name="preference_crop_guide_2_33">2.33 (21:9)</string>
+    <string name="preference_crop_guide_2_35">2.35 (47:20)</string>
+    <string name="preference_crop_guide_2_4">2.4 (12:5)</string>
+    
+    <string name="preference_audio_noise_control_sensitivity_3">+3 (alta sensibilitat)</string>
+    <string name="preference_audio_noise_control_sensitivity_2">+2</string>
+    <string name="preference_audio_noise_control_sensitivity_1">+1</string>
+    <string name="preference_audio_noise_control_sensitivity_0">0 (per defecte)</string>
+    <string name="preference_audio_noise_control_sensitivity_m1">-1</string>
+    <string name="preference_audio_noise_control_sensitivity_m2">-2</string>
+    <string name="preference_audio_noise_control_sensitivity_m3">-3 (baixa sensibilitat)</string>
+    
+    <string name="preference_hdr_contrast_enhancement">Millora del contrast HDR</string>
+    <string name="preference_hdr_contrast_enhancement_summary">Quan s\'usa un algorisme de millora del contrast per a HDR. Això pot millorar l\'aparença en els casos en què hi ha un rang dinàmic molt alt a l\'escena i confereix també un "aire HDR" als resultats.\n%s</string>
+    <string name="preference_hdr_contrast_enhancement_off">Inhabilitat</string>
+    <string name="preference_hdr_contrast_enhancement_smart">Intel·ligent</string>
+    <string name="preference_hdr_contrast_enhancement_always">Sempre</string>
+
+    <string name="preference_video_output_format">Format de vídeo</string>
+    <string name="preference_video_output_format_summary">Format i còdecs de vídeo i àudio del fitxer\n%s</string>
+
+    <string name="preference_video_output_format_default">Per defecte</string>
+    <string name="preference_video_output_format_mpeg4_h264">MPEG4 H264</string>
+    <string name="preference_video_output_format_mpeg4_hevc">MPEG4 HEVC</string>
+    <string name="preference_video_output_format_3gpp">3GPP</string>
+    <string name="preference_video_output_format_webm">WebM (àudio no compatible)</string>    
+    
+    <string name="preference_screen_settings_manager">Administrador de paràmetres</string>
+
+    <string name="preference_save_settings">Desa els paràmetres</string>
+    <string name="preference_save_settings_summary">Desa tots els paràmetres d\'Open Camera en un fitxer</string>
+    <string name="preference_save_settings_filename">Nom del fitxer</string>
+
+    <string name="preference_restore_settings">Restaura els paràmetres</string>
+    <string name="preference_restore_settings_summary">Restaura els paràmetres desats prèviament. Això sobreescriurà tots els paràmetres actuals amb els paràmetres desats!</string>
+    <string name="preference_restore_settings_question">Aquesta opció et permet escollir un fitxer de còpia de seguretat dels paràmetres que hagis desat prèviament.Tingues en compte que en carregar el fitxer se sobreescriuran tots els paràmetres actuals!</string>   
+    
+    <string name="saved_settings">Paràmetres desats</string>
+    <string name="save_settings_failed">Ha fallat en desar els paràmetres</string>
+    <string name="restore_settings_failed">Ha fallat en restaurar els paràmetres</string>
+    <string name="open_files_saf_exception_generic">No s\'ha trobat cap quadre de diàleg de fitxer en aquest dispositiu, l\'opció no és compatible</string>
+
+    <string name="preference_image_format">Format d\'imatge</string>
+    <string name="preference_image_format_jpeg">JPEG</string>
+    <string name="preference_image_format_jpeg_r">UltraHDR JPEG</string>
+    <string name="preference_image_format_webp">WebP</string>
+    <string name="preference_image_format_png">PNG</string>   
+    
+    <!-- beware of these strings for preference_nr_mode* being too long, otherwise too wide for popup menu -->
+    <string name="preference_nr_mode">Mode NR</string>
+    <string name="preference_nr_mode_normal">Normal</string>
+    <string name="preference_nr_mode_low_light">Poca llum</string>
+
+    <string name="preference_ui_placement_left">Interfície d\'usuari per a esquerrans</string>
+    <string name="preference_ui_placement_right">Interfície d\'usuari per a dretans</string>
+    <string name="preference_ui_placement_top">Icones a dalt (vertical)</string>
+
+    <string name="preference_show_face_detection">Mostra la detecció de cares</string>
+    <string name="preference_show_face_detection_summary">Mosta o no una icona en pantalla per habilitar o inhabilitar la detecció de cares</string>
+    <string name="face_detection_enable">Habilita detecció de cares</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="face_detection_disable">Inabilita detecció de cares</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="face_detection_enabled">Detecció de cares habilitada</string>
+    <string name="face_detection_disabled">Detecció de cares inhabilitada</string>    
+
+    <string name="preference_show_auto_level">Mostra l\'anivellament automàtic</string>
+    <string name="preference_show_auto_level_summary">Mosta o no una icona en pantalla per habilitar o inhabilitar l\'anivellament automàtic. Quan s\'habilita l\'anivellament automàtic les fotos van girant fins que s\'anivellen automàticament amb l\'horitzó.</string>
+    <string name="auto_level_enable">Habilita l\'anivellament automàtic</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="auto_level_disable">Inhabilita l\'anivellament automàtic</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+
+    <string name="preference_show_stamp">Mostra estampa la foto</string>
+    <string name="preference_show_stamp_summary">Mosta o no una icona en pantalla per habilitar o inhabilitar l\'estampat de la foto</string>
+    <string name="stamp_enable">Habilita l\'estampat</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="stamp_disable">Inhabilita l\'estampat</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="stamp_enabled">Estampat habilitat</string>
+    <string name="stamp_disabled">Estampat inhabilitat</string>
+    
+    <string name="preference_show_textstamp">Mostra text personalitzat d\'estampat</string>
+    <string name="preference_show_textstamp_summary">Mosta o no una icona en pantalla per especificar el text personalitzat que s\'estamparà a la foto</string>
+
+    <string name="preference_show_white_balance_lock">Mostra bloqueja balanç de blancs</string>
+    <string name="preference_show_white_balance_lock_summary">Mosta o no una icona en pantalla per bloquejar o desbloquejar el balanç de blancs automàtic</string>
+    <string name="white_balance_lock">Bloqueja el balanç de blancs</string>
+    <string name="white_balance_unlock">Desbloqueja el balanç de blancs</string>
+    <string name="white_balance_locked">Balanç de blancs bloquejat</string>
+    <string name="white_balance_unlocked">Balanç de blancs desbloquejat</string>    
+    
+      <string name="preference_show_exposure_lock">Mostra bloqueja exposició automàtica</string>
+    <string name="preference_show_exposure_lock_summary">Mosta o no una icona en pantalla per bloquejar o desbloquejar l\'exposició</string>
+    <string name="exposure_unlock">Desbloqueja l\'exposició</string>
+
+    <string name="preference_nr_mode_low_light_message">Mode amb poca llum: mantén la càmera estable</string>
+
+    <string name="photo_mode_panorama">Pano</string> <!-- keep short, as this shows in the popup menu; probably shouldn't be translated? -->
+    <string name="photo_mode_panorama_full">Panorama</string>
+
+    <string name="preference_screen_remote_control">Control remot Bluetooth LE…</string>
+    <string name="preference_enable_remote">Habilita el control remot Bluetooth LE</string>
+    <string name="preference_enable_remote_summary">Habilita el control remot de dispositius Bluetooth LE (BLE)</string>
+    <string name="preference_remote_type">Tipus de dispositiu remot</string>
+
+    <string name="ble_not_supported">BLE no és compatible</string>
+    <string name="scan_ble">Cerca dispositiu BLE</string>
+    <string name="bluetooth_not_supported">Bluetooth no és compatible.</string>
+    <string name="unknown_device">Dispositiu desconegut</string>
+    <string name="preference_remote_disconnect_screen_dim">Enfosqueix la pantalla si el remot es desconnecta</string>
+    <string name="preference_remote_disconnect_screen_dim_summary">Suggeriment: configura la lluminositat per defecte al mínim abans d\'iniciar Open Camera.</string>
+    <string name="preference_water_type">Usa AiguaSalada per a càlculs de profunditat</string>
+    <string name="preference_water_type_summary">En ubicacions subaquàtiques millora la precisió si es tria el tipus d\'aigua correcte.</string>
+    <string name="remote_connected">Remot connectat</string>  
+    
+    <string name="preference_stamp_geo_address">Usa les adreces</string>
+    <!-- preference_stamp_geo_address_summary defined below -->
+    <string name="preference_stamp_geo_address_both">Mostra l\'adreça si és possible, a més a més de les coordenades del GPS</string>
+    <string name="preference_stamp_geo_address_prefer">Prefereix l\'adreça a les coordenades del GPS</string>
+    <string name="preference_stamp_geo_address_no">No mostris l\'adreça</string>
+
+    <string name="preference_show_store_location">Mostra emmagatzema dades d\'ubicació</string>
+    <string name="preference_show_store_location_summary">Mosta o no una icona en pantalla per habilitar o inhabilitar l\'emmagatzematge de les dades d\'ubicació (geotagging)</string>
+    <string name="preference_location_enable">Emmagatzema les dades d\'ubicació</string>
+    <string name="preference_location_disable">No emmagatzemis les dades d\'ubicació</string>
+
+    <string name="preference_histogram">Mostra un histograma</string>
+    <string name="preference_histogram_summary">Mostra o no un histograma dels colors en pantalla\n%s</string>
+    <string name="preference_histogram_off">Inhabilitat</string>
+    <string name="preference_histogram_rgb">Colors RGB</string>
+    <string name="preference_histogram_luminance">Luminància</string>
+    <string name="preference_histogram_value">Valor (Màxim)</string>
+    <string name="preference_histogram_intensity">Intensitat (Mitjana)</string>
+    <string name="preference_histogram_lightness">Lluminositat (Mitjana entre mín-màx)</string>  
+    
+    <string name="preference_zebra_stripes">Mostra ratlles de zebra</string>
+    <string name="preference_zebra_stripes_summary">Si s\'habilita aquesta opció es mostraran ratlles de zebra en la vista prèvia de la pantalla per indicar les zones sobreexposades.\n%s</string>
+    <string name="preference_zebra_stripes_off">Inhabilitat</string>
+    <string name="preference_zebra_stripes_70pc">70%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_80pc">80%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_90pc">90%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_93pc">93%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_95pc">95%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_97pc">97%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_98pc">98%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_99pc">99%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_100pc">100%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->   
+    
+    <string name="preference_focus_peaking">Ressalt de l\'enfocament</string>
+    <string name="preference_focus_peaking_summary">Si s\'habilita aquesta opció, es mostraran ressalts a les vores dels enfocaments (contorns). Això és útil principalment per a l\'enfocament manual i es pot usar per ajudar a determinar quines regions de la imatge estan enfocades.\n%s</string>
+    <string name="preference_focus_peaking_off">Inhabilitat</string>
+    <string name="preference_focus_peaking_on">Habilitat</string>
+    <string name="preference_focus_peaking_color">Color del ressalt</string>
+    <string name="preference_focus_peaking_color_summary">Color que s\'usa per ressaltar les vores enfocades\n%s</string>
+
+    <string name="remaining">Restants</string> <!-- images remaining for "processing" -->
+
+    <string name="preference_preview">Vista prèvia de la càmera…</string>
+
+    <string name="cycle_flash">Canvia de flaix</string>
+    <string name="preference_show_cycle_flash">Mostra la icona flaix</string>
+    <string name="preference_show_cycle_flash_summary">Mostra o no una icona en pantalla per canviar entre les opcions de flaix en lloc de mostrar les opcions de flaix al menú emergent. Tingues present que el mode Llanterna no estarà disponible si uses aquesta icona.</string>     
+    
+    <string name="preference_raw_expo_bracketing">Permet RAW per al bràqueting d\'exposició</string>
+    <string name="preference_raw_expo_bracketing_summary">Si s\'habilita, l\'opció RAW també s\'aplicarà al bràqueting d\'exposició (o al mode HDR si \"Desa totes les imatges del mode HDR\" està habilitat). Si aquesta opció està inhabilitada, només es desaran les imatges no-DNG (JPEG/etc) en aquests modes.</string>
+
+    <string name="preference_raw_focus_bracketing">Permet RAW per al bràqueting d\'enfocament</string>
+    <string name="preference_raw_focus_bracketing_summary">Si s\'habilita, l\'opció RAW també s\'aplicarà al bràqueting d\'enfocament. Si aquesta opció està inhabilitada, només es desaran les imatges no-DNG (JPEG/etc) en el mode bràqueting d\'enfocament.</string>
+
+    <string name="cycle_raw">Canvia els modes RAW</string>
+    <string name="preference_show_cycle_raw">Mostra la icona RAW</string>
+    <string name="preference_show_cycle_raw_summary">Mostra o no en pantalla la icona per canviar entre els modes RAW</string>
+
+    <string name="bluetooth_current_remote">Remot actual:</string>
+    <string name="bluetooth_scan">Cerca</string>     
+
+    <string name="preference_stamp_style_shadowed">Text ombrejat</string>
+    <string name="preference_stamp_style_plain">Text pla</string>
+    <string name="preference_stamp_style_background">Text amb fons ombrejat</string>
+    
+    <string name="image_saving_notification">Desant les imatges…</string>
+
+    <string name="finish_panorama">Acaba panorama</string>
+    <string name="cancel_panorama">Cancel·la panorama</string>
+    <string name="panorama_cancelled">Panorama cancel·lat</string>
+    <string name="failed_to_process_panorama">Ha fallat en crear una imatge Panorama</string>
+
+    <string name="preference_panorama_crop">Retall automàtic a Panorama</string>
+    <string name="preference_panorama_crop_summary">En el mode panorama, si se suprimeixen o no les vores ondulades\n%s</string>
+
+    <string name="panorama_info">Per fer una foto en mode panorama, posa el dispositiu en posició vertical i clica "fer una foto" per iniciar el panorama. Aleshores ves girant el dispositiu cap a la dreta o l\'esquerra fins posar el cercle blanc del centre sobre el punt blau. Després de la captura de cada imatge segueix fent girar el dispositiu per anar cobrint cada nou punt blau que hi aparegui.\n\nClica el botó de vist per desar el panorama o l\'aspa per cancel·lar-lo.\n\nTingues present que les imatges panoràmiques triguen una estona a processar-se i desar-se.</string>
+
+    <string name="preference_panorama_save">Imatges originals del Panorama</string>
+    <string name="preference_panorama_save_summary">Si es desen o no les imatges originals del panorama. Tingues present que això farà que les imatges panoràmiques triguen encara més a desar-se. També permet desar un fitxer XML que pot ser útil per informar dels problemes amb panorama.\n%s</string>
+
+    <string name="preference_panorama_save_no">No desis les imatges originals</string>
+    <string name="preference_panorama_save_all">Desa les imatges originals</string>
+    <string name="preference_panorama_save_all_plus_debug">Desa les imatges originals i l\'XML de depuració</string>    
+    
+    <string name="camera_id">ID</string> <!-- ID as in camera ID -->
+
+    <string name="exposure_compensation_seekbar">Barra de selecció per canviar la compensació de l\'exposició</string>
+
+    <string name="preference_image_format_summary">Tria el format de fitxer per desar les fotos. Això afecta les fotos estàndard (no RAW). Només el format JPEG és compatible amb desar les metadades Exif. UltraHDR no és compatible amb els modes NR, HDR, Pano, X-.Tingues present que PNG no és un format sense pèrdues, sinó que es converteix des de JPEG al 100%% de qualitat.\n%s</string>
+
+    <string name="preference_camera_api">API de la càmera</string>
+    <string name="preference_camera_api_summary">Tria l\'API Camera2 per habilitar funcions extra com ara els modes manuals d\'exposició, enfocament, balanç de blancs i també RAW (si és compatible amb el teu dispositiu). Si canvies l\'Api es reiniciarà l\'aplicació.\n%s</string>
+    <string name="preference_camera_api_old">API original Camera</string>
+    <string name="preference_camera_api_camera2">API Camera2</string>
+
+    <string name="preference_audio_control_summary">Fes una foto/vídeo en captar un soroll.
+        Quan està habilitat s\'usa el botó de micròfon en pantalla per activar/aturar l\'escolta.
+        \n%s</string>    
+        
+    <string name="intro_text">Toca la pantalla per enfocar i prem el botó blau del disparador per fer fotos.
+        \n\nSi vols desar fotos i vídeos en una targeta SD vés a Paràmetres/Més controls de càmera/Storage Access Framework.
+        Per a més ajuda vés a Paràmetres/Ajuda en línia.
+    </string>        
+        
+    <string name="preference_select_remote">Tria el dispositiu remot</string>
+
+    <string name="preference_video_rec709">REC709</string>
+    <string name="preference_video_srgb">sRGB</string>
+    <string name="preference_video_gamma">Gamma</string>
+    <string name="preference_video_profile_gamma">Valor gamma del vídeo</string>
+    <string name="preference_video_profile_gamma_summary">Valor gamma que s\'usarà per al vídeo si el perfil d\'imatge de vídeo està definit com a Gamma\n%s</string>
+    <string name="preference_video_profile_gamma_1_6">1.6</string>
+    <string name="preference_video_profile_gamma_1_8">1.8</string>
+    <string name="preference_video_profile_gamma_1_9">1.9</string>
+    <string name="preference_video_profile_gamma_2_0">2.0</string>
+    <string name="preference_video_profile_gamma_2_1">2.1</string>
+    <string name="preference_video_profile_gamma_2_2">2.2</string>
+    <string name="preference_video_profile_gamma_2_3">2.3</string>
+    <string name="preference_video_profile_gamma_2_4">2.4</string>
+    <string name="preference_video_profile_gamma_2_6">2.6</string>
+    <string name="preference_video_profile_gamma_2_8">2.8</string>  
+    
+    <string name="preference_immersive_mode_off">Inhabilitat</string>
+    <string name="preference_immersive_mode_navigation">Oculta els botons de navegació en pantalla</string>
+    <string name="preference_immersive_mode_gui">Oculta la interfície d\'usuari</string>
+    <string name="preference_immersive_mode_everything">Oculta-ho tot</string>
+    
+    <string name="preference_ghost_image_alpha">Opacitat de la imatge fantasma</string>
+    <string name="preference_ghost_image_alpha_summary">Valor alpha que s\'usarà per a les imatges fantasma. Un valor més baix vol dir més transparents i més alt més opaques.\n%s</string>
+
+    <string name="preference_zebra_stripes_foreground_color">Color primer pla ratlles de zebra</string>
+    <string name="preference_zebra_stripes_foreground_color_summary">Color de les ratlles en primer pla en mostrar ratlles de zebra.\n%s</string>
+    <string name="preference_zebra_stripes_background_color">Color segon pla ratlles de zebra</string>
+    <string name="preference_zebra_stripes_background_color_summary">Color de les ratlles en segon pla en mostrar ratlles de zebra.\n%s</string>
+
+    <string name="preference_zebra_stripes_color_black">Negre</string>
+    <string name="preference_zebra_stripes_color_red">Vermell</string>
+    <string name="preference_zebra_stripes_color_orange">Taronja</string>
+    <string name="preference_zebra_stripes_color_transparent">Transparent</string>
+    <string name="preference_zebra_stripes_color_white">Blanc</string>
+
+    <string name="external_camera">Càmera externa</string>
+    <string name="ultrawide">Gran angular</string>
+
+    <string name="switch_to_external_camera">Canvia a càmera externa</string>
+    <string name="switch_to_unknown_camera">Canvia la càmera</string>
+    <string name="switch_multi_camera">Canvia entre múltiples càmeres</string>
+    <string name="preference_multi_cam_button">Icona de múltiples càmeres</string>
+    <string name="preference_multi_cam_button_summary">Si està habilitat, fa servir botons diferents per canviar entre les càmeres frontal/posterior i per canviar entre diverses càmeres frontals/posteriors. Si està desactivat, només hi haurà una icona de canvi de càmera que anirà rotant per totes les càmeres.</string>    
+
+    <string name="preference_show_camera_id">Mosta l\'ID de la càmera</string>
+    <string name="preference_show_camera_id_summary">Mostra el número d\'ID de la càmera actual en pantalla</string>
+
+    <string name="preference_allow_long_press">Permet accions de toc llarg</string>
+    <string name="preference_allow_long_press_summary">Permet o no accions de toc llarg (p.e., un toc llarg a galeria per canviar la ubicació on desar).</string>
+
+    <string name="aperture">Obertura</string>
+
+    <string name="error_features_4k">4K UHD</string>
+    <string name="error_features_bitrate">Taxa de bits</string>
+    <string name="error_features_frame_rate">Fotogrames per segon</string>
+    <string name="error_features_slow_motion">Càmera lenta</string>
+
+    <string name="preference_comment_ypr">Emmagatzema guinyada, capcineig i balanceig</string>
+    <string name="preference_comment_ypr_summary">Emmagatzema la guinyada, el capcineig i el balanceig del dispositiu a l\'Exif de la foto (només en formats JPEG)</string>
+
+    <string name="array_seekbar_preference_seekbar">Barra de selecció per canviar el valor de preferència actual</string>
+
+    <string name="preference_audio_control_none">Cap</string>
+    <string name="preference_audio_control_noise">Soroll fort</string>
+    <string name="preference_audio_control_voice">Ordre de veu: \"cheese\"</string> <!-- note that cheese shouldn't be translated, as we listen for this no matter what language is being used -->
+
+    <string name="preference_camera2_dummy_capture_hack">Habilita captura simulada HDR/Expo</string>
+    <string name="preference_camera2_dummy_capture_hack_summary">Prova d\'habilitar-ho si el teu dispositiu té problemes en fer fotos en mode HDR o Expo (si les fotos Expo surten amb les mateixes exposicions). Només és rellevant si l\'opció HDR/Expo ràpida també està habilitada.</string>
+
+    <string name="permission_rationale_bluetooth_scan_connect">Cal el permís de cerca/connexió Bluetooth per trobar i connectar dispositius de control remot Bluetooth LE.</string>
+    <string name="unknown_device_no_permission">Dispositiu desconegut (permís de connexió bluetooth no disponible)</string>
+
+    <string name="photo_mode_x_auto">X-Auto</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_auto_full">Extensió: Auto</string>
+    <string name="photo_mode_x_hdr">X-HDR</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_hdr_full">Extensió: HDR</string>
+    <string name="photo_mode_x_night">X-Nit</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_night_full">Extensió: Nit</string>
+    <string name="photo_mode_x_bokeh">X-Bokeh</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_bokeh_full">Extensió: Bokeh</string>
+    <string name="photo_mode_x_beauty">X-Blsa</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_x_beauty_full">Extensió: Bellesa/Retoc facial</string>
+    
+    <string name="preference_hdr_tonemapping">Mapatge de to en HDR</string>
+    <string name="preference_hdr_tonemapping_summary">Algorisme que s\'usa per mapar el to en el mode HDR\n%s</string>
+    <string name="preference_hdr_tonemapping_clamp">De pinça simple</string>
+    <string name="preference_hdr_tonemapping_exponential">Exponencial</string>
+    <string name="preference_hdr_tonemapping_default">Per defecte</string>
+
+    <string name="preference_remove_device_exif">Suprimeix les dades EXIF del dispositiu</string>
+    <string name="preference_remove_device_exif_summary">Suprimeix o no les metadades EXIF del dispositiu en les fotos JPEG. No se suprimiran les etiquetes EXIF provinents d\'altres paràmetres, com ara ubicació/geotagging. Aquestes altres opcions són independents i passen per damunt d\'aquest paràmetre. RAW/DNG i els vídeos no es veuen afectats.\n%s</string>
+    <string name="preference_remove_device_exif_off">No suprimeixis les dades EXIF del dispositiu</string>
+    <string name="preference_remove_device_exif_on">Suprimeix les dades EXIF del dispositiu</string>
+    <string name="preference_remove_device_exif_keep_datetime">Suprimeix-les tret de data/hora</string>
+
+    <string name="choose_camera">Tria la càmera:</string>   
+    
+    <string name="preference_show_focus_peaking">Mostra ressalt d\'enfocament</string>
+    <string name="preference_show_focus_peaking_summary">Mostra o no una icona en pantalla per habilitar o inhabillitar el ressalt de l\'enfocament. Quan el ressalt de l\'enfocament està habilitat es mostren ressalts a les vores enfocades (contorns). Vés a Paràmetres/Vista prèvia de càmera/Ressalt de l\'enfocament.</string>
+    <string name="focus_peaking_enable">Habilita ressalt d\'enfocament</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="focus_peaking_disable">Inhabilita ressalt d\'enfocament</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+
+    <string name="preference_photo_optimise_focus">Optimitza l\'enfocament per…</string>
+    <string name="preference_photo_optimise_focus_summary">En fer fotos, si s\'optimitza per latència o per qualitat. Només és rellevant si s\'usa l\'enfocament continu. Optimitzar per qualitat assegura que l\'escena està enfocada però pot comportar un retard a l\'hora de fer les fotos.\n%s</string>
+    <string name="preference_photo_optimise_focus_latency">Latència</string>
+    <string name="preference_photo_optimise_focus_quality">Qualitat</string>
+
+    <string name="preference_save_preshots">Desa imatges de vista prèvia</string>
+    <string name="preference_save_preshots_summary">Quan s\'habilita, es desa un vídeo curt al costat de cada foto que conté imatges del moment anterior a la captura. No és compatible amb els modes Expo, Bràqueting d\'enfocament o Panorama.\n%s</string>
+
+    <string name="telephoto">Teleobjectiu</string>
+    <string name="auto_lens">Objectiu automàtic</string>
+    <string name="lens">Objectiu</string>
+    <string name="physical_cameras_info">&#9432; Per defecte, una càmera utilitza la selecció automàtica de l\'objectiu, la qual cosa significa que el nivell de zoom controla quin objectiu s\'usa. Tanmateix, aquest menú també permet triar explícitament quin objectiu s\'usarà.</string>  
+    
+    <string name="focus_bracketing_auto_source_distance">Font automàtica</string>
+
+    <string name="preference_allow_haptic_feedback">Permet la vibració</string>
+    <string name="preference_allow_haptic_feedback_summary">Si s\'habilita o no la resposta tàctil de vibració, per exemple en ajustar alguns controls. Tingues present que això també requereix que les interaccions tàctils estiguin habilitades als paràmetres del dispositiu.</string>  
+         
+</resources>

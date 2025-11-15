@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Open Camera</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_popup">Настройки всплывающих окон</string>
+    <string name="intro_ok">Ок (Это сообщение больше не появится)</string>
+
+    <string name="on">Вкл</string>
+    <string name="off">Выкл</string>
+    
+    <string name="choose_save_location">Выберите папку для сохранения:</string>
+    <string name="clear_folder_history">Очистить историю папки</string>
+    <string name="clear_folder_history_question">Очистить историю папки?</string>
+    <string name="choose_another_folder">Выбрать другую папку</string>
+    <string name="changed_save_location">Папка сохранения изменена на:</string>
+    <string name="stopped_recording_video">Запись остановлена</string>
+    <string name="repeats_to_go">повторов осталось</string>
+    <string name="failed_to_reconnect_camera">Не удалось подключиться к камере</string>
+    <string name="video_may_be_corrupted">Ошибка, видеофайл может быть поврежден</string>
+    <string name="not_supported">Не поддерживается на вашем устройстве</string>
+    <string name="video_error_unknown">Неизвестная ошибка, видео остановлено</string>
+    <string name="video_error_server_died">Сервер умер, видео остановлено</string>
+    <string name="video_max_duration">Видео достигло максимальной продолжительности</string>
+    <string name="video_max_filesize">Видео достигло максимального размера</string>
+    <string name="exposure_compensation">Компенсация экспозиции</string>
+    <string name="fps">FPS</string>
+    <string name="focus_distance">Фокусное расстояние</string>
+    <string name="infinite">Бесконечно</string>
+    <string name="front_camera">Фронтальная камера</string>
+    <string name="back_camera">Задняя камера</string>
+    <string name="photo">Фото</string>
+    <string name="video">Видео</string>
+    <string name="exposure_locked">Экспозиция заблокирована</string>
+    <string name="exposure_unlocked">Экспозиция разблокирована</string>
+    <string name="cancelled_timer">Таймер отменен</string>
+    <string name="cancelled_repeat_mode">Режим серийной съемки отменен</string>
+    <string name="started_timer">Таймер запущен</string>
+    <string name="failed_to_save_video">Не удалось сохранить видеофайл</string>
+    <string name="failed_to_record_video">Не удалось записать видео</string>
+    <string name="started_recording_video">Запись видео</string>
+    <string name="sorry">К сожалению</string>
+    <string name="failed_to_save_photo">Не удалось сохранить фото</string>
+    <string name="failed_to_save_photo_raw">Не удалось сохранить фото RAW</string>
+    <string name="failed_to_auto_stabilise">Не удалось стабилизировать</string>
+    <string name="failed_to_start_camera_preview">Не удалось запустить предпросмотр</string>
+    <string name="taking_photo">Снимок</string>
+    <string name="failed_to_take_picture">Не удалось сфотографировать</string>
+    <string name="location_not_available">Местоположение недоступно</string>
+    <string name="photo_deleted">Фотография удалена</string>
+    <string name="no_gallery_app">Галерея недоступна</string>
+    <string name="screen_is_locked">Экран заблокирован,\nпроведите пальцем по экрану чтобы разблокировать</string>
+    <string name="unlocked">Разблокировано</string>
+    <string name="auto_stabilise_not_supported">К сожалению, автостабилизация\nне поддерживается на данном устройстве</string>
+    <string name="audio_disabled">Аудио выключено</string>
+    <string name="max_duration">Макс. продолжительность</string>
+    <string name="color_effect">Цветовой эффект</string>
+    <string name="scene_mode">Сцена</string>
+    <string name="white_balance">Баланс белого</string>
+    
+    <string name="angle">Угол</string>
+    <string name="direction">Направление</string>
+    <string name="failed_to_open_camera_1">Не удалось открыть камеру</string>
+    <string name="failed_to_open_camera_2">Камера может быть использована</string>
+    <string name="failed_to_open_camera_3">другим приложением?</string>
+    <string name="iso">ISO</string>
+    <string name="zoom">Масштаб</string>
+    <string name="free_memory">Память</string>
+    <string name="screen_lock_message_1">[Заблокировано:</string>
+    <string name="screen_lock_message_2">Проведите по экрану, чтобы разблокировать]</string>
+    
+    <string name="failed_to_stamp">Не удалось добавить отметку</string>
+    <string name="metres_abbreviation">м</string>
+    
+    <string name="preference_category_camera_effects">Эффекты</string>
+    <string name="preference_auto_stabilise">Автостабилизация</string>
+    <string name="preference_auto_stabilise_summary">Изображение будет стабилизироваться. Не рекомендуется на слабых устройствах</string>
+    <string name="preference_color_effect">Цветовой эффект</string>
+    <string name="preference_color_effect_summary">Применение выбранного эффекта на фото</string>
+    <string name="preference_scene_mode">Сцена</string>
+    <string name="preference_scene_mode_summary">Оптимизация фото для различных сцен</string>
+    <string name="preference_white_balance">Баланс белого</string>
+    <string name="preference_white_balance_summary">Параметр для настройки баланса белого</string>
+    <string name="preference_iso">Установка ISO</string>
+    <string name="preference_iso_summary">Более высокое значение означает большую чувствительность к свету (может не работать на некоторых устройствах)</string>
+    <string name="preference_exposure">Компенсация экспозиции</string>
+    <string name="preference_exposure_summary">Значение 0 для компенсации экспозиции по умолчанию</string>
+    <string name="preference_lock_orientation">Блокировка ориентации фото/видео</string>
+    <string name="preference_lock_orientation_summary">Игнорирование системной ориентации экрана устройства\n%s</string>
+    <string name="preference_face_detection">Распознавание лиц</string>
+    <string name="preference_face_detection_summary">Распознавание лиц в объективе для фокусировки</string>
+
+    <string name="preference_category_camera_controls">Управление</string>
+    <string name="preference_timer">Таймер</string>
+    <string name="preference_timer_beep">Звук таймера</string>
+    <string name="preference_timer_beep_summary">Подавать звуковой сигнал, когда таймер закончит отсчет</string>
+    <string name="preference_timer_speak">Озвучка таймера</string>
+    <string name="preference_timer_speak_summary">Озвучивать обратный отсчет для таймера или пакетного режима (от 60 секунд)</string>
+    <string name="preference_burst_mode">Пакетный</string>
+    <string name="preference_burst_interval">Интервал в пакетном режиме</string>
+    <string name="preference_screen_camera_controls_more">Дополнительные настройки…</string>
+    <string name="preference_touch_capture">Касание для съемки</string>
+    <string name="preference_touch_capture_summary">Делать снимок по одинарному или двойному касанию области просмотра\n%s</string>
+    <string name="preference_pause_preview">Пауза после съёмки</string>
+    <string name="preference_pause_preview_summary">Пауза после снятия фото, с возможностью поделиться или удалить фотографию</string>
+    <string name="preference_shutter_sound">Звук затвора</string>
+    <string name="preference_shutter_sound_summary">Воспроизведение звука при съемке фотографии</string>
+    <string name="preference_volume_keys">Клавиши громкости</string>
+    <string name="preference_audio_control">Настройки управления звуком</string>
+    <!-- preference_audio_control_summary defined below -->
+    <string name="preference_audio_noise_control_sensitivity">Чувствительность управления звуком</string>
+    <string name="preference_audio_noise_control_sensitivity_summary">Чувствительность уровня шума для управления звуком (опция \"громкий шум\")\n%s</string>
+    <string name="preference_save_location">Папка сохранения</string>
+    <string name="preference_save_location_summary">Имя папки для сохранения фото и видео (также может быть полный путь)</string>
+    <string name="preference_using_saf_summary">Использовать Storage Access Framework для сохранения фото и видео</string>
+    <string name="preference_save_photo_prefix">Префикс для фото</string>
+    <string name="preference_save_photo_prefix_summary">Префикс имен файлов для сохраняемых фото</string>
+    <string name="preference_save_video_prefix">Префикс для видео</string>
+    <string name="preference_save_video_prefix_summary">Префикс имен файлов для сохраняемых видео</string>
+    <string name="preference_save_zulu_time">Формат времени для имени файла</string>
+    <string name="preference_show_when_locked">Камера на экране блокировки</string>
+    <string name="preference_show_when_locked_summary">Если включено, то Open Camera будет отображаться поверх экрана блокировки (вы можете получить доступ к настройкам, галерее и т.д.)</string>
+    <string name="preference_startup_focus">Автофокус при запуске</string>
+    <string name="preference_startup_focus_summary">Включить автофокус при запуске Open Camera. Если у вас проблемы со включением вспышки при запуске, отключите эту опцию</string>
+    <string name="preference_lock_video">Блокировать экран при записи видео</string>
+    <string name="preference_lock_video_summary">При записи видео графический интерфейс будет заблокирован для предотвращения случайной остановки записи. Проведите по экрану, чтобы разблокировать. Обратите внимание, что запись видео остановится, если приложение перейдет в фоновый режим или погаснет экран.</string>
+    <string name="preference_rotate_preview">Поворот предпросмотра</string>
+    <string name="preference_rotate_preview_summary">Возможность поворота предпросмотра (не повлияет на фото/видео)\n%s</string>
+    <string name="preference_screen_gui">Настройки интерфейса…</string>
+    <string name="preference_preview_size">Размер предпросмотра</string>
+    <string name="preference_ui_placement">Расположение интерфейса</string>
+    <string name="preference_immersive_mode">Режим погружения</string>
+    <string name="preference_show_zoom">Показать масштаб</string>
+    <string name="preference_show_zoom_summary">Отображение текущего уровня масштабирования камеры на экране (при увеличении масштаба)</string>
+    <string name="preference_show_zoom_slider_controls">Ползунок масштабирования</string>
+    <string name="preference_show_zoom_slider_controls_summary">Отображение ползунка для управления масштабированием</string>
+    <string name="preference_show_iso">Показать ISO</string>
+    <string name="preference_show_iso_summary">Отображение текущего уровня ISO (требуется Camera2 API)</string>
+    <string name="preference_free_memory">Показать свободную память</string>
+    <string name="preference_free_memory_summary">Отображение количества свободной памяти</string>
+    <string name="preference_show_angle">Показать наклон</string>
+    <string name="preference_show_angle_summary">Отображение уровня наклона</string>
+    <string name="preference_show_angle_line">Показать линию уровня</string>
+    <string name="preference_show_angle_line_summary">Отображение горизонтальной линии уровня</string>
+    <string name="preference_angle_highlight_color">Цвет линии уровня</string>
+    <string name="preference_angle_highlight_color_summary">Цвет линии уровня, близкого к горизонтальному\n%s</string>
+    <string name="preference_show_geo_direction">Показать направление компаса</string>
+    <string name="preference_show_geo_direction_summary">Отображение направления компаса на экране</string>
+    <string name="preference_show_time">Показать время</string>
+    <string name="preference_show_time_summary">Отображение текущего времени на экране</string>
+    <string name="preference_show_battery">Показать батарею</string>
+    <string name="preference_show_battery_summary">Отображение текущего уровня заряда батареи</string>
+    <string name="preference_grid">Показать сетку</string>
+    <string name="grid">Сетка</string> <!-- short form of Show a grid -->
+    <string name="preference_crop_guide">Руководство по обрезке</string>
+    <string name="preference_crop_guide_summary">Отображение прямоугольника, показывающего соотношение сторон - полезно, если вы планируете обрезать фото/видео. Требуется режим фотосъемки WYSIWYG или режим видео\n%s</string>
+    <string name="preference_show_toasts">Всплывающие сообщения</string>
+    <string name="preference_show_toasts_summary">Показывать всплывающие уведомления при работе</string>
+    <string name="preference_thumbnail_animation">Показать анимацию эскиза</string>
+    <string name="preference_thumbnail_animation_summary">Отображение анимации перемещения эскиза при съемке фотографии</string>
+    <string name="preference_take_photo_border">Показывать рамку во время фотосъемки</string>
+    <string name="preference_take_photo_border_summary">Показывать рамку на экране для индикации фотосъемки</string>
+    <string name="preference_keep_display_on">Не выключать дисплей</string>
+    <string name="preference_keep_display_on_summary">Если включено, экран не будет выключаться, пока Open Camera открыта</string>
+    <string name="preference_max_brightness">Максимальная яркость</string>
+    <string name="preference_max_brightness_summary">Включение максимальной яркости во время съемки</string>
+    
+    <string name="preference_category_camera_quality">Качество фото и видео</string>
+    <string name="preference_screen_photo_settings">Настройки фото…</string>
+    <string name="preference_screen_video_settings">Настройки видео…</string>
+    <string name="preference_screen_location_settings">Настройки местоположения…</string>
+    <string name="preference_resolution">Разрешение камеры</string>
+    <string name="preference_quality">Качество изображения</string>
+    <string name="preference_quality_summary">Выбор качества фотографий (рекомендуется 90%%)\n%s</string>
+    <string name="preference_raw">RAW</string>
+    <string name="preference_location">Хранить данные о местоположении (геотеггинг)</string>
+    <string name="preference_location_summary">Хранить данные о местоположении в фотографиях</string>
+    <string name="preference_gps_direction">Хранить направление компаса</string>
+    <string name="preference_gps_direction_summary">Хранить данные о направлении компаса в фотографиях</string>
+    <string name="preference_require_location">Требовать данные о местоположении</string>
+    <string name="preference_require_location_summary">Если данные о местоположении включены, вы сможете снять фото/видео только при их доступности</string>
+    <string name="preference_stamp">Штампы</string>
+    <string name="preference_stamp_summary">Сохранение вместе с фотографией таких данных как: дата/время/местоположение\n%s</string>
+    <string name="preference_stamp_dateformat">Формат даты</string>
+    <string name="preference_stamp_timeformat">Формат времени</string>
+    <string name="preference_stamp_gpsformat">Формат GPS</string>
+    <string name="preference_textstamp">Подписывать фото</string>
+    <string name="preference_textstamp_summary">Добавлять текст на фотографию</string>
+    <string name="preference_stamp_fontsize">Размер шрифта</string>
+    <string name="preference_stamp_fontsize_summary">Размер шрифта для добавляемого на фотографию текста\n%s</string>
+    <string name="preference_stamp_font_color">Цвет</string>
+    <string name="preference_stamp_font_color_summary">Цвет текста добавляемого на фотографию\n%s</string>
+    <string name="preference_stamp_style">Стиль</string>
+    <string name="preference_stamp_style_summary">Стиль текста добавляемого на фотографию\n%s</string>
+    <string name="preference_background_photo_saving">Использовать фоновый поток</string>
+    <string name="preference_background_photo_saving_summary">Сохранять фото в фоновом потоке (для ускорения работы)</string>
+    <string name="video_quality">Разрешение видео</string>
+    <string name="preference_force_video_4k">Качество видео 4K UHD (экспериментально)</string>
+    <string name="preference_force_video_4k_summary">При выборе разрешения (3840х2160) для записи через заднюю камеру она будет работать только, если ваше устройство поддерживает данный формат!</string>
+    <string name="preference_video_stabilization">Включить стабилизацию видео</string>
+    <string name="preference_video_stabilization_summary">Стабилизация видео уменьшает тряску в связи с движением камеры</string>
+    <string name="preference_video_bitrate">Битрейт видео (примерно)</string>
+    <string name="preference_video_bitrate_summary">Выбор битрейта видео. (чем выше, тем лучше качество, но файл будет занимать больше места на диске. Неподдерживаемый битрейт может стать причиной ошибки при записи видео).\n%s</string>
+    <string name="preference_video_fps">Частота кадров видео (примерно)</string>
+    <string name="preference_video_fps_summary">Кол-во кадров в секунду (FPS) в видео (примерное). Может привести к записи с ошибкой, если частота кадров не поддерживается. Не гарантируется, что будет достигнуто. Пожалуйста, проверьте итоговые видео, чтобы узнать фактическую частоту кадров.\n%s</string>
+    <string name="preference_video_max_duration">Максимальная длительность видео</string>
+    <string name="preference_video_max_duration_summary">Видеозапись прекратится по истечении указанной продолжительности\n%s</string>
+    <string name="preference_video_restart">Записывать новое видео после достижения лимита</string>
+    <string name="preference_video_restart_summary">При достижении лимита продолжительности будет записано новое видео (столько раз, сколько вы выбрали)\n%s</string>
+    <string name="preference_video_max_filesize">Максимальный размер файла видео</string>
+    <string name="preference_video_max_filesize_summary">Видеозапись прекратится или начнется заново (смотрите опцию ниже), когда размер файла достигнет указанной величины (приблизительно). Важно: почти у всех Android-устройств есть ограничение на максимальный размер видео (обычно около 2 или 4 Гб), однако с помощью этой опции можно указать конкретное значение\n%s</string>
+    <string name="preference_video_restart_max_filesize">Начать видеозапись заново при достижении максимального размера файла</string>
+    <string name="preference_video_restart_max_filesize_summary">Автоматически начать видеозапись заново при достижении максимального размера файла (обусловленного ограничениями устройства или указанного пользователем)</string>
+    <string name="preference_record_audio">Запись звука</string>
+    <string name="preference_record_audio_summary">Запись звука при записи видео</string>
+    <string name="preference_record_audio_src">Источник звука</string>
+    <string name="preference_record_audio_src_summary">Микрофон для записи звука\n%s</string>
+    <string name="preference_record_audio_channels">Число каналов</string>
+    <string name="preference_record_audio_channels_summary">Настройка моно или стереозвука (стерео доступно не на всех устройствах)\n%s</string>
+    <string name="preference_video_flash">Вспышка во время записи видео</string>
+    <string name="preference_video_flash_summary">Если включено, вспышка будет включаться/выключаться при записи видео (можно использовать, чтобы выполнить запись на расстоянии)</string>
+    
+    <string name="preference_category_online">Разное</string>
+    <string name="preference_online_help">Помощь в Интернете</string>
+    <string name="preference_online_help_summary">Открыть веб-сайт Open Camera в вашем браузере</string>
+    <string name="preference_use_camera2">Использовать Camera2 API</string>
+    <string name="preference_use_camera2_summary">Разрешает использование Camera2 API - дополнительные, но экспериментальные возможности (требуется перезапуск)</string>
+    <string name="preference_about">О программе</string>
+    <string name="preference_about_summary">Информация</string>
+    <string name="preference_reset">Сброс настроек</string>
+    <string name="preference_reset_summary">Сброс всех настроек Open Camera на стандартные значения</string>
+    <string name="preference_reset_question">Сбросить все настройки Open Camera на стандартные значения?</string>
+
+    <string name="about_available">Доступно</string>
+    <string name="about_not_available">Недоступно</string>
+    <string name="about_copy_to_clipboard">Копировать в буфер</string>
+    
+    <string name="take_photo">Сделать фото</string>
+    <string name="gallery">Галерея</string>
+    <string name="exposure">Экспозиция</string>
+    <string name="exposure_lock">Блокировка экспозиции</string>
+    <string name="focus_mode">Фокус</string>
+    <string name="flash_mode">Вспышка</string>
+    <string name="switch_to_front_camera">Переключиться на фронтальную камеру</string>
+    <string name="switch_to_back_camera">Переключиться на заднюю камеру</string>
+    <string name="switch_to_video">Переключиться в режим видео</string>
+    <string name="switch_to_photo">Переключиться в режим фото</string>
+    <string name="trash">Удалить последний снимок</string>
+    <string name="share">Поделиться</string>
+    
+    <string name="parent_folder">Родительская папка</string>
+    <string name="new_folder">Новая папка</string>
+    <string name="cant_write_folder">Невозможно записать в эту папку</string>
+    <string name="cant_access_folder">Не удается получить доступ к этой папке</string>
+    <string name="enter_new_folder">Введите имя новой папки</string>
+    <string name="failed_create_folder">Не удалось создать папку</string>
+    <string name="folder_exists">Папка уже существует</string>
+
+    <string name="saf_select_save_location">Выберите место для сохранения</string>
+    <string name="saf_cancelled">Storage Access Framework отменен</string>
+    <string name="saf_permission_failed">Не удалось сохранить в эту папку</string>
+
+    <!-- the permission names such as Microphone should match what Android calls them in the App permission settings -->
+    <string name="permission_record_audio_not_available">Разрешение на доступ к микрофону отсутствует</string>
+    <string name="permission_location_not_available">Разрешение на доступ к файлам отсутствует</string>
+
+    <string name="start_video">Начать запись видео</string>
+    <string name="stop_video">Остановить запись видео</string>
+
+    <string name="max_filesize">Максимальный размер файла</string>
+    <string name="mb_abbreviation">Мб</string> <!-- symbol short for megabytes -->
+    <string name="gb_abbreviation">Гб</string> <!-- symbol short for gigabytes -->
+
+    <string name="audio_control_start">Включить управление звуком</string>
+    <string name="audio_control_stop">Выключить управление звуком</string>
+    <string name="speech_recognizer_started">Скажите \"cheese\"</string>
+    <string name="audio_listener_started">Создайте громкий шум</string>
+
+    <string name="auto_stabilise_info">Автоматическая стабилизация будет поворачивать фотографии для их выравнивания.\n\nВажно: разрешение полученных фото слегка уменьшится из-за поворота и обрезки.</string>
+    <string name="raw_info">Файлы DNG содержат несжатую и необработанную информацию с вашей камеры.\n\nБольшинство программ для просмотра изображений не поддерживают DNG. Их нужно открывать специальными программами.\n\nВажно: различные опции наподобие "Штамп на фото" или "Автоматическая стабилизация" работают только для изображений формата JPEG, а не DNG.\n\nФайлы DNG имеют большой объем. Для их копирования или удаления может быть полезен файловый менеджер.\n\nФайлы DNG сохраняются только в режиме фото "Стандарт".</string>
+    <string name="hdr_info">Режим HDR полезен для фото с большой разницей яркости. В нем делается несколько фото с различной экспозицией, которые объединяются в окончательное фото.\n\nВажно: HDR не рекомендуется для съемки кадров с быстрым движением, это может привести к менее корректной цветопередаче.\n\nСъемка фото в режиме HDR будет гораздо медленнее, чем в обычном режиме.</string>
+
+    <string name="dont_show_again">Больше не показывать</string>
+
+    <string name="photo_mode">Режим фото</string>
+    <string name="photo_mode_standard">Std</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_standard_full">Стандартный</string>
+    <string name="photo_mode_hdr">HDR</string>
+    <string name="photo_mode_expo_bracketing">Expo {}</string>
+    <string name="photo_mode_expo_bracketing_full">Брекетинг экспозиции</string>
+    <string name="photo_mode_fast_burst_full">Серийная съемка</string>
+    <string name="photo_mode_noise_reduction">NR</string>
+    <string name="photo_mode_noise_reduction_full">Снижение шума</string>
+    <string name="preference_category_stamp">Штамп на фото</string>
+    <string name="preference_hdr_save_expo">Сохранять все изображения в режиме HDR</string>
+    <string name="preference_hdr_save_expo_summary">Если эта опция включена, то в режиме HDR вместе с окончательным фото HDR будут сохранены три основных фото экспозиции. Важно: сохранение фото будет медленнее, особенно при включенных опциях наподобие "Штамп на фото" или "Автоматическая стабилизация".</string>
+
+    <string name="no_permission">РАЗРЕШЕНИЯ НЕДОСТУПНЫ</string>
+    <string name="permission_rationale_title">Требуется разрешение</string>
+    <string name="permission_rationale_camera">Требуется разрешение на доступ к камере для ее включения</string>
+    <string name="permission_rationale_location">Требуется разрешение на определение местоположения для геотеггинга (хранение информации о местоположении
+        внутри фото и видео). Разрешение на определение местоположения также требуется для подключения к устройствам удаленного управления по Bluetooth LE (Android 11 or earlier).</string>
+
+    <string name="preference_category_photo_debugging">Настройки отладки</string>
+    <string name="preference_category_video_debugging">Настройки отладки</string>
+    <string name="preference_camera2_fake_flash">Использовать альтернативный способ вспышки</string>
+    <string name="preference_camera2_fake_flash_summary">Включите, если у вашего устройства проблемы со вспышкой в Camera2 API</string>
+
+    <string name="preference_expo_bracketing_n_images">Брекетинг экспозиции</string>
+    <string name="preference_expo_bracketing_n_images_summary">Количество изображений для режима брекетинга экспозиции\n%s</string>
+    <string name="preference_expo_bracketing_stops">Остановки брекетинга экспозиции</string>
+    <string name="preference_expo_bracketing_stops_summary">Число остановок для каждого изображения\n%s</string>
+
+    <string name="preference_nr_save">Снижение шума: оригинальные изображения</string>
+    <string name="preference_nr_save_summary">Сохранение оригинальных изображений в режиме снижения шума. Важно: сохранение фото может замедлиться.\n%s</string>
+
+    <string name="preference_nr_save_no">Не сохранять оригинальные изображения</string>
+    <string name="preference_nr_save_single">Сохранять одно оригинальное изображение</string>
+    <string name="preference_nr_save_all">Сохранять все оригинальные изображения (медленно)</string>
+
+    <string name="seconds_abbreviation">сек</string> <!-- short for seconds -->
+
+    <string name="video_no_free_space">Недостаточно свободного места для записи видео</string>
+    <string name="video_power_critical">Запись видео остановлена\nКритически низкий уровень заряда батареи</string>
+    <string name="preference_video_low_power_check">Проверка критического состояния батареи</string>
+    <string name="preference_video_low_power_check_summary">Остановить запись видео, если уровень заряда батареи критически низок. Это поможет уменьшить риск повреждения видео при внезапном выключении устройства из-за нехватки заряда батареи.</string>
+
+    <string name="dark">Темный</string> <!-- exposure compensation dark -->
+    <string name="bright">Светлый</string> <!-- exposure compensation bright -->
+    <string name="exposure_shutter_speed">Выдержка</string>
+
+    <string name="camera_error">Серьезная ошибка камеры</string>
+
+    <string name="preference_camera2_fast_burst">Включить быструю съемку в режиме HDR/экспозиции</string>
+    <string name="preference_camera2_fast_burst_summary">Позволяет быстрее захватывать снимки в режиме HDR/экспозиции. Отключите, если у вашего устройства проблемы с фотосъемкой в режиме HDR или экспозиции (прекращение работы камеры или неправильный порядок экспозиции фотографий).</string>
+
+    <string name="camera">Камера</string>
+    <string name="record_video">Записать видео</string>
+    <string name="selfie">Селфи</string>
+
+    <string name="preference_front_camera_mirror">Зеркалить фронтальную камеру</string>
+    <string name="preference_front_camera_mirror_summary">Отражать изображения зеркально при использовании фронтальной камеры\n%s</string>
+
+    <string name="preference_calibrate_level">Калибровать уровень угла</string>
+    <string name="preference_calibrate_level_summary">Эта настройка калибрует акселерометр вашего устройства для корректной работы автоматической стабилизации и настроек наэкранного уровня/угла.</string>
+    <string name="preference_calibrate_level_dialog">Поместите ваше устройство на ровную горизонтальную поверхность для установки уровня (в портретной или ландшафтной ориентации), затем выберите "Откалибровать".\n\nНажмите "Сбросить" для удаления калибровки с вашего устройства.\n\nНажмите "Назад" для отмены.</string>
+    <string name="preference_calibrate_level_calibrate">Откалибровать</string>
+    <string name="preference_calibrate_level_reset">Сбросить</string>
+    <string name="preference_calibrate_level_calibrated">Уровень откалиброван</string>
+    <string name="preference_calibrate_level_calibration_reset">Сброс уровня калибровки</string>
+
+    <string name="photo_mode_dro">DRO</string>
+
+    <string name="preference_show_pitch_lines">Отображать делительные линии</string>
+    <string name="preference_show_pitch_lines_summary">Отображать горизонтальные делительные линии на экране</string>
+    <string name="preference_show_geo_direction_lines">Отображать линии направления компаса</string>
+    <string name="preference_show_geo_direction_lines_summary">Отображать линии направления компаса на экране</string>
+    <string name="preference_video_subtitle">Субтитры видео</string>
+    <string name="preference_video_subtitle_summary">Создавать файл субтитров (.SRT) с датой и временем записи, а также информацией GPS при включенных данных геолокации/направления\n%s</string>
+
+    <string name="duration_unlimited">Без ограничений</string>
+    <string name="duration_3s">3 секунды</string>
+    <string name="duration_5s">5 секунд</string>
+    <string name="duration_10s">10 секунд</string>
+    <string name="duration_15s">15 секунд</string>
+    <string name="duration_30s">30 секунд</string>
+    <string name="duration_1m">1 минута</string>
+    <string name="duration_2m">2 минуты</string>
+    <string name="duration_3m">3 минуты</string>
+    <string name="duration_4m">4 минуты</string>
+    <string name="duration_5m">5 минут</string>
+    <string name="duration_6m">6 минут</string>
+    <string name="duration_7m">7 минут</string>
+    <string name="duration_8m">8 минут</string>
+    <string name="duration_9m">9 минут</string>
+    <string name="duration_10m">10 минут</string>
+    <string name="duration_11m">11 минут</string>
+    <string name="duration_12m">12 минут</string>
+    <string name="duration_15m">15 минут</string>
+    <string name="duration_20m">20 минут</string>
+    <string name="duration_25m">25 минут</string>
+    <string name="duration_30m">30 минут</string>
+    <string name="duration_45m">45 минут</string>
+    <string name="duration_1h">1 час</string>
+
+    <string name="preference_show_take_photo">Показать кнопку съёмки</string>
+    <string name="preference_show_take_photo_summary">Отображение кнопки фото- и видеосъемки. Полезно, если на вашем устройстве уже есть аппаратная кнопка спуска затвора.</string>
+
+    <string name="video_pause">Запись видео приостановлена</string>
+    <string name="video_resume">Запись видео продолжена</string>
+    <string name="pause_video">Приостановить запись видео</string>
+    <string name="resume_video">Приостановить запись видео</string>
+
+    <string name="capturing">Захват…</string>
+
+    <string name="audio_listener_failed">Не удалось инициализировать прослушивание аудио</string>
+    <string name="failed_to_process_hdr">Не удалось создать изображение в режиме HDR</string>
+
+    <string name="white_balance_auto">Автоматически</string>
+    <string name="white_balance_cloudy">Облачно</string>
+    <string name="white_balance_daylight">Светлый день</string>
+    <string name="white_balance_fluorescent">Свечение</string>
+    <string name="white_balance_incandescent">Яркое свечение</string>
+    <string name="white_balance_shade">Тень</string>
+    <string name="white_balance_twilight">Сумерки</string>
+    <string name="white_balance_warm">Тепло</string>
+    <string name="white_balance_manual">Вручную</string>
+
+    <string name="scene_mode_action">Движение</string>
+    <string name="scene_mode_barcode">Штрих-код</string>
+    <string name="scene_mode_beach">Пляж</string>
+    <string name="scene_mode_candlelight">Свет свечи</string>
+    <string name="scene_mode_auto">Автоматически</string>
+    <string name="scene_mode_fireworks">Фейерверки</string>
+    <string name="scene_mode_landscape">Ландшафт</string>
+    <string name="scene_mode_night">Ночь</string>
+    <string name="scene_mode_night_portrait">Ночной портрет</string>
+    <string name="scene_mode_party">Вечеринка</string>
+    <string name="scene_mode_portrait">Портрет</string>
+    <string name="scene_mode_snow">Снег</string>
+    <string name="scene_mode_sports">Спорт</string>
+    <string name="scene_mode_steady_photo">Устойчивая камера</string>
+    <string name="scene_mode_sunset">Закат</string>
+    <string name="scene_mode_theatre">Театр</string>
+
+    <string name="color_effect_aqua">Аква</string>
+    <string name="color_effect_blackboard">Черная доска</string>
+    <string name="color_effect_mono">Моно</string>
+    <string name="color_effect_negative">Негатив</string>
+    <string name="color_effect_none">Нет</string>
+    <string name="color_effect_posterize">Постеризация</string>
+    <string name="color_effect_sepia">Сепия</string>
+    <string name="color_effect_solarize">Соляризация</string>
+    <string name="color_effect_whiteboard">Белая доска</string>
+
+    <string name="whats_new">Что нового:</string>
+
+    <!-- for accessibility, these strings for face detection will typically be spoken, e.g., through Google Talkback -->
+    <string name="face_detected">лицо</string>
+    <string name="faces_detected">лица</string>
+    <string name="left_of_screen">в левой части экрана</string>
+    <string name="right_of_screen">в правой части экрана</string>
+    <string name="top_of_screen">в верхней части экрана</string>
+    <string name="bottom_of_screen">в нижней части экрана</string>
+    <string name="centre_of_screen">в центре</string>
+
+    <string name="high_speed">Высокая скорость</string> <!-- in the sense of high speed video frame rates -->
+
+    <string name="preference_video_fps_default">По умолчанию</string>
+
+    <string name="preference_category_exif_tags">Пользовательские теги EXIF</string>
+    <string name="preference_exif_artist">Автор</string>
+    <string name="preference_exif_artist_summary">Текст для хранения в метаданных изображения под меткой "автор" (только в формате JPEG). (Оставьте пустым при отсутствии.)</string>
+    <string name="preference_exif_copyright">Авторское право</string>
+    <string name="preference_exif_copyright_summary">Текст для хранения в метаданных изображения под меткой "авторское право" (только в формате JPEG). (Оставьте пустым при отсутствии.)</string>
+
+    <string name="processing">Обработка…</string>
+
+    <string name="preference_raw_no">Нет</string>
+    <string name="preference_raw_yes">Стандартное и DNG (RAW)</string>
+    <string name="preference_raw_only">Только DNG (RAW)</string>
+
+    <string name="preference_stamp_dateformat_default">По умолчанию</string>
+    <string name="preference_stamp_dateformat_yyyymmdd">гггг-мм-дд</string>
+    <string name="preference_stamp_dateformat_ddmmyyyy">дд/мм/гггг</string>
+    <string name="preference_stamp_dateformat_mmddyyyy">мм/дд/гггг</string>
+    <string name="preference_stamp_dateformat_none">Нет</string>
+
+    <string name="preference_fast_burst_n_images">Количество фото</string>
+    <string name="preference_fast_burst_n_images_entries_2">2</string>
+    <string name="preference_fast_burst_n_images_entries_3">3</string>
+    <string name="preference_fast_burst_n_images_entries_4">4</string>
+    <string name="preference_fast_burst_n_images_entries_5">5</string>
+    <string name="preference_fast_burst_n_images_entries_6">6</string>
+    <string name="preference_fast_burst_n_images_entries_8">8</string>
+    <string name="preference_fast_burst_n_images_entries_10">10</string>
+    <string name="preference_fast_burst_n_images_entries_12">12</string>
+    <string name="preference_fast_burst_n_images_entries_15">15</string>
+    <string name="preference_fast_burst_n_images_entries_20">20</string>
+
+    <string name="preference_focus_bracketing_n_images">Количество фото</string>
+    <string name="preference_focus_bracketing_n_images_entries_2">2</string>
+    <string name="preference_focus_bracketing_n_images_entries_3">3</string>
+    <string name="preference_focus_bracketing_n_images_entries_4">4</string>
+    <string name="preference_focus_bracketing_n_images_entries_5">5</string>
+    <string name="preference_focus_bracketing_n_images_entries_6">6</string>
+    <string name="preference_focus_bracketing_n_images_entries_8">8</string>
+    <string name="preference_focus_bracketing_n_images_entries_10">10</string>
+    <string name="preference_focus_bracketing_n_images_entries_12">12</string>
+    <string name="preference_focus_bracketing_n_images_entries_15">15</string>
+    <string name="preference_focus_bracketing_n_images_entries_20">20</string>
+    <string name="preference_focus_bracketing_n_images_entries_25">25</string>
+    <string name="preference_focus_bracketing_n_images_entries_30">30</string>
+    <string name="preference_focus_bracketing_n_images_entries_40">40</string>
+    <string name="preference_focus_bracketing_n_images_entries_50">50</string>
+    <string name="preference_focus_bracketing_n_images_entries_100">100</string>
+    <string name="preference_focus_bracketing_n_images_entries_150">150</string>
+    <string name="preference_focus_bracketing_n_images_entries_200">200</string>
+
+    <string name="preference_video_capture_rate">Скорость</string>
+    <string name="preference_video_capture_rate_normal">Нормальная</string>
+    <string name="slow_motion_enabled">Замедление движения включено</string>
+    <string name="slow_motion_disabled">Замедление движения отключено</string>
+
+    <string name="flash_off">Вспышка Выкл</string>
+    <string name="flash_auto">Вспышка Авто</string>
+    <string name="flash_on">Вспышка Вкл</string>
+    <string name="flash_torch">Фонарик</string>
+    <string name="flash_red_eye">Красные глаза</string>
+    <string name="flash_frontscreen_auto">Экранная вспышка: автоматически</string>
+    <string name="flash_frontscreen_on">Экранная вспышка: включено</string>
+    <string name="flash_frontscreen_torch">Экранный фонарик</string>
+
+    <string name="preference_antibanding">Антибэндинг</string>
+    <string name="preference_antibanding_summary">Алгоритмы для борьбы с мерцанием света.\n%s</string>
+    <string name="anti_banding_auto">Автоматически</string>
+    <string name="anti_banding_50hz">50 Гц</string>
+    <string name="anti_banding_60hz">60 Гц</string>
+    <string name="anti_banding_off">Выкл.</string>
+
+    <string name="preference_ghost_image">Изображение-призрак</string>
+    <string name="preference_ghost_image_summary">Наложение изображения поверх экрана для помощи с выравниванием.\n%s</string>
+    <string name="preference_ghost_image_off">Выкл.</string>
+    <string name="preference_ghost_image_last">Последнее фото</string>
+    <string name="preference_ghost_image_selected">Выбранное изображение</string>
+
+    <string name="open_files_saf_exception_ghost">Диалог выбора файла не найден на данном устройстве, изображение-призрак не поддерживается</string>
+    <string name="saf_permission_failed_open_image">Не удалось открыть данное изображение</string>
+
+    <string name="preference_camera2_photo_video_recording">Разрешать снимать фото во время записи видео</string>
+    <string name="preference_camera2_photo_video_recording_summary">Разрешает снимать фото во время записи видео. Отключите при возникновении проблем с записью видео с включенным Camera2 API.</string>
+
+    <string name="preference_video_log">Плоский профиль видео (log)</string>
+    <string name="preference_video_log_summary">Включить плоский профиль (log) для режима записи видео\n%s</string>
+    <string name="preference_video_log_off">Выкл.</string>
+    <string name="preference_video_log_fine">Очень низкий</string>
+    <string name="preference_video_log_low">Низкий</string>
+    <string name="preference_video_log_medium">Средний</string>
+    <string name="preference_video_log_strong">Высокий</string>
+    <string name="preference_video_log_extra_strong">Очень высокий</string>
+    <string name="video_log">Профиль log</string>
+
+    <string name="preference_record_audio_src_camcorder">Микрофон видеокамеры</string>
+    <string name="preference_record_audio_src_mic">Внешний микрофон (если есть)</string>
+    <string name="preference_record_audio_src_default">По умолчанию</string>
+    <string name="preference_record_audio_src_voice_communication">Оптимизировано для голоса</string>
+    <string name="preference_record_audio_src_voice_recognition">Оптимизировано для распознавания голоса</string>
+    <string name="preference_record_audio_src_unprocessed">Без обработки</string>
+
+    <string name="preference_video_bitrate_default">По умолчанию</string>
+    <string name="preference_video_bitrate_100000">100 kbps</string>
+    <string name="preference_video_bitrate_200000">200 kbps</string>
+    <string name="preference_video_bitrate_500000">500 kbps</string>
+    <string name="preference_video_bitrate_1000000">1 Mbps</string>
+    <string name="preference_video_bitrate_2000000">2 Mbps</string>
+    <string name="preference_video_bitrate_3000000">3 Mbps</string>
+    <string name="preference_video_bitrate_4000000">4 Mbps</string>
+    <string name="preference_video_bitrate_5000000">5 Mbps</string>
+    <string name="preference_video_bitrate_6000000">6 Mbps</string>
+    <string name="preference_video_bitrate_7000000">7 Mbps</string>
+    <string name="preference_video_bitrate_8000000">8 Mbps</string>
+    <string name="preference_video_bitrate_9000000">9 Mbps</string>
+    <string name="preference_video_bitrate_10000000">10 Mbps</string>
+    <string name="preference_video_bitrate_15000000">15 Mbps</string>
+    <string name="preference_video_bitrate_20000000">20 Mbps</string>
+    <string name="preference_video_bitrate_30000000">30 Mbps</string>
+    <string name="preference_video_bitrate_40000000">40 Mbps</string>
+    <string name="preference_video_bitrate_50000000">50 Mbps</string>
+    <string name="preference_video_bitrate_60000000">60 Mbps</string>
+    <string name="preference_video_bitrate_70000000">70 Mbps</string>
+    <string name="preference_video_bitrate_80000000">80 Mbps</string>
+    <string name="preference_video_bitrate_90000000">90 Mbps</string>
+    <string name="preference_video_bitrate_100000000">100 Mbps</string>
+    <string name="preference_video_bitrate_150000000">150 Mbps</string>
+    <string name="preference_video_bitrate_200000000">200 Mbps</string>
+
+    <string name="no_burst">no burst</string> <!-- string for burst mode not being supported for a resolution -->
+
+    <string name="preference_show_video_max_amp">Показывать измеритель уровня звука</string>
+    <string name="preference_show_video_max_amp_summary">Показывать измеритель уровня звука на экране при записи видео</string>
+
+    <string name="photo_mode_focus_bracketing">Фокус {}</string> <!-- keep short, as this shows in the popup menu -->
+    <string name="photo_mode_focus_bracketing_full">Фокус-брэкетинг</string>
+
+    <string name="focus_bracketing_source_distance">Исходное расстояние фокус-брэкетинга</string>
+    <string name="focus_bracketing_target_distance">Целевое расстояние фокус-брэкетинга</string>
+
+    <string name="focus_bracketing_add_infinity">Добавить бесконечное расстояние</string>
+
+    <string name="magnetic_accuracy_title">Направление компаса</string>
+    <string name="magnetic_accuracy_info">Необходимо откалибровать компас вашего устройства для улучшения точности. Это можно сделать, нарисовав устройством в воздухе цифру 8.\n\nТекущая точность:</string>
+
+    <string name="accuracy_unreliable">Невозможно определить</string>
+    <string name="accuracy_low">Низкая</string>
+    <string name="accuracy_medium">Средняя</string>
+    <string name="accuracy_high">Высокая</string>
+    <string name="accuracy_unknown">Неизвестно</string>
+
+    <string name="preference_units_distance">Единицы расстояния</string>
+    <string name="preference_units_distance_summary">В них измеряется высота по GPS для штампов на фото и субтитров к видео\n%s</string>
+    <string name="preference_units_distance_m">Метры</string>
+    <string name="preference_units_distance_ft">Футы</string>
+    <string name="feet_abbreviation">фт</string> <!-- symbol short for feet -->
+
+    <string name="preference_show_whats_new">Показывает диалог Что нового</string>
+    <string name="preference_show_whats_new_summary">Показывает информацию о новых возможностях и улучшениях при обновлении приложения</string>
+
+    <string name="preference_edge_mode">Алгоритм режима краев</string>
+    <string name="preference_edge_mode_summary">Алгоритм, используемый драйвером камеры для улучшения краев. Улучшение краев увеличивает резкость и детализацию фото. (Данная настройка игнорируется в режиме снижения шума.)\n%s</string>
+
+    <string name="preference_screen_processing_settings">Настройки обработки…</string>
+
+    <string name="preference_noise_reduction_mode">Алгоритм снижения шума</string>
+    <string name="preference_noise_reduction_mode_summary">Алгоритм, используемый драйвером камеры для снижения шума. Алгоритм снижения шума пытается улучшить качество изображения путем удаления сильного шума, появляющегося в процессе захвате, особенно в темных условиях. (Важно: данная настройка не относится к режиму снижения шума на фото и фактически игнорируется в этом режиме.)\n%s</string>
+    <string name="noise_reduction_mode_default">По умолчанию</string>
+    <string name="noise_reduction_mode_off">Выкл.</string>
+    <string name="noise_reduction_mode_minimal">Минимальный</string>
+    <string name="noise_reduction_mode_fast">Быстрый</string>
+    <string name="noise_reduction_mode_high_quality">Высокое качество</string>
+
+    <string name="preference_focus_assist">Помощь при фокусировке</string>
+    <string name="preference_focus_assist_summary">Масштабировать при изменении фокусного расстояния вручную\n%s</string>
+    <string name="preference_focus_assist_off">Выкл.</string>
+    <string name="preference_focus_assist_2x">2x</string>
+    <string name="preference_focus_assist_4x">4x</string>
+
+    <string name="exposure_compensation_zoom">Увеличивать или уменьшать экспокоррекцию</string>
+
+    <string name="previous">Предыдущий</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) for "<" button on popup menu -->
+    <string name="next">Следующий</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) for ">" button on popup menu -->
+
+    <string name="preference_burst_mode_off">Выкл</string>
+    <string name="preference_burst_mode_2x">2x</string>
+    <string name="preference_burst_mode_3x">3x</string>
+    <string name="preference_burst_mode_4x">4x</string>
+    <string name="preference_burst_mode_5x">5x</string>
+    <string name="preference_burst_mode_10x">10x</string>
+    <string name="preference_burst_mode_20x">20x</string>
+    <string name="preference_burst_mode_30x">30x</string>
+    <string name="preference_burst_mode_40x">40x</string>
+    <string name="preference_burst_mode_50x">50x</string>
+    <string name="preference_burst_mode_100x">100x</string>
+    <string name="preference_burst_mode_200x">200x</string>
+    <string name="preference_burst_mode_500x">500x</string>
+    <string name="preference_burst_mode_unlimited">Навсегда</string> <!-- Russian uses 'Forever' intead of 'Unlimited' (Неограниченно) so it's not too long for popup menu on small screens! -->
+
+    <string name="preference_burst_interval_no_delay">Без задержки</string>
+    <string name="preference_burst_interval_0_5s">0.5 секунды</string>
+    <string name="preference_burst_interval_1s">1 секунда</string>
+    <string name="preference_burst_interval_2s">2 секунды</string>
+    <string name="preference_burst_interval_3s">3 секунды</string>
+    <string name="preference_burst_interval_5s">5 секунд</string>
+    <string name="preference_burst_interval_10s">10 секунд</string>
+    <string name="preference_burst_interval_15s">15 секунд</string>
+    <string name="preference_burst_interval_20s">20 секунд</string>
+    <string name="preference_burst_interval_30s">30 секунд</string>
+    <string name="preference_burst_interval_1m">1 минута</string>
+    <string name="preference_burst_interval_2m">2 минуты</string>
+    <string name="preference_burst_interval_5m">5 минут</string>
+    <string name="preference_burst_interval_10m">10 минут</string>
+    <string name="preference_burst_interval_20m">20 минут</string>
+    <string name="preference_burst_interval_30m">30 минут</string>
+    <string name="preference_burst_interval_1h">1 час</string>
+    <string name="preference_burst_interval_2h">2 часа</string>
+
+    <string name="preference_video_max_filesize_default">По умолчанию (зависит от устройства)</string>
+    <string name="preference_video_max_filesize_100mb">100 Мб</string>
+    <string name="preference_video_max_filesize_200mb">200 Мб</string>
+    <string name="preference_video_max_filesize_300mb">300 Мб</string>
+    <string name="preference_video_max_filesize_500mb">500 Мб</string>
+    <string name="preference_video_max_filesize_1gb">1 Гб</string>
+    <string name="preference_video_max_filesize_2gb">2 Гб</string>
+    <string name="preference_video_max_filesize_5gb">5 Гб</string>
+    <string name="preference_video_max_filesize_9gb">9 Гб</string>
+
+    <string name="cancelled_focus_bracketing">Фокус-брэкетинг отменен</string>
+
+    <string name="preference_crop_guide_none">Нет</string>
+    <string name="preference_crop_guide_1">1 (1:1)</string>
+    <string name="preference_crop_guide_1_25">1.25 (5:4)</string>
+    <string name="preference_crop_guide_1_33">1.33 (4:3)</string>
+    <string name="preference_crop_guide_1_4">1.4 (7:4)</string>
+    <string name="preference_crop_guide_1_5">1.5 (3:2)</string>
+    <string name="preference_crop_guide_1_78">1.78 (16:9)</string>
+    <string name="preference_crop_guide_1_85">1.85 (37:20)</string>
+    <string name="preference_crop_guide_2">2 (2:1)</string>
+    <string name="preference_crop_guide_2_33">2.33 (21:9)</string>
+    <string name="preference_crop_guide_2_35">2.35 (47:20)</string>
+    <string name="preference_crop_guide_2_4">2.4 (12:5)</string>
+
+    <string name="preference_audio_noise_control_sensitivity_3">+3 (высокая чувствительность)</string>
+    <string name="preference_audio_noise_control_sensitivity_2">+2</string>
+    <string name="preference_audio_noise_control_sensitivity_1">+1</string>
+    <string name="preference_audio_noise_control_sensitivity_0">0 (по умолчанию)</string>
+    <string name="preference_audio_noise_control_sensitivity_m1">-1</string>
+    <string name="preference_audio_noise_control_sensitivity_m2">-2</string>
+    <string name="preference_audio_noise_control_sensitivity_m3">-3 (низкая чувствительность)</string>
+
+    <string name="preference_hdr_contrast_enhancement">Улучшение контрастности HDR</string>
+    <string name="preference_hdr_contrast_enhancement_summary">Использовать алгоритм улучшения контрастности для HDR. Может улучшить качество при очень высоком динамическом диапазоне в кадре, в результате чего изображение становится "похожим на HDR".\n%s</string>
+    <string name="preference_hdr_contrast_enhancement_off">Выкл.</string>
+    <string name="preference_hdr_contrast_enhancement_smart">Умный</string>
+    <string name="preference_hdr_contrast_enhancement_always">Всегда</string>
+
+    <string name="preference_video_output_format">Формат видео</string>
+    <string name="preference_video_output_format_summary">Кодеки и формат видео- и аудиофайлов\n%s</string>
+
+    <string name="preference_video_output_format_default">По умолчанию</string>
+    <string name="preference_video_output_format_mpeg4_h264">MPEG4 H264</string>
+    <string name="preference_video_output_format_mpeg4_hevc">MPEG4 HEVC</string>
+    <string name="preference_video_output_format_3gpp">3GPP</string>
+    <string name="preference_video_output_format_webm">WebM (аудио не поддерживается)</string>
+
+    <string name="preference_screen_settings_manager">Управление настройками</string>
+
+    <string name="preference_save_settings">Сохранить настройки</string>
+    <string name="preference_save_settings_summary">Сохраняет все настройки Open Camera в файл</string>
+    <string name="preference_save_settings_filename">Имя сохраненных настроек</string>
+
+    <string name="preference_restore_settings">Восстановить настройки</string>
+    <string name="preference_restore_settings_summary">Восстанавливает ранее сохраненные настройки. Все текущие настройки будут перезаписаны сохраненными!</string>
+    <string name="preference_restore_settings_question">Позволяет выбрать ранее сохраненный файл настроек. Будьте осторожны: при выборе файла все текущие настройки будут перезаписаны!</string>
+
+    <string name="saved_settings">Сохраненные настройки</string>
+    <string name="save_settings_failed">Не удалось сохранить настройки</string>
+    <string name="restore_settings_failed">Не удалось восстановить настройки</string>
+    <string name="open_files_saf_exception_generic">Диалог выбора файла не найден на данном устройстве, настройка не поддерживается</string>
+
+    <string name="preference_image_format">Формат изображения</string>
+    <string name="preference_image_format_jpeg">JPEG</string>
+    <string name="preference_image_format_webp">WebP</string>
+    <string name="preference_image_format_png">PNG</string>
+
+    <string name="preference_nr_mode">Режим NR</string>
+    <string name="preference_nr_mode_normal">Нормальный</string>
+    <string name="preference_nr_mode_low_light">Низкий уровень освещенности</string>
+
+    <string name="preference_ui_placement_left">Интерфейс для левши</string>
+    <string name="preference_ui_placement_right">Интерфейс для правши</string>
+    <string name="preference_ui_placement_top">Ярлыки в верхней части экрана (портретный режим)</string>
+
+    <string name="preference_show_face_detection">Показывать ярлык распознавания лиц</string>
+    <string name="preference_show_face_detection_summary">Показывать на экране ярлык для включения или отключения распознавания лиц</string>
+    <string name="face_detection_enable">Включить распознавание лиц</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="face_detection_disable">Отключить распознавание лиц</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="face_detection_enabled">Распознавание лиц включено</string>
+    <string name="face_detection_disabled">Распознавание лиц отключено</string>
+
+    <string name="preference_show_auto_level">Показывать ярлык автоматического выравнивания</string>
+    <string name="preference_show_auto_level_summary">Показывать на экране ярлык для включения или отключения автоматического выравнивания. При включенном автоматическом выравнивании фотографии будут поворачиваться в соответствии с линией горизонта.</string>
+    <string name="auto_level_enable">Включить автоматическое выравнивание</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="auto_level_disable">Отключить автоматическое выравнивание</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+
+    <string name="preference_show_stamp">Показывать ярлык для штампа на фото</string>
+    <string name="preference_show_stamp_summary">Показывать на экране ярлык для включения или отключения штампа на фото</string>
+    <string name="stamp_enable">Включить штамп на фото</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="stamp_disable">Отключить штамп на фото</string> <!-- for "ContentDescription" (used for accessibility, e.g., Google Talkback) -->
+    <string name="stamp_enabled">Штамп на фото включен</string>
+    <string name="stamp_disabled">Штамп на фото отключен</string>
+
+    <string name="preference_show_textstamp">Показывать ярлык для пользовательского текстового штампа на фото</string>
+    <string name="preference_show_textstamp_summary">Показывать на экране ярлык ввода пользовательского текста для штампа на фото</string>
+
+    <string name="preference_show_white_balance_lock">Показывать ярлык для блокировки автоматического баланса белого</string>
+    <string name="preference_show_white_balance_lock_summary">Показывать на экране ярлык для блокировки или разблокировки автоматического баланса белого</string>
+    <string name="white_balance_lock">Заблокировать баланс белого</string>
+    <string name="white_balance_unlock">Разблокировать баланс белого</string>
+    <string name="white_balance_locked">Баланс белого заблокирован</string>
+    <string name="white_balance_unlocked">Баланс белого разблокирован</string>
+
+    <string name="preference_show_exposure_lock">Показывать ярлык для блокировки автоматической экспозиции</string>
+    <string name="preference_show_exposure_lock_summary">Показывать на экране ярлык для блокировки или разблокировки экспозиции</string>
+    <string name="exposure_unlock">Разблокировать экспозицию</string>
+
+    <string name="preference_nr_mode_low_light_message">Режим низкого уровня освещенности: пожалуйста, держите камеру в устойчивом положении</string>
+
+    <string name="photo_mode_panorama">Pano</string> <!-- keep short, as this shows in the popup menu; probably shouldn't be translated? -->
+    <string name="photo_mode_panorama_full">Панорама</string>
+
+    <string name="preference_screen_remote_control">Удаленное управление по Bluetooth LE…</string>
+    <string name="preference_enable_remote">Включить удаленное управление по Bluetooth LE</string>
+    <string name="preference_enable_remote_summary">Включить устройства удаленного управления по Bluetooth LE (BLE)</string>
+    <string name="preference_remote_type">Тип удаленного устройства</string>
+
+    <string name="ble_not_supported">BLE не поддерживается</string>
+    <string name="scan_ble">Сканирование устройств по BLE</string>
+    <string name="bluetooth_not_supported">Bluetooth не поддерживается.</string>
+    <string name="unknown_device">Неизвестное устройство</string>
+    <string name="preference_remote_disconnect_screen_dim">Выключать экран при отключении удаленного управления</string>
+    <string name="preference_remote_disconnect_screen_dim_summary">Подсказка: установите яркость по умолчанию на минимальный уровень перед запуском Open Camera.</string>
+    <string name="preference_water_type">Использовать Saltwater для более точных вычислений</string>
+    <string name="preference_water_type_summary">При размещении под водой улучшает точность, если выбран правильный тип воды.</string>
+    <string name="remote_connected">Удаленное устройство подключено</string>
+
+    <string name="preference_stamp_geo_address">Использовать адреса</string>
+    <!-- preference_stamp_geo_address_summary defined below -->
+    <string name="preference_stamp_geo_address_both">По возможности показывать адреса вместе с GPS-координатами</string>
+    <string name="preference_stamp_geo_address_prefer">Предпочитать адреса GPS-координатам</string>
+    <string name="preference_stamp_geo_address_no">Не показывать адреса</string>
+
+    <string name="preference_show_store_location">Показывать ярлык сохранения данных о местоположении</string>
+    <string name="preference_show_store_location_summary">Показывать на экране ярлык для включения или отключения данных о местоположении (геотеггинг)</string>
+    <string name="preference_location_enable">Сохранять данные о местоположении</string>
+    <string name="preference_location_disable">Прекратить сохранять данные о местоположении</string>
+
+    <string name="preference_histogram">Показывать гистограмму</string>
+    <string name="preference_histogram_summary">Показывать на экране гистограмму цветов\n%s</string>
+    <string name="preference_histogram_off">Выкл.</string>
+    <string name="preference_histogram_rgb">Цвета RGB</string>
+    <string name="preference_histogram_luminance">Яркость</string>
+    <string name="preference_histogram_value">Значение (максимум)</string>
+    <string name="preference_histogram_intensity">Интенсивность (средняя)</string>
+    <string name="preference_histogram_lightness">Освещенность (средняя мин.-макс.)</string>
+
+    <string name="preference_zebra_stripes">Показывать полосы зебры</string>
+    <string name="preference_zebra_stripes_summary">Если данная настройка включена, на экране будут появляться полосы зебры при чрезмерной экспозиции.\n%s</string>
+    <string name="preference_zebra_stripes_off">Выкл.</string>
+    <string name="preference_zebra_stripes_70pc">70%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_80pc">80%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_90pc">90%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_93pc">93%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_95pc">95%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_97pc">97%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_98pc">98%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_99pc">99%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+    <string name="preference_zebra_stripes_100pc">100%</string> <!-- shouldn't escape %, not needed when shown in ListPreference -->
+
+    <string name="preference_focus_peaking">Снижение фокусировки</string>
+    <string name="preference_focus_peaking_summary">Если данная настройка включена, грани (контуры) фокуса будут освещены. В основном это применяется для ручной фокусировки, также его можно использовать для определения зон изображения находящихся в фокусе.\n%s</string>
+    <string name="preference_focus_peaking_off">Выкл.</string>
+    <string name="preference_focus_peaking_on">Вкл.</string>
+    <string name="preference_focus_peaking_color">Цвет снижения фокуса</string>
+    <string name="preference_focus_peaking_color_summary">Данный цвет будет использоваться для подсветки контуров фокуса\n%s</string>
+
+    <string name="remaining">Осталось</string> <!-- images remaining for "processing" -->
+
+    <string name="preference_preview">Предпросмотр камеры…</string>
+
+    <string name="cycle_flash">Переключать вспышку</string>
+    <string name="preference_show_cycle_flash">Показывать ярлык вспышки</string>
+    <string name="preference_show_cycle_flash_summary">Показывать на экране ярлык для задания цикла вспышки вместо отображения настроек вспышки во всплывающем меню</string>
+
+    <string name="preference_raw_expo_bracketing">Разрешать RAW для брэкетинга экспозиции</string>
+    <string name="preference_raw_expo_bracketing_summary">Настройка также предназначена для применения RAW для режима брэкетинга экспозиции фото (или для режима HDR, когда включена настройка \"Сохранять все изображения для режима HDR\"). Если данная настройка отключена, в данных режимах фото будут сохранены только в формате JPEG.</string>
+
+    <string name="preference_raw_focus_bracketing">Разрешать RAW для фокус-брэкетинга</string>
+    <string name="preference_raw_focus_bracketing_summary">Настройка также предназначена для применения RAW для режима фокус-брэкетинга фото. Если данная настройка отключена, в режиме фокус-брэкетинга фото будут сохранены только в формате JPEG.</string>
+
+    <string name="cycle_raw">Переключать режимы RAW</string>
+    <string name="preference_show_cycle_raw">Показывать ярлык RAW</string>
+    <string name="preference_show_cycle_raw_summary">Показывать на экране ярлык для переключения режимов RAW</string>
+
+    <string name="bluetooth_current_remote">Текущее удаленное устройство:</string>
+    <string name="bluetooth_scan">Сканировать</string>
+
+    <string name="preference_stamp_style_shadowed">Текст с тенью</string>
+    <string name="preference_stamp_style_plain">Обычный текст</string>
+    <string name="preference_stamp_style_background">Текст с тенью фона</string>
+
+    <string name="image_saving_notification">Сохранение изображений…</string>
+
+    <string name="finish_panorama">Закончить панораму</string>
+    <string name="cancel_panorama">Отменить панораму</string>
+    <string name="panorama_cancelled">Панорама отменена</string>
+    <string name="failed_to_process_panorama">Не удалось создать панораму</string>
+
+    <string name="preference_panorama_crop">Автоматическая обрезка панорамы</string>
+    <string name="preference_panorama_crop_summary">Удалять волнистые края в режиме панорамы\n%s</string>
+
+    <string name="panorama_info">Чтобы снять панораму, удерживайте ваше устройство в портретной ориентации и нажмите на кнопку снятия фото для начала формирования панорамы. Затем поворачивайте устройство влево или вправо, сдвигая белый круг в центре на синюю точку. После захвата нового изображения продолжайте поворачивать устройство, чтобы захватить следующую синюю точку.\n\nНажмите на галочку, чтобы сохранить панораму, или крестик, чтобы отменить ее.\n\nВажно: обработка и сохранение фото панорамы могут занять некоторое время.</string>
+
+    <string name="preference_panorama_save">Оригинальные изображения панорамы</string>
+    <string name="preference_panorama_save_summary">Сохранять оригинальные изображения в режиме панорамы. Важно: фото панорам будут сохраняться медленнее. Также позволяет сохранять файл XML, который может быть полезен при сообщении об ошибках с панорамами.\n%s</string>
+
+    <string name="preference_panorama_save_no">Не сохранять оригинальные изображения</string>
+    <string name="preference_panorama_save_all">Сохранять оригинальные изображения</string>
+    <string name="preference_panorama_save_all_plus_debug">Сохранять оригинальные изображения и файл XML для отладки</string>
+
+    <string name="camera_id">ID</string> <!-- ID as in camera ID -->
+
+    <string name="exposure_compensation_seekbar">Шкала для изменения компенсации экспозиции</string>
+
+    <string name="preference_image_format_summary">Выберите формат файла для сохранения фото. Это влияет на \"обычные\" (не RAW) фото. Важно: формат PNG не является настоящим форматом "без потерь", вместо этого он конвертируется из JPEG со 100%% качеством.\n%s</string>
+
+    <string name="preference_camera_api">Camera API</string>
+    <string name="preference_camera_api_summary">Выберите Camera2 API, чтобы включить дополнительные возможности, например ручные режимы экспозиции, фокус, баланс белого, вместе с форматом RAW (если поддерживается устройством). При изменении API потребуется перезапуск.\n%s</string>
+    <string name="preference_camera_api_old">Оригинальный API камеры</string>
+    <string name="preference_camera_api_camera2">Camera2 API</string>
+
+    <string name="preference_audio_control_summary">Снимать фото/видео при обнаружении шума.
+        Если включено, используйте экранную кнопку микрофона для запуска/остановки слушания.
+        \n%s</string>
+
+    <string name="intro_text">Коснитесь для фокуса и нажмите синюю кнопку камеры, чтобы сделать фото.
+        \n\nДля сохранения на SD-карту на Android 5+ перейдите в Настройки/Дополнительные настройки…/\"Storage Access Framework\".
+        Для получения подробностей нажмите \"Помощь в Интернете\" в меню Настройки.
+    </string>
+
+    <string name="preference_select_remote">Выбрать удаленное устройство</string>
+
+    <string name="preference_video_rec709">REC709</string>
+    <string name="preference_video_srgb">sRGB</string>
+    <string name="preference_video_gamma">Гамма</string>
+
+    <string name="preference_video_profile_gamma">Значение гаммы видео</string>
+    <string name="preference_video_profile_gamma_summary">Значение гаммы для видео при заданном профиле \"Гамма\"\n%s</string>
+    <string name="preference_video_profile_gamma_1_6">1.6</string>
+    <string name="preference_video_profile_gamma_1_8">1.8</string>
+    <string name="preference_video_profile_gamma_1_9">1.9</string>
+    <string name="preference_video_profile_gamma_2_0">2.0</string>
+    <string name="preference_video_profile_gamma_2_1">2.1</string>
+    <string name="preference_video_profile_gamma_2_2">2.2</string>
+    <string name="preference_video_profile_gamma_2_3">2.3</string>
+    <string name="preference_video_profile_gamma_2_4">2.4</string>
+    <string name="preference_video_profile_gamma_2_6">2.6</string>
+    <string name="preference_video_profile_gamma_2_8">2.8</string>
+
+    <string name="preference_immersive_mode_off">Выключить</string>
+    <string name="preference_immersive_mode_navigation">Скрыть кнопки навигации</string>
+    <string name="preference_immersive_mode_gui">Скрыть интерфейс</string>
+    <string name="preference_immersive_mode_everything">Скрыть все</string>
+
+    <string name="preference_ghost_image_alpha">Непрозрачность призрачного изображения</string>
+    <string name="preference_ghost_image_alpha_summary">Значение альфа для призрачных изображений. Чем ниже значение, тем более прозрачным будет изображение, чем выше - тем более непрозрачным.\n%s</string>
+
+    <string name="preference_zebra_stripes_foreground_color">Цвет полос зебры на переднем плане</string>
+    <string name="preference_zebra_stripes_foreground_color_summary">Цвет на переднем плане при отображении полос зебры.\n%s</string>
+    <string name="preference_zebra_stripes_background_color">Цвет полос зебры на заднем плане</string>
+    <string name="preference_zebra_stripes_background_color_summary">Цвет на заднем плане при отображении полос зебры.\n%s</string>
+
+    <string name="preference_zebra_stripes_color_black">Черный</string>
+    <string name="preference_zebra_stripes_color_red">Красный</string>
+    <string name="preference_zebra_stripes_color_orange">Оранжевый</string>
+    <string name="preference_zebra_stripes_color_transparent">Прозрачный</string>
+    <string name="preference_zebra_stripes_color_white">Белый</string>
+
+    <string name="external_camera">Внешняя камера</string>
+    <string name="ultrawide">Ультраширокая камера</string>
+
+    <string name="switch_to_external_camera">Переключиться на внешнюю камеру</string>
+    <string name="switch_to_unknown_camera">Переключить камеру</string>
+    <string name="switch_multi_camera">Переключаться между несколькими камерами</string>
+    <string name="preference_multi_cam_button">Значок нескольких камер</string>
+    <string name="preference_multi_cam_button_summary">Если включено, использовать отдельные кнопки для переключения между фронтальной/задней камерами и между несколькими фронтальными/задними камерами. Если отключено, значок \"Переключить камеру\" будет циклически переключать все камеры.</string>
+
+    <string name="preference_show_camera_id">Показать ID камеры</string>
+    <string name="preference_show_camera_id_summary">Показывать номер ID текущей камеры на экране</string>
+
+    <string name="preference_allow_long_press">Разрешать действия при долгом нажатии</string>
+    <string name="preference_allow_long_press_summary">При возможности разрешать действия при долгом нажатии (например, долгое нажатие на галерею для изменения пути сохранения).</string>
+
+    <string name="aperture">Апертура</string>
+
+    <string name="error_features_4k">4K UHD</string>
+    <string name="error_features_bitrate">Битрейт</string>
+    <string name="error_features_frame_rate">Частота кадров</string>
+    <string name="error_features_slow_motion">Замедление времени</string>
+
+    <string name="preference_comment_ypr">Сохранять связанную систему координат</string>
+    <string name="preference_comment_ypr_summary">Сохранять связанную систему координат устройства в EXIF фото в комментарии пользователя (только для формата JPEG)</string>
+
+    <string name="preference_audio_control_none">Нет</string>
+    <string name="preference_audio_control_noise">Громкий шум</string>
+    <string name="preference_audio_control_voice">Голосовая команда: \"cheese\"</string> <!-- note that cheese shouldn't be translated, as we listen for this no matter what language is being used -->
+
+</resources>

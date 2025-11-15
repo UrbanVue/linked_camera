@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences_root">
+
+    <ListPreference
+        android:key="preference_ui_placement"
+        android:title="@string/preference_ui_placement"
+        android:summary="%s"
+        android:entries="@array/preference_ui_placement_entries"
+        android:entryValues="@array/preference_ui_placement_values"
+        android:defaultValue="ui_top"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <ListPreference
+        android:key="preference_immersive_mode"
+        android:title="@string/preference_immersive_mode"
+        android:summary="%s"
+        android:entries="@array/preference_immersive_mode_entries"
+        android:entryValues="@array/preference_immersive_mode_values"
+        android:defaultValue="immersive_mode_off"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <CheckBoxPreference
+        android:key="preference_show_face_detection"
+        android:title="@string/preference_show_face_detection"
+        android:summary="@string/preference_show_face_detection_summary"
+        android:icon="@drawable/ic_face_white_48dp"
+        android:defaultValue="false"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <CheckBoxPreference
+        android:key="preference_show_cycle_flash"
+        android:title="@string/preference_show_cycle_flash"
+        android:summary="@string/preference_show_cycle_flash_summary"
+        android:icon="@drawable/flash_on"
+        android:defaultValue="false"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <CheckBoxPreference
+        android:key="preference_show_focus_peaking"
+        android:title="@string/preference_show_focus_peaking"
+        android:summary="@string/preference_show_focus_peaking_summary"
+        android:icon="@drawable/key_visualizer"
+        android:defaultValue="false"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <CheckBoxPreference
+        android:key="preference_show_auto_level"
+        android:title="@string/preference_show_auto_level"
+        android:summary="@string/preference_show_auto_level_summary"
+        android:icon="@drawable/auto_stabilise_icon"
+        android:defaultValue="false"
+        />
+
+    <CheckBoxPreference
+        android:key="preference_show_stamp"
+        android:title="@string/preference_show_stamp"
+        android:summary="@string/preference_show_stamp_summary"
+        android:icon="@drawable/ic_text_format_white_48dp"
+        android:defaultValue="false"
+        />
+
+    <CheckBoxPreference
+        android:key="preference_show_textstamp"
+        android:title="@string/preference_show_textstamp"
+        android:summary="@string/preference_show_textstamp_summary"
+        android:icon="@drawable/baseline_text_fields_white_48"
+        android:defaultValue="false"
+        />
+
+    <CheckBoxPreference
+        android:key="preference_show_store_location"
+        android:title="@string/preference_show_store_location"
+        android:summary="@string/preference_show_store_location_summary"
+        android:icon="@drawable/ic_gps_fixed_white_48dp"
+        android:defaultValue="false"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <CheckBoxPreference
+        android:key="preference_show_cycle_raw"
+        android:title="@string/preference_show_cycle_raw"
+        android:summary="@string/preference_show_cycle_raw_summary"
+        android:icon="@drawable/raw_icon"
+        android:defaultValue="false"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <CheckBoxPreference
+        android:key="preference_show_white_balance_lock"
+        android:title="@string/preference_show_white_balance_lock"
+        android:summary="@string/preference_show_white_balance_lock_summary"
+        android:icon="@drawable/white_balance_unlocked"
+        android:defaultValue="false"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <CheckBoxPreference
+        android:key="preference_show_exposure_lock"
+        android:title="@string/preference_show_exposure_lock"
+        android:summary="@string/preference_show_exposure_lock_summary"
+        android:icon="@drawable/exposure_unlocked"
+        android:defaultValue="true"
+        />
+
+    <CheckBoxPreference
+        android:key="preference_show_zoom_slider_controls"
+        android:title="@string/preference_show_zoom_slider_controls"
+        android:summary="@string/preference_show_zoom_slider_controls_summary"
+        android:defaultValue="true"
+        />
+
+    <CheckBoxPreference
+        android:key="preference_show_take_photo"
+        android:title="@string/preference_show_take_photo"
+        android:summary="@string/preference_show_take_photo_summary"
+        android:defaultValue="true"
+        />
+
+    <CheckBoxPreference
+        android:key="preference_show_toasts"
+        android:title="@string/preference_show_toasts"
+        android:summary="@string/preference_show_toasts_summary"
+        android:defaultValue="true"
+        />
+
+    <CheckBoxPreference
+        android:key="preference_show_whats_new"
+        android:title="@string/preference_show_whats_new"
+        android:summary="@string/preference_show_whats_new_summary"
+        android:defaultValue="true"
+        />
+
+    <!--  if we move this to another PreferenceGroup, we should update code to remove this Preference -->
+    <SwitchPreference
+        android:key="preference_multi_cam_button"
+        android:title="@string/preference_multi_cam_button"
+        android:summary="@string/preference_multi_cam_button_summary"
+        android:defaultValue="true"
+        />
+
+    <SwitchPreference
+        android:key="preference_keep_display_on"
+        android:title="@string/preference_keep_display_on"
+        android:summary="@string/preference_keep_display_on_summary"
+        android:defaultValue="true"
+        />
+
+    <SwitchPreference
+        android:key="preference_max_brightness"
+        android:title="@string/preference_max_brightness"
+        android:summary="@string/preference_max_brightness_summary"
+        android:defaultValue="false"
+        />
+
+</PreferenceScreen>

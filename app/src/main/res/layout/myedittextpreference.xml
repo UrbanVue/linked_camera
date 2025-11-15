@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See documentation in MyEditTextPreference.java for why we have this.
+    Since this is used in multiple places, we don't set the hint (which seems to be standard
+    behaviour for EditTextPreference anyway.) Similarly for the autofillHints.
+    Also note we intentionally don't set a contentDescription, else this would get a Google Play
+    pre-launch warning:
+        This editable TextView has an android:contentDescription. A screen reader may read this
+        attribute instead of the editable content when the user is navigating.
+    The inputType is set programmatically by MyEditTextPreference.java.
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/myedittextpreference_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        />
+    <EditText
+        android:id="@+id/myedittextpreference_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        tools:ignore="Autofill,LabelFor,TextFields"
+        />
+</LinearLayout>

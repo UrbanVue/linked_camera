@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generic xml for use with creating a TextView for AlertDialog.
+    Used in several places, so customisations should be done programatically in code.
+    Important not to create TextViews dynamically in code, due to Google Play emoji policy...
+    -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    />

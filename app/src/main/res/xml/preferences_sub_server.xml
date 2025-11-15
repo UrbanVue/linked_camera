@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences_root">
+
+    <!-- Nextcloud Upload Toggle -->
+    <SwitchPreference
+        android:key="preference_nextcloud_upload"
+        android:title="@string/preference_nextcloud_upload"
+        android:summary="@string/preference_nextcloud_upload_summary"
+        android:defaultValue="false" />
+
+    <!-- Nextcloud Share URL -->
+    <com.linkedcamera.app.ui.MyEditTextPreference
+        android:key="preference_nextcloud_url"
+        android:title="@string/preference_nextcloud_url"
+        android:summary="@string/preference_nextcloud_url_summary"
+        android:dialogMessage="@string/preference_nextcloud_url_summary"
+        android:dependency="preference_nextcloud_upload"
+        android:inputType="textUri" />
+
+    <!-- Nextcloud Share Password (optional) -->
+    <com.linkedcamera.app.ui.MyEditTextPreference
+        android:key="preference_nextcloud_password"
+        android:title="@string/preference_nextcloud_password"
+        android:summary="@string/preference_nextcloud_password_summary"
+        android:dialogMessage="@string/preference_nextcloud_password_summary"
+        android:dependency="preference_nextcloud_upload"
+        android:inputType="textPassword" />
+
+    <!-- WiFi Only Upload -->
+    <SwitchPreference
+        android:key="preference_nextcloud_wifi_only"
+        android:title="@string/preference_nextcloud_wifi_only"
+        android:summary="@string/preference_nextcloud_wifi_only_summary"
+        android:defaultValue="true"
+        android:dependency="preference_nextcloud_upload" />
+
+    <!-- Auto-Delete After Upload -->
+    <SwitchPreference
+        android:key="preference_nextcloud_auto_delete"
+        android:title="@string/preference_nextcloud_auto_delete"
+        android:summary="@string/preference_nextcloud_auto_delete_summary"
+        android:defaultValue="false"
+        android:dependency="preference_nextcloud_upload" />
+
+    <!-- Process Upload Queue Button -->
+    <Preference
+        android:key="preference_nextcloud_process_queue"
+        android:title="@string/preference_nextcloud_process_queue"
+        android:summary="@string/preference_nextcloud_process_queue_summary"
+        android:dependency="preference_nextcloud_wifi_only" />
+
+</PreferenceScreen>

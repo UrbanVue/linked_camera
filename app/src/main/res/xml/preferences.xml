@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!--<PreferenceCategory
+        android:key="preference_category_camera_effects"
+        android:title="@string/preference_category_camera_effects"
+        >
+        -->
+
+        <!--  if we move this to another PreferenceGroup, we should update code for the readFromIntent() call -->
+        <!--
+        <ListPreference 
+            android:key="preference_color_effect"
+            android:title="@string/preference_color_effect"
+            android:summary="@string/preference_color_effect_summary"
+            />
+        -->
+    
+        <!--  if we move this to another PreferenceGroup, we should update code for the readFromIntent() call -->
+        <!--
+        <ListPreference 
+            android:key="preference_scene_mode"
+            android:title="@string/preference_scene_mode"
+            android:summary="@string/preference_scene_mode_summary"
+            />
+        -->
+    
+        <!--  if we move this to another PreferenceGroup, we should update code for the readFromIntent() call -->
+        <!--
+        <ListPreference 
+            android:key="preference_white_balance"
+            android:title="@string/preference_white_balance"
+            android:summary="@string/preference_white_balance_summary"
+            />
+        -->
+
+        <!--  if we move this to another PreferenceGroup, we should update code for the readFromIntent() call -->
+        <!--
+        <ListPreference 
+            android:key="preference_iso"
+            android:title="@string/preference_iso"
+            android:summary="@string/preference_iso_summary"
+            />
+        -->
+
+        <!--  if we move this to another PreferenceGroup, we should update code for the readFromIntent() call -->
+        <!--
+        <ListPreference
+            android:key="preference_exposure"
+            android:title="@string/preference_exposure"
+            android:summary="@string/preference_exposure_summary"
+            />
+        -->
+
+        <!--  if we move this to another PreferenceGroup, we should update code for the findPreference() call -->
+        <!--
+        <SwitchPreference
+            android:key="preference_auto_stabilise"
+            android:title="@string/preference_auto_stabilise"
+            android:summary="@string/preference_auto_stabilise_summary"
+            android:defaultValue="false"
+            />
+        -->
+
+    <!-- </PreferenceCategory> -->
+
+    <PreferenceCategory
+        android:key="preference_category_camera_controls"
+        android:title="@string/preference_category_camera_controls">
+
+        <ListPreference
+            android:key="preference_timer"
+            android:title="@string/preference_timer"
+            android:summary="%s"
+            android:icon="@drawable/ic_timer_white_48dp"
+            android:entries="@array/preference_timer_entries"
+            android:entryValues="@array/preference_timer_values"
+            android:defaultValue="0"
+            />
+
+        <ListPreference
+            android:key="preference_burst_mode"
+            android:title="@string/preference_burst_mode"
+            android:summary="%s"
+            android:icon="@drawable/ic_burst_mode_white_48dp"
+            android:entries="@array/preference_burst_mode_entries"
+            android:entryValues="@array/preference_burst_mode_values"
+            android:defaultValue="1"
+            />
+
+        <ListPreference
+            android:key="preference_burst_interval"
+            android:title="@string/preference_burst_interval"
+            android:summary="%s"
+            android:icon="@drawable/baseline_shutter_speed_white_48"
+            android:entries="@array/preference_burst_interval_entries"
+            android:entryValues="@array/preference_burst_interval_values"
+            android:defaultValue="0"
+            />
+
+        <PreferenceScreen
+            android:key="preference_screen_server_settings"
+            android:title="@string/preference_screen_server_settings"
+            android:icon="@drawable/baseline_cloud_upload_white_48"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubServer"
+            />
+
+        <PreferenceScreen
+            android:key="preference_screen_location_settings"
+            android:title="@string/preference_screen_location_settings"
+            android:icon="@drawable/ic_gps_fixed_white_48dp"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubLocation"
+            />
+
+        <PreferenceScreen
+            android:key="preference_screen_camera_controls_more"
+            android:title="@string/preference_screen_camera_controls_more"
+            android:icon="@drawable/ic_more_horiz_white_48dp"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubCameraControlsMore"
+            />
+
+        <PreferenceScreen
+            android:key="preference_preview"
+            android:title="@string/preference_preview"
+            android:icon="@drawable/ic_more_horiz_white_48dp"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubPreview"
+            />
+
+        <PreferenceScreen
+            android:key="preference_screen_gui"
+            android:title="@string/preference_screen_gui"
+            android:icon="@drawable/ic_more_horiz_white_48dp"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubGUI"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="preference_category_camera_quality"
+        android:title="@string/preference_category_camera_quality">
+
+        <PreferenceScreen
+            android:key="preference_screen_photo_settings"
+            android:title="@string/preference_screen_photo_settings"
+            android:icon="@drawable/take_photo_pref"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubPhoto"
+            />
+    
+        <PreferenceScreen
+            android:key="preference_screen_video_settings"
+            android:title="@string/preference_screen_video_settings"
+            android:icon="@drawable/take_video_pref"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubVideo"
+            />
+
+        <!--  if we move this to another PreferenceGroup, we should update code for the findPreference() call -->
+        <SwitchPreference
+            android:key="preference_face_detection"
+            android:title="@string/preference_face_detection"
+            android:summary="@string/preference_face_detection_summary"
+            android:defaultValue="false"
+            />
+
+        <!--  if we move this to another PreferenceGroup, we should update code for the findPreference() call -->
+        <ListPreference
+            android:key="preference_camera_api"
+            android:title="@string/preference_camera_api"
+            android:summary="@string/preference_camera_api_summary"
+            />
+
+        <PreferenceScreen
+            android:key="preference_screen_processing_settings"
+            android:title="@string/preference_screen_processing_settings"
+            android:icon="@drawable/ic_more_horiz_white_48dp"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubProcessing"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="preference_category_online"
+        android:title="@string/preference_category_online"
+        >
+
+        <Preference
+            android:key="preference_online_help"
+            android:title="@string/preference_online_help"
+            android:summary="@string/preference_online_help_summary"
+            android:icon="@drawable/ic_help_outline_white_48dp"
+            />
+
+        <Preference
+            android:key="preference_about"
+            android:title="@string/preference_about"
+            android:summary="@string/preference_about_summary"
+            android:icon="@drawable/ic_info_outline_white_48dp"
+            />
+
+        <PreferenceScreen
+            android:key="preference_screen_licences"
+            android:title="@string/preference_screen_licences"
+            android:icon="@drawable/ic_info_outline_white_48dp"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubLicences"
+            />
+
+        <Preference
+            android:key="preference_privacy_policy"
+            android:title="@string/preference_privacy_policy"
+            android:summary="@string/preference_privacy_policy_summary"
+            android:icon="@drawable/ic_info_outline_white_48dp"
+            />
+
+        <PreferenceScreen
+            android:key="preference_screen_settings_manager"
+            android:title="@string/preference_screen_settings_manager"
+            android:icon="@drawable/settings"
+            android:persistent="false"
+            android:fragment="com.linkedcamera.app.PreferenceSubSettingsManager"
+            />
+
+        </PreferenceCategory>
+        
+</PreferenceScreen>

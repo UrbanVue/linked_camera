@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generic xml for use with creating a Switch for PopupView.
+    Used in several places, so customisations should be done programatically in code.
+    Important not to create TextViews dynamically in code, due to Google Play emoji policy...
+    Note that we still need to use SwitchCompat directly instead of Switch, as it's documented
+    under SwitchCompat that unlike other classes, this won't automatically be changed to the
+    AppCompat equivalent even when created in XML.
+    -->
+<androidx.appcompat.widget.SwitchCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupview_switch"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />

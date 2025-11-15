@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generic xml for use with creating a RadioButton for PopupView.
+    Used in several places, so customisations should be done programatically in code.
+    Important not to create TextViews dynamically in code, due to Google Play emoji policy...
+    -->
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupview_radiobutton"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
