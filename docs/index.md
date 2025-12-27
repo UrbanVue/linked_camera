@@ -90,7 +90,7 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 ## Contact Us
 
 If you have questions about this Privacy Policy, please contact us:
-- **Email**: [your-email@example.com]
+- **Email**: [info@urbanvue.nl]
 - **GitHub Issues**: https://github.com/UrbanVue/linked_camera/issues
 
 ## Consent
