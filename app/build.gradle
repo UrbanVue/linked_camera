@@ -4,11 +4,35 @@ android {
     compileSdk 35
     compileOptions.encoding = 'UTF-8'
 
+    // For release signing, create a file 'signing.properties' in project root with:
+    // storeFile=path/to/keystore
+    // storePassword=your_password
+    // keyAlias=your_alias
+    // keyPassword=your_password
+    // Then uncomment the signingConfigs section below
+
+    /*
+    signingConfigs {
+        release {
+            def signingPropsFile = rootProject.file('signing.properties')
+            if (signingPropsFile.exists()) {
+                def signingProps = new Properties()
+                signingProps.load(new FileInputStream(signingPropsFile))
+                storeFile file(signingProps['storeFile'])
+                storePassword signingProps['storePassword']
+                keyAlias signingProps['keyAlias']
+                keyPassword signingProps['keyPassword']
+            }
+        }
+    }
+    */
+
     defaultConfig {
         applicationId "com.linkedcamera.app"
         minSdkVersion 21
         targetSdkVersion 35
-        //compileSdkVersion 31 // needed to support appcompat:1.4.0 (which we need for emoji policy support, and not yet ready to target SDK 30)
+        versionCode 3
+        versionName "1.2"
 
         testApplicationId "com.linkedcamera.app.test"
         //testInstrumentationRunner "android.test.InstrumentationTestRunner"
@@ -17,8 +41,9 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            // signingConfig signingConfigs.release  // Uncomment when signing.properties is configured
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 

@@ -24,3 +24,8 @@ testdata/
 
 local.properties
 uninstall.bat
+
+# Signing files - NEVER commit these
+*.keystore
+*.jks
+signing.properties

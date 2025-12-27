@@ -1100,6 +1100,10 @@
     <string name="nextcloud_upload_failed">Upload failed</string>
     <string name="nextcloud_upload_waiting_wifi">Queued for WiFi upload</string>
     <string name="nextcloud_photo_deleted">Photo deleted after upload</string>
+    <string name="preference_nextcloud_queue_empty">No photos pending</string>
+    <string name="preference_nextcloud_queue_count">%d photo(s) pending</string>
+    <string name="nextcloud_uploading_progress">Uploading %1$d of %2$d...</string>
+    <string name="nextcloud_upload_complete">Upload complete (%d photos)</string>
 
     <!-- There's no point translating the What's New text (and shouldn't be included in language-specific strings.xml) - it'll be updated constantly, and change each version -->
     <string name="whats_new_text" translatable="false">
