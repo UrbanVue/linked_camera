@@ -7,6 +7,10 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Android](https://img.shields.io/badge/Android-5.0%2B-green.svg)](https://developer.android.com)
 [![GitHub release](https://img.shields.io/github/v/release/UrbanVue/linked_camera)](https://github.com/UrbanVue/linked_camera/releases)
+[![IzzyOnDroid](https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/com.linkedcamera.app&label=IzzyOnDroid)](https://apt.izzysoft.de/packages/com.linkedcamera.app)
+
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="85" alt="Get it on Google Play">](https://play.google.com/store/apps/details?id=com.linkedcamera.app)
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroidButtonGreyBorder_nofont.png" height="70" alt="Get it on IzzyOnDroid">](https://apt.izzysoft.de/packages/com.linkedcamera.app)
 
 [Features](#features) • [Installation](#installation) • [Nextcloud Setup](#nextcloud-setup-guide) • [Building](#building-from-source) • [Contributing](#contributing)
 
@@ -100,10 +104,22 @@ Built upon the excellent [Open Camera](https://opencamera.org.uk/) by Mark Harma
 
 ## Installation
 
+### Google Play Store
+
+The easiest way to install Linked Camera:
+
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="85" alt="Get it on Google Play">](https://play.google.com/store/apps/details?id=com.linkedcamera.app)
+
+### IzzyOnDroid
+
+Available on the IzzyOnDroid F-Droid repository:
+
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroidButtonGreyBorder_nofont.png" height="70" alt="Get it on IzzyOnDroid">](https://apt.izzysoft.de/packages/com.linkedcamera.app)
+
 ### Download from GitHub Releases
 
 1. Go to [Releases](https://github.com/UrbanVue/linked_camera/releases/latest)
-2. Download `linked-camera-v1.0.apk`
+2. Download the latest APK
 3. On your Android device:
    - Go to **Settings** → **Security** → **Install unknown apps**
    - Enable installation for your browser or file manager
@@ -224,101 +240,57 @@ Upload All Queued Photos
 ✅ Success Notifications
 ```
 
-### Upload Settings Reference
-
-| Setting | Description | Recommendation |
-|---------|-------------|----------------|
-| **Nextcloud Auto-Upload** | Master on/off toggle | ✅ Enable for field work |
-| **Nextcloud Share URL** | Your public share link | ⚠️ Must have upload permissions |
-| **Share Password** | Password for protected share | 🔒 Use for added security |
-| **WiFi Only** | Only upload on WiFi | ✅ Enable to save mobile data |
-| **Auto-Delete After Upload** | Delete local copy after upload | ⚠️ Enable if storage is limited |
-| **Process Upload Queue** | Manual queue processing | 🔧 Use if WiFi disconnects |
-
 ---
 
 ## Troubleshooting
 
-### Photos Aren't Uploading
+### Upload Issues
 
-**Check these items:**
+**"Upload failed" notification**
+- Verify the share URL is correct (check for typos)
+- Ensure "Allow upload and editing" is enabled on the share
+- Check if the Nextcloud server is accessible
+- Try opening the share URL in a web browser to verify it works
 
-1. ✅ **Share URL is correct**
-   - Must include `/index.php/s/TOKEN`
-   - Example: `https://cloud.example.com/index.php/s/AbCdEfGh123456`
-   - ❌ Not: `https://cloud.example.com/s/AbCdEfGh123456` (missing `/index.php`)
+**Photos not uploading automatically**
+- Check if WiFi is connected (if WiFi-only mode is enabled)
+- Verify auto-upload is enabled in settings
+- Check if the share password is correct (if set)
+- Try manually processing the queue
 
-2. ✅ **Share has upload permissions**
-   - In Nextcloud share settings, "Allow upload and editing" must be checked
-   - Try uploading a test file via web browser to verify
+**Large queue not processing**
+- Connect to a stable WiFi network
+- Keep the app open (or in recent apps) during upload
+- Check available server storage quota
 
-3. ✅ **WiFi is connected** (if WiFi-only mode is enabled)
-   - Check your WiFi connection
-   - Disable WiFi-only mode temporarily to test
+### Camera Issues
 
-4. ✅ **Password is correct** (if share is password-protected)
-   - Password is case-sensitive
-   - No extra spaces before/after
+**Camera not starting**
+- Grant camera permission in Android settings
+- Close other camera apps
+- Restart the device
 
-5. ✅ **Nextcloud server is accessible**
-   - Try accessing the share URL in a web browser
-   - Check if server is online
+**GPS location not appearing**
+- Grant location permission
+- Enable device location (GPS)
+- Wait for GPS lock (may take a minute outdoors)
+- Ensure geotagging is enabled in settings
 
-**Check Notifications:**
-- Look for error messages in notification area
-- Common errors: "Upload failed", "Server not reachable", "Authentication failed"
-
-### Upload Queue Not Processing
-
-**Solutions:**
-
-1. **Check WiFi Connection**
-   - Ensure WiFi is connected and working
-   - Try opening a website to verify internet access
-
-2. **Manually Trigger Queue**
-   - Settings → Server settings → **"Process Upload Queue"**
-   - This forces immediate queue processing
-
-3. **Check Queue Size**
-   - Queue size shown in notification area
-   - If queue is very large, processing may take time
-
-4. **Restart the App**
-   - Close Linked Camera completely
-   - Reopen - queue should auto-process if WiFi is available
-
-### "Upload Failed" Errors
-
-**Common causes:**
-
-| Error Scenario | Possible Cause | Solution |
-|----------------|----------------|----------|
-| All uploads fail | Server offline | Check Nextcloud server status |
-| Intermittent failures | Network issues | Check WiFi stability, try mobile data |
-| After Nextcloud update | Share permissions changed | Re-verify "Allow upload and editing" |
-| Large photos fail | Server upload limits | Check Nextcloud upload size limits |
-| Authentication errors | Wrong password | Re-enter share password |
-
-### Logs and Debugging
-
-For advanced troubleshooting:
-
-1. **Enable Android Developer Options**
-2. **Connect via ADB**: `adb logcat -s NextcloudUploadService:* ImageSaver:*`
-3. **Look for error messages** in the log output
-4. **Share logs** when reporting issues on GitHub
+**Bluetooth remote not working**
+- Grant Bluetooth permissions
+- Enable Bluetooth on device
+- Ensure remote is in pairing mode
+- Try rescanning for devices
 
 ---
 
 ## Building from Source
 
-### Requirements
+### Prerequisites
 
-- **JDK 17 or higher** (JDK 21 recommended)
-- **Android SDK** with API level 35 (Android 15)
-- **Gradle 8.7.3+** (wrapper included in repository)
-- **Git** for cloning the repository
+- Android Studio (latest stable version)
+- Android SDK 35 (target) and SDK 21 (minimum)
+- Java Development Kit 17
 
 ### Build Steps
 
@@ -327,69 +299,27 @@ For advanced troubleshooting:
 git clone https://github.com/UrbanVue/linked_camera.git
 cd linked_camera
 
-# Build debug APK
-./gradlew assembleDebug
+# Open in Android Studio
+# - File → Open → Select project folder
 
-# Output location
-# app/build/outputs/apk/debug/app-debug.apk
-
-# OR build release APK (requires signing configuration)
+# Or build from command line
 ./gradlew assembleRelease
 ```
 
-### Setting Up Android SDK
+### Build Variants
 
-If you don't have Android SDK installed:
+- **Debug**: For development and testing
+- **Release**: For distribution (requires signing)
 
-1. Download [Android Studio](https://developer.android.com/studio)
-2. Install Android SDK via Android Studio
-3. Set `ANDROID_HOME` environment variable:
-   ```bash
-   # Linux/Mac
-   export ANDROID_HOME=$HOME/Android/Sdk
-
-   # Windows
-   set ANDROID_HOME=C:\Users\YourName\AppData\Local\Android\Sdk
-   ```
-
-### Troubleshooting Build Issues
-
-**JDK version errors:**
-```bash
-# Check your Java version
-java -version
-
-# Should show Java 17 or higher
-# If not, download from: https://adoptium.net/
-```
-
-**SDK not found:**
-- Ensure `ANDROID_HOME` is set correctly
-- Or create `local.properties` in project root:
-  ```properties
-  sdk.dir=/path/to/your/android/sdk
-  ```
-
-**Permission denied on gradlew:**
-```bash
-chmod +x gradlew
-./gradlew assembleDebug
-```
-
-**Gradle daemon issues:**
-```bash
-./gradlew --stop
-./gradlew clean assembleDebug
-```
+The APK will be generated in `app/build/outputs/apk/`
 
 ---
 
-## Usage Tips
+## Field Workflow Tips
 
-### For Field Data Collection
+### Pre-Field Preparation
 
-**Pre-Field Setup:**
-1. Configure Nextcloud upload with WiFi-only enabled
+1. Configure Nextcloud connection and verify it works
 2. Enable geotagging (Settings → Location settings)
 3. Configure photo stamping with your project name
 4. Take test photos and verify uploads
@@ -589,6 +519,19 @@ Thank you to all contributors who help improve Linked Camera!
 ---
 
 ## Changelog
+
+### v1.2 (2025)
+
+- 🔧 Release build configuration (non-debuggable)
+- 🔐 Proper release signing certificate
+- 📦 Added Fastlane metadata for F-Droid/IzzyOnDroid
+- 🛒 Published on Google Play Store
+- 🛒 Published on IzzyOnDroid repository
+
+### v1.1 (2025)
+
+- 🛒 Initial Google Play Store release
+- 🔧 Build improvements and stability fixes
 
 ### v1.0 (Initial Release - 2025)
 
