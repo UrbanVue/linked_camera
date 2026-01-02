@@ -51,4 +51,3 @@ NEXTCLOUD SETUP (Simple!)
 Linked Camera combines the powerful features of a professional camera app with seamless integration to your own cloud storage. Keep your photos organized and backed up without relying on third-party cloud services.
 
 Built upon the solid foundation of Open Camera by Mark Harman, Linked Camera extends the functionality with Nextcloud integration and field-optimized features.
-
