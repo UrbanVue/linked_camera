@@ -1,0 +1,6 @@
+v1.2 Changes:
+- Improved Nextcloud upload service with progress notifications
+- Real-time upload queue count display in settings
+- Production-safe logging
+- ProGuard enabled for smaller APK
+- Comprehensive documentation

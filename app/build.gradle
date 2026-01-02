@@ -11,7 +11,6 @@ android {
     // keyPassword=your_password
     // Then uncomment the signingConfigs section below
 
-    /*
     signingConfigs {
         release {
             def signingPropsFile = rootProject.file('signing.properties')
@@ -25,7 +24,6 @@ android {
             }
         }
     }
-    */
 
     defaultConfig {
         applicationId "com.linkedcamera.app"
@@ -41,7 +39,7 @@ android {
 
     buildTypes {
         release {
-            // signingConfig signingConfigs.release  // Uncomment when signing.properties is configured
+            signingConfig signingConfigs.release
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
