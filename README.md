@@ -520,7 +520,7 @@ Thank you to all contributors who help improve Linked Camera!
 
 ## Changelog
 
-### v1.2 (2025)
+### v1.2 (2026)
 
 - 🔧 Release build configuration (non-debuggable)
 - 🔐 Proper release signing certificate
